@@ -1,0 +1,13 @@
+[
+renderText "Hello"
+wait 10
+renderText "How ya doin"
+wait 10
+renderText "Im good"
+wait 10
+renderText "Drip"
+wait 10
+renderText "Sus"
+wait 10
+
+]

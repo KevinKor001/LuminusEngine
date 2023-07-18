@@ -1,0 +1,101 @@
+Inherit(self)
+
+var something 10
+var Mytag self.GetTag
+List ListName = [thing1, thing2, thing3]
+var KeyDown = Engine.GetKeyDown
+
+Encode Base64 "hello"
+#beginPlay
+
+onStart{ #runs once when the script launches
+
+
+Loop 10 #Loops
+   move 10
+   move -10
+   wait 1000
+
+While(Something = false) #Loops while something is true
+   move 10
+   move -10
+   wait 1000
+
+Switch #switches states every time it runs
+    OnTrue
+    move 10
+    OnFalse
+    move -10
+
+}
+
+#everyTick
+
+Tick{ #runs every frame when the script launches
+
+if(KeyDown = W)
+    move 10
+
+
+
+}
+
+End{ #runs when the objects gets destoryed
+
+
+
+}
+
+
+
+
+
+func somethingnew() {
+
+    destory somegameobject #destorys a gameobject
+    var object = Engine.GetNearestObject(self) #gets nearest game object
+    list Objects = Engine.ListGameObjects #Lists objects
+    list ChildObjects = Self.GetChildObjects #Gets the child objects
+    var GetParent = Self.Parent #get child objects parent
+    var IsChild = Engine.IsChild "self" #test if its a child
+    var IsParent = Engine.IsParent "self" #test if its a parent
+    Self.BecomeParent #sets the child to a parent
+
+}
+
+func Animate(){
+
+
+
+}
+
+
+Engine.Input.
+
+Engine.IsChild
+Engine.IsParent
+Engine.ListGameObjects
+Engine.GetNearestObject
+Engine.Input.GetKeyDown
+Engine.Input.GetInputMethod
+Engine.Input.GetAxis
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
