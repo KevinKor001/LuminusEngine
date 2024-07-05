@@ -1,0 +1,3 @@
+res://Windows/MainEditor/main.tscn
+res://Windows/SubWindows/MainViewport.tscn
+res://Windows/SubWindows/ObjectSelector.tscn

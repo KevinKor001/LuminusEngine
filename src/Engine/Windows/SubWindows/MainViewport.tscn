@@ -1,0 +1,98 @@
+[gd_scene load_steps=7 format=3 uid="uid://bgygflok661bk"]
+
+[ext_resource type="Texture2D" uid="uid://r7081tnsaein" path="res://Textures/Icons/add_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg" id="1_m0cgs"]
+[ext_resource type="Texture2D" uid="uid://cahud40mv7rup" path="res://Textures/Icons/Recenter.svg" id="2_fm2ls"]
+[ext_resource type="Texture2D" uid="uid://pqbgpudafvy0" path="res://Textures/Icons/Reload.svg" id="3_m78sf"]
+[ext_resource type="Texture2D" uid="uid://qx6l181bfkx0" path="res://Textures/Icons/height_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg" id="4_fcwlq"]
+[ext_resource type="Texture2D" uid="uid://diedbb5qqa3le" path="res://Textures/Icons/Cube.svg" id="5_jlsbp"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_y53ka"]
+bg_color = Color(0.0627451, 0.0627451, 0.0627451, 0.647059)
+corner_radius_top_left = 15
+corner_radius_top_right = 15
+corner_radius_bottom_right = 15
+corner_radius_bottom_left = 15
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchor_right = 0.063
+anchor_bottom = 1.0
+offset_right = 0.423996
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_y53ka")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Panel"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.137
+anchor_top = 0.015
+anchor_right = 0.863
+anchor_bottom = 0.985
+offset_left = -0.0010004
+offset_top = 0.28
+offset_right = 0.000995636
+offset_bottom = -0.280029
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Button" type="Button" parent="Panel/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+icon = ExtResource("1_m0cgs")
+icon_alignment = 1
+expand_icon = true
+
+[node name="Button2" type="Button" parent="Panel/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+icon = ExtResource("2_fm2ls")
+icon_alignment = 1
+expand_icon = true
+
+[node name="Button3" type="Button" parent="Panel/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+icon = ExtResource("3_m78sf")
+icon_alignment = 1
+expand_icon = true
+
+[node name="Button4" type="Button" parent="Panel/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+icon = ExtResource("4_fcwlq")
+icon_alignment = 1
+expand_icon = true
+
+[node name="Button5" type="Button" parent="Panel/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+icon = ExtResource("5_jlsbp")
+icon_alignment = 1
+expand_icon = true
+
+[node name="Button6" type="Button" parent="Panel/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+icon_alignment = 1
+expand_icon = true
+
+[node name="Button7" type="Button" parent="Panel/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+icon_alignment = 1
+expand_icon = true
+
+[node name="Button8" type="Button" parent="Panel/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+icon_alignment = 1
+expand_icon = true

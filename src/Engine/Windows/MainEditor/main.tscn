@@ -1,6 +1,7 @@
-[gd_scene load_steps=13 format=3 uid="uid://c3dtuivy3402e"]
+[gd_scene load_steps=19 format=3 uid="uid://c3dtuivy3402e"]
 
 [ext_resource type="Script" path="res://MainEditor.gd" id="1_mhr7w"]
+[ext_resource type="PackedScene" uid="uid://bgygflok661bk" path="res://Windows/SubWindows/MainViewport.tscn" id="2_27sna"]
 [ext_resource type="PackedScene" uid="uid://deiou02c4hjjp" path="res://Windows/CF Browsers/FileBrowserLarge.tscn" id="2_ke0at"]
 [ext_resource type="Texture2D" uid="uid://cahud40mv7rup" path="res://Textures/Icons/Recenter.svg" id="3_qkg2g"]
 [ext_resource type="Texture2D" uid="uid://blyl5giqvv1sx" path="res://Textures/Icons/Version Manager.svg" id="4_4g0fl"]
@@ -10,6 +11,13 @@
 [ext_resource type="PackedScene" uid="uid://jgxlu3cabxsf" path="res://Windows/MainEditor/TestGraph.tscn" id="8_j2a4f"]
 [ext_resource type="Script" path="res://MenuFileButton.gd" id="9_g7ajt"]
 [ext_resource type="Script" path="res://Button4.gd" id="10_mqm44"]
+[ext_resource type="Texture2D" uid="uid://cyg5mkhkft0hs" path="res://Textures/Icons/stop_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg" id="11_20jol"]
+[ext_resource type="Texture2D" uid="uid://doflovfc7c1p4" path="res://Textures/Icons/pause_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg" id="12_1551m"]
+[ext_resource type="Texture2D" uid="uid://ds04bw3k7kb04" path="res://Textures/Icons/play_arrow_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg" id="13_l5wgm"]
+[ext_resource type="Texture2D" uid="uid://evxcrgt3jp4x" path="res://Textures/Icons/account_circle_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg" id="14_n3nqh"]
+[ext_resource type="Texture2D" uid="uid://bj1e07rhkbduy" path="res://Textures/Icons/groups_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg" id="15_3xkld"]
+
+[sub_resource type="World3D" id="World3D_1w7mm"]
 
 [sub_resource type="Environment" id="Environment_xjyie"]
 background_mode = 2
@@ -18,9 +26,6 @@ background_energy_multiplier = 3.75
 ambient_light_source = 2
 ambient_light_color = Color(1, 0.141176, 1, 1)
 ambient_light_energy = 0.0
-
-[sub_resource type="World3D" id="World3D_1w7mm"]
-environment = SubResource("Environment_xjyie")
 
 [node name="Main" type="Control"]
 layout_mode = 3
@@ -76,24 +81,74 @@ size_flags_horizontal = 3
 layout_mode = 2
 size_flags_horizontal = 3
 
-[node name="SubViewportContainer" type="SubViewportContainer" parent="Panel/TabContainer/ViewPort/VBoxContainer/VSplitContainer/HBoxContainer/HSplitContainer/HSplitContainer2"]
+[node name="Panel" type="Panel" parent="Panel/TabContainer/ViewPort/VBoxContainer/VSplitContainer/HBoxContainer/HSplitContainer/HSplitContainer2"]
 layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="SubViewportContainer" type="SubViewportContainer" parent="Panel/TabContainer/ViewPort/VBoxContainer/VSplitContainer/HBoxContainer/HSplitContainer/HSplitContainer2/Panel"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
 size_flags_horizontal = 3
 stretch = true
 stretch_shrink = 9
 
-[node name="SubViewport" type="SubViewport" parent="Panel/TabContainer/ViewPort/VBoxContainer/VSplitContainer/HBoxContainer/HSplitContainer/HSplitContainer2/SubViewportContainer"]
+[node name="SubViewport" type="SubViewport" parent="Panel/TabContainer/ViewPort/VBoxContainer/VSplitContainer/HBoxContainer/HSplitContainer/HSplitContainer2/Panel/SubViewportContainer"]
 world_3d = SubResource("World3D_1w7mm")
 handle_input_locally = false
 size = Vector2i(63, 30)
 render_target_update_mode = 4
 
-[node name="WorldEnvironment" type="WorldEnvironment" parent="Panel/TabContainer/ViewPort/VBoxContainer/VSplitContainer/HBoxContainer/HSplitContainer/HSplitContainer2/SubViewportContainer/SubViewport"]
+[node name="WorldEnvironment" type="WorldEnvironment" parent="Panel/TabContainer/ViewPort/VBoxContainer/VSplitContainer/HBoxContainer/HSplitContainer/HSplitContainer2/Panel/SubViewportContainer/SubViewport"]
 environment = SubResource("Environment_xjyie")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Panel/TabContainer/ViewPort/VBoxContainer/VSplitContainer/HBoxContainer/HSplitContainer/HSplitContainer2/Panel/SubViewportContainer"]
+layout_mode = 2
+
+[node name="Control" parent="Panel/TabContainer/ViewPort/VBoxContainer/VSplitContainer/HBoxContainer/HSplitContainer/HSplitContainer2/Panel" instance=ExtResource("2_27sna")]
+layout_mode = 1
+offset_left = 5.0
+offset_top = 5.0
+offset_right = 5.0
+offset_bottom = -5.0
+grow_horizontal = 0
+grow_vertical = 0
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Panel/TabContainer/ViewPort/VBoxContainer/VSplitContainer/HBoxContainer/HSplitContainer/HSplitContainer2/Panel"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
 
 [node name="Panel2" type="Panel" parent="Panel/TabContainer/ViewPort/VBoxContainer/VSplitContainer/HBoxContainer/HSplitContainer/HSplitContainer2"]
 layout_mode = 2
 size_flags_horizontal = 3
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Panel/TabContainer/ViewPort/VBoxContainer/VSplitContainer/HBoxContainer/HSplitContainer/HSplitContainer2/Panel2"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="Panel/TabContainer/ViewPort/VBoxContainer/VSplitContainer/HBoxContainer/HSplitContainer/HSplitContainer2/Panel2/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 10
+text = "No Instance in this Container"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Button" type="Button" parent="Panel/TabContainer/ViewPort/VBoxContainer/VSplitContainer/HBoxContainer/HSplitContainer/HSplitContainer2/Panel2/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 2
+text = "Add One ..."
 
 [node name="Panel" type="Panel" parent="Panel/TabContainer/ViewPort/VBoxContainer/VSplitContainer"]
 layout_mode = 2
@@ -195,14 +250,14 @@ value = 3.5
 visible = false
 layout_mode = 2
 
-[node name="Panel" type="Panel" parent="Panel"]
+[node name="UtilityBar" type="Panel" parent="Panel"]
 layout_mode = 1
 anchors_preset = 10
 anchor_right = 1.0
 offset_bottom = 31.0
 grow_horizontal = 2
 
-[node name="HBoxContainer" type="HBoxContainer" parent="Panel/Panel"]
+[node name="HBoxContainer" type="HBoxContainer" parent="Panel/UtilityBar"]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -210,7 +265,7 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="MenuFileButton" type="MenuButton" parent="Panel/Panel/HBoxContainer"]
+[node name="MenuFileButton" type="MenuButton" parent="Panel/UtilityBar/HBoxContainer"]
 layout_mode = 2
 text = "File"
 item_count = 4
@@ -224,7 +279,7 @@ popup/item_3/text = "ReCompile Project Solution"
 popup/item_3/id = 3
 script = ExtResource("9_g7ajt")
 
-[node name="MenuPluginsButton" type="MenuButton" parent="Panel/Panel/HBoxContainer"]
+[node name="MenuPluginsButton" type="MenuButton" parent="Panel/UtilityBar/HBoxContainer"]
 layout_mode = 2
 text = "Plugins"
 item_count = 3
@@ -237,15 +292,51 @@ popup/item_2/text = "INDEV: 3D_Modeler"
 popup/item_2/id = 2
 script = ExtResource("9_g7ajt")
 
-[node name="Button3" type="Button" parent="Panel/Panel/HBoxContainer"]
-layout_mode = 2
-text = "Edit
-"
-
-[node name="Button4" type="Button" parent="Panel/Panel/HBoxContainer"]
+[node name="Button4" type="Button" parent="Panel/UtilityBar/HBoxContainer"]
 layout_mode = 2
 text = "DEV"
 script = ExtResource("10_mqm44")
 
-[connection signal="pressed" from="Panel/Panel/HBoxContainer/MenuFileButton" to="Panel/Panel/HBoxContainer/MenuFileButton" method="_on_pressed"]
-[connection signal="pressed" from="Panel/Panel/HBoxContainer/Button4" to="Panel/Panel/HBoxContainer/Button4" method="_on_pressed"]
+[node name="Button3" type="Button" parent="Panel/UtilityBar/HBoxContainer"]
+layout_mode = 2
+text = "Edit
+"
+
+[node name="VSeparator2" type="VSeparator" parent="Panel/UtilityBar/HBoxContainer"]
+layout_mode = 2
+
+[node name="VSeparator3" type="VSeparator" parent="Panel/UtilityBar/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 10
+
+[node name="Stop" type="Button" parent="Panel/UtilityBar/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 0
+icon = ExtResource("11_20jol")
+
+[node name="Pause" type="Button" parent="Panel/UtilityBar/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 8
+icon = ExtResource("12_1551m")
+
+[node name="Run" type="Button" parent="Panel/UtilityBar/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 8
+icon = ExtResource("13_l5wgm")
+
+[node name="VSeparator" type="VSeparator" parent="Panel/UtilityBar/HBoxContainer"]
+layout_mode = 2
+
+[node name="Account" type="Button" parent="Panel/UtilityBar/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 0
+text = "[Account]"
+icon = ExtResource("14_n3nqh")
+
+[node name="Invite" type="Button" parent="Panel/UtilityBar/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 8
+icon = ExtResource("15_3xkld")
+
+[connection signal="pressed" from="Panel/UtilityBar/HBoxContainer/MenuFileButton" to="Panel/UtilityBar/HBoxContainer/MenuFileButton" method="_on_pressed"]
+[connection signal="pressed" from="Panel/UtilityBar/HBoxContainer/Button4" to="Panel/UtilityBar/HBoxContainer/Button4" method="_on_pressed"]
