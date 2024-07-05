@@ -17,8 +17,6 @@
 [ext_resource type="Texture2D" uid="uid://evxcrgt3jp4x" path="res://Textures/Icons/account_circle_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg" id="14_n3nqh"]
 [ext_resource type="Texture2D" uid="uid://bj1e07rhkbduy" path="res://Textures/Icons/groups_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg" id="15_3xkld"]
 
-[sub_resource type="World3D" id="World3D_1w7mm"]
-
 [sub_resource type="Environment" id="Environment_xjyie"]
 background_mode = 2
 background_color = Color(0.952941, 0.0705882, 0.952941, 1)
@@ -26,6 +24,9 @@ background_energy_multiplier = 3.75
 ambient_light_source = 2
 ambient_light_color = Color(1, 0.141176, 1, 1)
 ambient_light_energy = 0.0
+
+[sub_resource type="World3D" id="World3D_1w7mm"]
+environment = SubResource("Environment_xjyie")
 
 [node name="Main" type="Control"]
 layout_mode = 3
@@ -85,7 +86,18 @@ size_flags_horizontal = 3
 layout_mode = 2
 size_flags_horizontal = 3
 
+[node name="Control" parent="Panel/TabContainer/ViewPort/VBoxContainer/VSplitContainer/HBoxContainer/HSplitContainer/HSplitContainer2/Panel" instance=ExtResource("2_27sna")]
+z_as_relative = false
+layout_mode = 1
+offset_left = 5.0
+offset_top = 5.0
+offset_right = 5.0
+offset_bottom = -5.0
+grow_horizontal = 0
+grow_vertical = 0
+
 [node name="SubViewportContainer" type="SubViewportContainer" parent="Panel/TabContainer/ViewPort/VBoxContainer/VSplitContainer/HBoxContainer/HSplitContainer/HSplitContainer2/Panel"]
+visible = false
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -100,22 +112,13 @@ stretch_shrink = 9
 world_3d = SubResource("World3D_1w7mm")
 handle_input_locally = false
 size = Vector2i(63, 30)
-render_target_update_mode = 4
+render_target_update_mode = 0
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="Panel/TabContainer/ViewPort/VBoxContainer/VSplitContainer/HBoxContainer/HSplitContainer/HSplitContainer2/Panel/SubViewportContainer/SubViewport"]
 environment = SubResource("Environment_xjyie")
 
 [node name="HBoxContainer" type="HBoxContainer" parent="Panel/TabContainer/ViewPort/VBoxContainer/VSplitContainer/HBoxContainer/HSplitContainer/HSplitContainer2/Panel/SubViewportContainer"]
 layout_mode = 2
-
-[node name="Control" parent="Panel/TabContainer/ViewPort/VBoxContainer/VSplitContainer/HBoxContainer/HSplitContainer/HSplitContainer2/Panel" instance=ExtResource("2_27sna")]
-layout_mode = 1
-offset_left = 5.0
-offset_top = 5.0
-offset_right = 5.0
-offset_bottom = -5.0
-grow_horizontal = 0
-grow_vertical = 0
 
 [node name="HBoxContainer" type="HBoxContainer" parent="Panel/TabContainer/ViewPort/VBoxContainer/VSplitContainer/HBoxContainer/HSplitContainer/HSplitContainer2/Panel"]
 layout_mode = 1
