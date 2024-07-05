@@ -1,0 +1,92 @@
+[gd_scene load_steps=7 format=3 uid="uid://jgxlu3cabxsf"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_76008"]
+bg_color = Color(0.141176, 0.141176, 0.141176, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_odhcn"]
+bg_color = Color(0.0392157, 0.0392157, 0.0392157, 0.980392)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+corner_detail = 20
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_0g75o"]
+bg_color = Color(0.619608, 0.239216, 0.0862745, 0.705882)
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+corner_detail = 20
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_oxevx"]
+bg_color = Color(0.870588, 0.490196, 0, 0.85098)
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+corner_detail = 20
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_4ibs7"]
+bg_color = Color(1, 0.415686, 0.231373, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_detail = 20
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_vdeur"]
+bg_color = Color(0.847059, 0.509804, 0, 0.545098)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="GraphEdit" type="GraphEdit" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_76008")
+theme_override_styles/menu_panel = SubResource("StyleBoxFlat_odhcn")
+snapping_enabled = false
+snapping_distance = 27
+connection_lines_thickness = 3.0
+show_zoom_buttons = false
+show_grid_buttons = false
+
+[node name="GraphNode" type="GraphNode" parent="GraphEdit"]
+layout_mode = 0
+offset_left = 474.0
+offset_top = 163.0
+offset_right = 822.0
+offset_bottom = 218.0
+mouse_filter = 1
+theme_override_colors/resizer_color = Color(1, 1, 1, 1)
+theme_override_constants/separation = -180
+theme_override_constants/port_h_offset = 0
+theme_override_styles/panel = SubResource("StyleBoxFlat_0g75o")
+theme_override_styles/panel_selected = SubResource("StyleBoxFlat_oxevx")
+theme_override_styles/titlebar = SubResource("StyleBoxFlat_4ibs7")
+theme_override_styles/titlebar_selected = SubResource("StyleBoxFlat_4ibs7")
+theme_override_styles/slot = SubResource("StyleBoxFlat_vdeur")
+position_offset = Vector2(474, 163)
+selected = true
+title = "   F-GetPlugin(PowerpointSig)    Node 1N1P"
+slot/0/left_enabled = false
+slot/0/left_type = 0
+slot/0/left_color = Color(1, 1, 1, 1)
+slot/0/left_icon = null
+slot/0/right_enabled = true
+slot/0/right_type = 0
+slot/0/right_color = Color(1, 0.345098, 0.12549, 1)
+slot/0/right_icon = null
+slot/0/draw_stylebox = true
+
+[node name="Label" type="Label" parent="GraphEdit/GraphNode"]
+layout_mode = 2
+text = "   PowerPoint Out Signal (PLUGIN ON)"

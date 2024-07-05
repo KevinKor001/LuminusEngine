@@ -1,0 +1,429 @@
+[gd_scene load_steps=3 format=3 uid="uid://daiokfbarmy3d"]
+
+[ext_resource type="Script" path="res://MenuFileButton.gd" id="1_hagi1"]
+[ext_resource type="Script" path="res://Button4.gd" id="2_w78yw"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="HSplitContainer" type="HSplitContainer" parent="Panel"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ColorRect" type="ColorRect" parent="Panel/HSplitContainer"]
+custom_minimum_size = Vector2(83.37, 0)
+layout_mode = 2
+color = Color(0.235294, 1, 0, 1)
+
+[node name="Panel" type="Panel" parent="Panel/HSplitContainer"]
+layout_mode = 2
+
+[node name="ScrollContainer" type="ScrollContainer" parent="Panel/HSplitContainer/Panel"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Panel/HSplitContainer/Panel/ScrollContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="Panel/HSplitContainer/Panel/ScrollContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "dfdsfsdf"
+
+[node name="Label2" type="Label" parent="Panel/HSplitContainer/Panel/ScrollContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "dfdsfsdf"
+
+[node name="Label3" type="Label" parent="Panel/HSplitContainer/Panel/ScrollContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "dfdsfsdf"
+
+[node name="Label4" type="Label" parent="Panel/HSplitContainer/Panel/ScrollContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "dfdsfsdf"
+
+[node name="Label5" type="Label" parent="Panel/HSplitContainer/Panel/ScrollContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "dfdsfsdf"
+
+[node name="Label6" type="Label" parent="Panel/HSplitContainer/Panel/ScrollContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "dfdsfsdf"
+
+[node name="Label7" type="Label" parent="Panel/HSplitContainer/Panel/ScrollContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "dfdsfsdf"
+
+[node name="Label8" type="Label" parent="Panel/HSplitContainer/Panel/ScrollContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "dfdsfsdf"
+
+[node name="Label9" type="Label" parent="Panel/HSplitContainer/Panel/ScrollContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "dfdsfsdf"
+
+[node name="Label10" type="Label" parent="Panel/HSplitContainer/Panel/ScrollContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "dfdsfsdf"
+
+[node name="Label11" type="Label" parent="Panel/HSplitContainer/Panel/ScrollContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "dfdsfsdf"
+
+[node name="Label12" type="Label" parent="Panel/HSplitContainer/Panel/ScrollContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "dfdsfsdf"
+
+[node name="Label13" type="Label" parent="Panel/HSplitContainer/Panel/ScrollContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "dfdsfsdf"
+
+[node name="Label14" type="Label" parent="Panel/HSplitContainer/Panel/ScrollContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "dfdsfsdf"
+
+[node name="Label15" type="Label" parent="Panel/HSplitContainer/Panel/ScrollContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "dfdsfsdf"
+
+[node name="Label16" type="Label" parent="Panel/HSplitContainer/Panel/ScrollContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "dfdsfsdf"
+
+[node name="Label17" type="Label" parent="Panel/HSplitContainer/Panel/ScrollContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "dfdsfsdf"
+
+[node name="Label18" type="Label" parent="Panel/HSplitContainer/Panel/ScrollContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "dfdsfsdf"
+
+[node name="Label19" type="Label" parent="Panel/HSplitContainer/Panel/ScrollContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "dfdsfsdf"
+
+[node name="Label20" type="Label" parent="Panel/HSplitContainer/Panel/ScrollContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "dfdsfsdf"
+
+[node name="Label21" type="Label" parent="Panel/HSplitContainer/Panel/ScrollContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "dfdsfsdf"
+
+[node name="Label22" type="Label" parent="Panel/HSplitContainer/Panel/ScrollContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "dfdsfsdf"
+
+[node name="Label23" type="Label" parent="Panel/HSplitContainer/Panel/ScrollContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "dfdsfsdf"
+
+[node name="Label24" type="Label" parent="Panel/HSplitContainer/Panel/ScrollContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "dfdsfsdf"
+
+[node name="Label25" type="Label" parent="Panel/HSplitContainer/Panel/ScrollContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "dfdsfsdf"
+
+[node name="Label26" type="Label" parent="Panel/HSplitContainer/Panel/ScrollContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "dfdsfsdf"
+
+[node name="Label27" type="Label" parent="Panel/HSplitContainer/Panel/ScrollContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "dfdsfsdf"
+
+[node name="Label28" type="Label" parent="Panel/HSplitContainer/Panel/ScrollContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "dfdsfsdf"
+
+[node name="Label29" type="Label" parent="Panel/HSplitContainer/Panel/ScrollContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "dfdsfsdf"
+
+[node name="Label30" type="Label" parent="Panel/HSplitContainer/Panel/ScrollContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "dfdsfsdf"
+
+[node name="Label31" type="Label" parent="Panel/HSplitContainer/Panel/ScrollContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "dfdsfsdf"
+
+[node name="Label32" type="Label" parent="Panel/HSplitContainer/Panel/ScrollContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "dfdsfsdf"
+
+[node name="Label33" type="Label" parent="Panel/HSplitContainer/Panel/ScrollContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "dfdsfsdf"
+
+[node name="Label34" type="Label" parent="Panel/HSplitContainer/Panel/ScrollContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "dfdsfsdf"
+
+[node name="Label35" type="Label" parent="Panel/HSplitContainer/Panel/ScrollContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "dfdsfsdf"
+
+[node name="Label36" type="Label" parent="Panel/HSplitContainer/Panel/ScrollContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "dfdsfsdf"
+
+[node name="Label37" type="Label" parent="Panel/HSplitContainer/Panel/ScrollContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "dfdsfsdf"
+
+[node name="Label38" type="Label" parent="Panel/HSplitContainer/Panel/ScrollContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "dfdsfsdf"
+
+[node name="Label39" type="Label" parent="Panel/HSplitContainer/Panel/ScrollContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "dfdsfsdf"
+
+[node name="Label40" type="Label" parent="Panel/HSplitContainer/Panel/ScrollContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "dfdsfsdf"
+
+[node name="Label41" type="Label" parent="Panel/HSplitContainer/Panel/ScrollContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "dfdsfsdf"
+
+[node name="Label42" type="Label" parent="Panel/HSplitContainer/Panel/ScrollContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "dfdsfsdf"
+
+[node name="Label43" type="Label" parent="Panel/HSplitContainer/Panel/ScrollContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "dfdsfsdf"
+
+[node name="Label44" type="Label" parent="Panel/HSplitContainer/Panel/ScrollContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "dfdsfsdf"
+
+[node name="Label45" type="Label" parent="Panel/HSplitContainer/Panel/ScrollContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "dfdsfsdf"
+
+[node name="Label46" type="Label" parent="Panel/HSplitContainer/Panel/ScrollContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "dfdsfsdf"
+
+[node name="Label47" type="Label" parent="Panel/HSplitContainer/Panel/ScrollContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "dfdsfsdf"
+
+[node name="Label48" type="Label" parent="Panel/HSplitContainer/Panel/ScrollContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "dfdsfsdf"
+
+[node name="Panel2" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_bottom = 31.0
+grow_horizontal = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Panel2"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="MenuFileButton" type="MenuButton" parent="Panel2/HBoxContainer"]
+layout_mode = 2
+text = "File"
+item_count = 4
+popup/item_0/text = "New File"
+popup/item_0/id = 0
+popup/item_1/text = "Load File"
+popup/item_1/id = 1
+popup/item_2/text = "Settings"
+popup/item_2/id = 2
+popup/item_3/text = "ReCompile Project Solution"
+popup/item_3/id = 3
+script = ExtResource("1_hagi1")
+
+[node name="MenuPluginsButton" type="MenuButton" parent="Panel2/HBoxContainer"]
+layout_mode = 2
+text = "Render"
+item_count = 3
+popup/item_0/text = "Plugin Manager"
+popup/item_0/id = 0
+popup/item_1/text = "Plugins"
+popup/item_1/id = 1
+popup/item_1/separator = true
+popup/item_2/text = "INDEV: 3D_Modeler"
+popup/item_2/id = 2
+script = ExtResource("1_hagi1")
+
+[node name="MenuPluginsButton2" type="MenuButton" parent="Panel2/HBoxContainer"]
+layout_mode = 2
+text = "Edit"
+item_count = 3
+popup/item_0/text = "Plugin Manager"
+popup/item_0/id = 0
+popup/item_1/text = "Plugins"
+popup/item_1/id = 1
+popup/item_1/separator = true
+popup/item_2/text = "INDEV: 3D_Modeler"
+popup/item_2/id = 2
+script = ExtResource("1_hagi1")
+
+[node name="MenuPluginsButton3" type="MenuButton" parent="Panel2/HBoxContainer"]
+layout_mode = 2
+text = "Textures"
+item_count = 3
+popup/item_0/text = "Plugin Manager"
+popup/item_0/id = 0
+popup/item_1/text = "Plugins"
+popup/item_1/id = 1
+popup/item_1/separator = true
+popup/item_2/text = "INDEV: 3D_Modeler"
+popup/item_2/id = 2
+script = ExtResource("1_hagi1")
+
+[node name="MenuPluginsButton4" type="MenuButton" parent="Panel2/HBoxContainer"]
+layout_mode = 2
+text = "Shaders"
+item_count = 3
+popup/item_0/text = "Plugin Manager"
+popup/item_0/id = 0
+popup/item_1/text = "Plugins"
+popup/item_1/id = 1
+popup/item_1/separator = true
+popup/item_2/text = "INDEV: 3D_Modeler"
+popup/item_2/id = 2
+script = ExtResource("1_hagi1")
+
+[node name="Button3" type="Button" parent="Panel2/HBoxContainer"]
+layout_mode = 2
+text = "Edit
+"
+
+[node name="Button4" type="Button" parent="Panel2/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 10
+text = "IN DEVELOPMENT BUILD!!!!"
+script = ExtResource("2_w78yw")
+
+[connection signal="pressed" from="Panel2/HBoxContainer/Button4" to="Panel2/HBoxContainer/Button4" method="_on_pressed"]

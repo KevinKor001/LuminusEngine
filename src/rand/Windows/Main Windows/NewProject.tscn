@@ -1,0 +1,303 @@
+[gd_scene load_steps=14 format=3 uid="uid://dmnh3gav2nr81"]
+
+[ext_resource type="Texture2D" uid="uid://cr30fvxvoa3xu" path="res://Textures/Icons/ControllerLarge1.svg" id="1_8j45e"]
+[ext_resource type="Texture2D" uid="uid://biam7l2yy4g04" path="res://Textures/Icons/2DLarge.svg" id="2_elyxq"]
+[ext_resource type="Texture2D" uid="uid://ntu8o5tptub5" path="res://Textures/Icons/3DLarge.svg" id="3_7tanp"]
+[ext_resource type="Texture2D" uid="uid://h2ox4nisq5x0" path="res://Textures/Icons/CricketLarge.svg" id="4_m2sfk"]
+[ext_resource type="Texture2D" uid="uid://blbeeute1mgki" path="res://Textures/Icons/AccessibilityLarge.svg" id="5_0pcjx"]
+[ext_resource type="Texture2D" uid="uid://bmboemqh1e32b" path="res://Textures/Icons/PianoLarge.svg" id="6_ch16x"]
+[ext_resource type="Texture2D" uid="uid://cgjp4jguck2ag" path="res://Textures/Icons/WindowLarge.svg" id="7_e1moc"]
+[ext_resource type="Texture2D" uid="uid://ceu3fjje7g0qu" path="res://Textures/Icons/HtmlLarge.svg" id="8_esqkt"]
+[ext_resource type="Texture2D" uid="uid://b6l8r10h6fhkx" path="res://Textures/Icons/MoveSelectionLarge.svg" id="9_vcypd"]
+[ext_resource type="Texture2D" uid="uid://522t76f6emvv" path="res://Textures/Icons/CubeLarge.svg" id="10_oqap6"]
+[ext_resource type="FontFile" uid="uid://ntm0tieyb5t6" path="res://Textures/Fonts/RubikMonoOne-Regular.ttf" id="11_e5vbi"]
+[ext_resource type="Texture2D" uid="uid://5rb1xegxrj4v" path="res://Textures/TemplateBanners/Humanoid.png" id="12_iyfj6"]
+[ext_resource type="PackedScene" uid="uid://d4mla17b1u4cw" path="res://Windows/CF Browsers/FileBrowser.tscn" id="13_2mws0"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TabContainer" type="TabContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+tab_alignment = 1
+current_tab = 1
+drag_to_rearrange_enabled = true
+
+[node name="New Project" type="Panel" parent="TabContainer"]
+visible = false
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="HBoxContainer" type="HBoxContainer" parent="TabContainer/New Project"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Panel" type="Panel" parent="TabContainer/New Project/HBoxContainer"]
+custom_minimum_size = Vector2(220, 0)
+layout_mode = 2
+
+[node name="ScrollContainer" type="ScrollContainer" parent="TabContainer/New Project/HBoxContainer/Panel"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+scroll_vertical = 94
+
+[node name="VBoxContainer" type="VBoxContainer" parent="TabContainer/New Project/HBoxContainer/Panel/ScrollContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Label" type="Label" parent="TabContainer/New Project/HBoxContainer/Panel/ScrollContainer/VBoxContainer"]
+layout_mode = 2
+text = "Templates"
+horizontal_alignment = 1
+
+[node name="HSeparator" type="HSeparator" parent="TabContainer/New Project/HBoxContainer/Panel/ScrollContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="Button" type="Button" parent="TabContainer/New Project/HBoxContainer/Panel/ScrollContainer/VBoxContainer"]
+layout_mode = 2
+text = "Game Project"
+icon = ExtResource("1_8j45e")
+
+[node name="Button4" type="Button" parent="TabContainer/New Project/HBoxContainer/Panel/ScrollContainer/VBoxContainer"]
+layout_mode = 2
+text = "2D Based Project"
+icon = ExtResource("2_elyxq")
+
+[node name="Button5" type="Button" parent="TabContainer/New Project/HBoxContainer/Panel/ScrollContainer/VBoxContainer"]
+layout_mode = 2
+text = "3D Based Project"
+icon = ExtResource("3_7tanp")
+
+[node name="Button2" type="Button" parent="TabContainer/New Project/HBoxContainer/Panel/ScrollContainer/VBoxContainer"]
+layout_mode = 2
+text = "Physics Simulation"
+icon = ExtResource("4_m2sfk")
+
+[node name="HSeparator2" type="HSeparator" parent="TabContainer/New Project/HBoxContainer/Panel/ScrollContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="Label2" type="Label" parent="TabContainer/New Project/HBoxContainer/Panel/ScrollContainer/VBoxContainer"]
+layout_mode = 2
+text = "Plugin Templates"
+horizontal_alignment = 1
+
+[node name="HSeparator3" type="HSeparator" parent="TabContainer/New Project/HBoxContainer/Panel/ScrollContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="Button3" type="Button" parent="TabContainer/New Project/HBoxContainer/Panel/ScrollContainer/VBoxContainer"]
+layout_mode = 2
+text = "Humanoid Modeler"
+icon = ExtResource("5_0pcjx")
+
+[node name="Button6" type="Button" parent="TabContainer/New Project/HBoxContainer/Panel/ScrollContainer/VBoxContainer"]
+layout_mode = 2
+text = "Track Maker INDEV"
+icon = ExtResource("6_ch16x")
+
+[node name="Button7" type="Button" parent="TabContainer/New Project/HBoxContainer/Panel/ScrollContainer/VBoxContainer"]
+layout_mode = 2
+text = "OS Window Maker"
+icon = ExtResource("7_e1moc")
+
+[node name="Button8" type="Button" parent="TabContainer/New Project/HBoxContainer/Panel/ScrollContainer/VBoxContainer"]
+layout_mode = 2
+text = "Website Maker"
+icon = ExtResource("8_esqkt")
+
+[node name="Button9" type="Button" parent="TabContainer/New Project/HBoxContainer/Panel/ScrollContainer/VBoxContainer"]
+layout_mode = 2
+text = "Modeling Project"
+icon = ExtResource("9_vcypd")
+
+[node name="Button10" type="Button" parent="TabContainer/New Project/HBoxContainer/Panel/ScrollContainer/VBoxContainer"]
+layout_mode = 2
+text = "UNO Editor"
+icon = ExtResource("10_oqap6")
+
+[node name="HSeparator4" type="HSeparator" parent="TabContainer/New Project/HBoxContainer/Panel/ScrollContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="Button11" type="Button" parent="TabContainer/New Project/HBoxContainer/Panel/ScrollContainer/VBoxContainer"]
+layout_mode = 2
+text = "LEG Game Mod"
+icon = ExtResource("10_oqap6")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="TabContainer/New Project/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="HSeparator2" type="HSeparator" parent="TabContainer/New Project/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="TabContainer/New Project/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("11_e5vbi")
+theme_override_font_sizes/font_size = 36
+text = "Create a New Project"
+horizontal_alignment = 1
+
+[node name="HSeparator" type="HSeparator" parent="TabContainer/New Project/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="Label2" type="Label" parent="TabContainer/New Project/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 10
+text = "Selected Template : (Default)"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="TextureRect" type="TextureRect" parent="TabContainer/New Project/HBoxContainer/VBoxContainer"]
+custom_minimum_size = Vector2(0, 200)
+layout_mode = 2
+texture = ExtResource("12_iyfj6")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="TabContainer/New Project/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 0
+
+[node name="Label2" type="Label" parent="TabContainer/New Project/HBoxContainer/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 10
+text = "Project Name : "
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="LineEdit" type="LineEdit" parent="TabContainer/New Project/HBoxContainer/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="HBoxContainer3" type="HBoxContainer" parent="TabContainer/New Project/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 2
+
+[node name="Label2" type="Label" parent="TabContainer/New Project/HBoxContainer/VBoxContainer/HBoxContainer3"]
+layout_mode = 2
+size_flags_vertical = 10
+text = "Project Path : "
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="LineEdit" type="LineEdit" parent="TabContainer/New Project/HBoxContainer/VBoxContainer/HBoxContainer3"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Button2" type="Button" parent="TabContainer/New Project/HBoxContainer/VBoxContainer/HBoxContainer3"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Browse"
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="TabContainer/New Project/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 10
+
+[node name="Button" type="Button" parent="TabContainer/New Project/HBoxContainer/VBoxContainer/HBoxContainer2"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Create New Project"
+
+[node name="Button2" type="Button" parent="TabContainer/New Project/HBoxContainer/VBoxContainer/HBoxContainer2"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Cancel"
+
+[node name="Load Project" type="Panel" parent="TabContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="HBoxContainer" type="HBoxContainer" parent="TabContainer/Load Project"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Panel" type="Panel" parent="TabContainer/Load Project/HBoxContainer"]
+custom_minimum_size = Vector2(220, 0)
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="TabContainer/Load Project/HBoxContainer/Panel"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Button" type="Button" parent="TabContainer/Load Project/HBoxContainer/Panel/VBoxContainer"]
+layout_mode = 2
+text = "Select Custom Folder"
+
+[node name="Control" parent="TabContainer/Load Project/HBoxContainer/Panel/VBoxContainer" instance=ExtResource("13_2mws0")]
+layout_mode = 2
+HasRefresh = true
+HasPath = true
+
+[node name="VBoxContainer" type="VBoxContainer" parent="TabContainer/Load Project/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="HSeparator2" type="HSeparator" parent="TabContainer/Load Project/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="TabContainer/Load Project/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("11_e5vbi")
+theme_override_font_sizes/font_size = 36
+text = "Load a Project"
+horizontal_alignment = 1
+
+[node name="HSeparator" type="HSeparator" parent="TabContainer/Load Project/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="Label2" type="Label" parent="TabContainer/Load Project/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 10
+text = "Selected Project : X"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="TextureRect" type="TextureRect" parent="TabContainer/Load Project/HBoxContainer/VBoxContainer"]
+visible = false
+custom_minimum_size = Vector2(0, 200)
+layout_mode = 2
+texture = ExtResource("12_iyfj6")
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="TabContainer/Load Project/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 10
+
+[node name="Button" type="Button" parent="TabContainer/Load Project/HBoxContainer/VBoxContainer/HBoxContainer2"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Load Project"
+
+[node name="Button2" type="Button" parent="TabContainer/Load Project/HBoxContainer/VBoxContainer/HBoxContainer2"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Project Settings"
+
+[node name="Comming Soon" type="TabBar" parent="TabContainer"]
+visible = false
+layout_mode = 2
+tab_alignment = 1
+max_tab_width = 290

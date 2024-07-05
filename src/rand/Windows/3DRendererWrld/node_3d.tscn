@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://b25m4yncpwmmb"]
+
+[sub_resource type="QuadMesh" id="QuadMesh_ha8qq"]
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_mfeky"]
+
+[node name="Node3D" type="Node3D"]
+
+[node name="CSGMesh3D" type="CSGMesh3D" parent="."]
+transform = Transform3D(2.4, 0, 0, 0, -1.35505e-07, 1, 0, -3.1, -4.37114e-08, 0, 0, 0)
+mesh = SubResource("QuadMesh_ha8qq")
+
+[node name="CSGMesh3D2" type="CSGMesh3D" parent="."]
+transform = Transform3D(0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, 0.790596, 0.0977901, 0)
+mesh = SubResource("CapsuleMesh_mfeky")
+
+[node name="Viewport3D" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.965926, 0.258819, 0, -0.258819, 0.965926, 0.842862, 0.261865, 1.09257)

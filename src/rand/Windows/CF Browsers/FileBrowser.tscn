@@ -1,0 +1,61 @@
+[gd_scene load_steps=3 format=3 uid="uid://d4mla17b1u4cw"]
+
+[ext_resource type="Script" path="res://FileBrowser.gd" id="1_0bvwl"]
+[ext_resource type="Texture2D" uid="uid://pqbgpudafvy0" path="res://Textures/Icons/Reload.svg" id="1_j3by6"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchor_top = -0.087
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = 56.376
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+script = ExtResource("1_0bvwl")
+metadata/_edit_use_anchors_ = true
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer"]
+layout_mode = 2
+
+[node name="ProgressBar" type="ProgressBar" parent="VBoxContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+value = 19.92
+
+[node name="Button" type="Button" parent="VBoxContainer/HBoxContainer"]
+custom_minimum_size = Vector2(27.045, 0)
+layout_mode = 2
+icon = ExtResource("1_j3by6")
+expand_icon = true
+
+[node name="LineEdit" type="LineEdit" parent="VBoxContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+placeholder_text = "Type a path"
+
+[node name="HSeparator" type="HSeparator" parent="VBoxContainer"]
+layout_mode = 2
+
+[node name="ScrollContainer" type="ScrollContainer" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Tree" type="Tree" parent="VBoxContainer/ScrollContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+column_titles_visible = true
+allow_reselect = true
+enable_recursive_folding = false
+drop_mode_flags = 3
+select_mode = 2

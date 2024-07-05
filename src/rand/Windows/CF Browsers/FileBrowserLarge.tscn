@@ -1,0 +1,101 @@
+[gd_scene load_steps=4 format=3 uid="uid://deiou02c4hjjp"]
+
+[ext_resource type="PackedScene" uid="uid://d4mla17b1u4cw" path="res://Windows/CF Browsers/FileBrowser.tscn" id="1_5j2ck"]
+[ext_resource type="PackedScene" uid="uid://db46pnqboyipx" path="res://Windows/Main Windows/Console.tscn" id="2_ua16j"]
+[ext_resource type="PackedScene" uid="uid://bcs52owj2ayvl" path="res://Windows/CF Browsers/ContentBrowser.tscn" id="3_sw7eo"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="HSplitContainer" type="HSplitContainer" parent="Panel"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Control" parent="Panel/HSplitContainer" instance=ExtResource("1_5j2ck")]
+layout_mode = 2
+
+[node name="TabContainer" type="TabContainer" parent="Panel/HSplitContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+current_tab = 2
+drag_to_rearrange_enabled = true
+
+[node name="Control" parent="Panel/HSplitContainer/TabContainer" instance=ExtResource("2_ua16j")]
+visible = false
+layout_mode = 2
+
+[node name="Control2" parent="Panel/HSplitContainer/TabContainer" instance=ExtResource("3_sw7eo")]
+visible = false
+layout_mode = 2
+
+[node name="Console 3" type="TabBar" parent="Panel/HSplitContainer/TabContainer"]
+layout_mode = 2
+
+[node name="Console 4" type="TabBar" parent="Panel/HSplitContainer/TabContainer"]
+visible = false
+layout_mode = 2
+
+[node name="Console 5" type="TabBar" parent="Panel/HSplitContainer/TabContainer"]
+visible = false
+layout_mode = 2
+
+[node name="Console 6" type="TabBar" parent="Panel/HSplitContainer/TabContainer"]
+visible = false
+layout_mode = 2
+
+[node name="Console 7" type="TabBar" parent="Panel/HSplitContainer/TabContainer"]
+visible = false
+layout_mode = 2
+
+[node name="Console 8" type="TabBar" parent="Panel/HSplitContainer/TabContainer"]
+visible = false
+layout_mode = 2
+
+[node name="Console 9" type="TabBar" parent="Panel/HSplitContainer/TabContainer"]
+visible = false
+layout_mode = 2
+
+[node name="Console 10" type="TabBar" parent="Panel/HSplitContainer/TabContainer"]
+visible = false
+layout_mode = 2
+
+[node name="Console 11" type="TabBar" parent="Panel/HSplitContainer/TabContainer"]
+visible = false
+layout_mode = 2
+
+[node name="Console 12" type="TabBar" parent="Panel/HSplitContainer/TabContainer"]
+visible = false
+layout_mode = 2
+
+[node name="Console 13" type="TabBar" parent="Panel/HSplitContainer/TabContainer"]
+visible = false
+layout_mode = 2
+
+[node name="Console 14" type="TabBar" parent="Panel/HSplitContainer/TabContainer"]
+visible = false
+layout_mode = 2
+
+[node name="Console 15" type="TabBar" parent="Panel/HSplitContainer/TabContainer"]
+visible = false
+layout_mode = 2
+
+[node name="Console 16" type="TabBar" parent="Panel/HSplitContainer/TabContainer"]
+visible = false
+layout_mode = 2
