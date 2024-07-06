@@ -1,10 +1,12 @@
-[gd_scene load_steps=19 format=3 uid="uid://c3dtuivy3402e"]
+[gd_scene load_steps=28 format=3 uid="uid://c3dtuivy3402e"]
 
 [ext_resource type="Script" path="res://MainEditor.gd" id="1_mhr7w"]
 [ext_resource type="PackedScene" uid="uid://bgygflok661bk" path="res://Windows/SubWindows/MainViewport.tscn" id="2_27sna"]
 [ext_resource type="PackedScene" uid="uid://deiou02c4hjjp" path="res://Windows/CF Browsers/FileBrowserLarge.tscn" id="2_ke0at"]
+[ext_resource type="Texture2D" uid="uid://co4wtq2ldq32t" path="res://Windows/3DRendererWrld/ingo-doerrie-MCq600eIijI-unsplash.jpg" id="3_mbo7g"]
 [ext_resource type="Texture2D" uid="uid://cahud40mv7rup" path="res://Textures/Icons/Recenter.svg" id="3_qkg2g"]
 [ext_resource type="Texture2D" uid="uid://blyl5giqvv1sx" path="res://Textures/Icons/Version Manager.svg" id="4_4g0fl"]
+[ext_resource type="Script" path="res://Windows/MainEditor/AnimationPlayer.gd" id="4_pj35i"]
 [ext_resource type="Texture2D" uid="uid://c63fwestf8b8y" path="res://Textures/Icons/Server.svg" id="5_cs6g0"]
 [ext_resource type="Texture2D" uid="uid://0i2dvkvv1ulg" path="res://Textures/Icons/ResetPosition.svg" id="6_30ml4"]
 [ext_resource type="Texture2D" uid="uid://c3hmul1xujg3y" path="res://Textures/Icons/Gpus.svg" id="7_wwy78"]
@@ -17,16 +19,191 @@
 [ext_resource type="Texture2D" uid="uid://evxcrgt3jp4x" path="res://Textures/Icons/account_circle_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg" id="14_n3nqh"]
 [ext_resource type="Texture2D" uid="uid://bj1e07rhkbduy" path="res://Textures/Icons/groups_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg" id="15_3xkld"]
 
-[sub_resource type="Environment" id="Environment_xjyie"]
-background_mode = 2
-background_color = Color(0.952941, 0.0705882, 0.952941, 1)
-background_energy_multiplier = 3.75
-ambient_light_source = 2
-ambient_light_color = Color(1, 0.141176, 1, 1)
-ambient_light_energy = 0.0
+[sub_resource type="BoxMesh" id="BoxMesh_1taio"]
 
-[sub_resource type="World3D" id="World3D_1w7mm"]
-environment = SubResource("Environment_xjyie")
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_cw6ol"]
+albedo_color = Color(0, 0.176471, 1, 1)
+
+[sub_resource type="PanoramaSkyMaterial" id="PanoramaSkyMaterial_pcvos"]
+panorama = ExtResource("3_mbo7g")
+
+[sub_resource type="Sky" id="Sky_ep240"]
+sky_material = SubResource("PanoramaSkyMaterial_pcvos")
+radiance_size = 1
+
+[sub_resource type="Environment" id="Environment_bdsre"]
+background_mode = 2
+background_energy_multiplier = 3.1
+sky = SubResource("Sky_ep240")
+ambient_light_color = Color(0, 1, 0, 1)
+fog_light_energy = 0.9
+fog_sky_affect = 0.607
+volumetric_fog_enabled = true
+volumetric_fog_density = 0.0
+adjustment_saturation = 2.85
+
+[sub_resource type="FogMaterial" id="FogMaterial_84hyw"]
+density = 0.0
+height_falloff = 0.0204801
+edge_fade = 1e-05
+
+[sub_resource type="Animation" id="Animation_bx3q3"]
+resource_name = "Smoke animation"
+length = 25.0
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("WorldEnvironment/FogVolume:material:density")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.4, 2.1, 2.5, 16.5),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 0,
+"values": [0.0, 3.6098, 3.6098, 8.0, 8.0]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("WorldEnvironment/FogVolume:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 1, 2.1, 3, 4.6),
+"transitions": PackedFloat32Array(1, 0.267943, 0.267943, 0.297302, 0.297302),
+"update": 0,
+"values": [Vector3(-1.20167, 0, -0.592784), Vector3(-1.20167, 0, -0.592784), Vector3(-2.71658, 0, -0.592784), Vector3(-2.71658, 0, -0.592784), Vector3(-0.686431, 0, -0.592784)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Camera3D:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 4.6, 6.3, 7.8, 9.1, 9.9, 10.9, 12, 13.4, 14.5, 15.5, 16.5),
+"transitions": PackedFloat32Array(1, 0.25, 0.25, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector3(0.51975, 0, -3.46573), Vector3(0.51975, 0, -3.46573), Vector3(-6.90561, 0, -0.676413), Vector3(-4.41654, 4.76837e-07, 2.30806), Vector3(-2.73981, 4.76837e-07, 4.74597), Vector3(0, 0, 4.746), Vector3(2.74232, 0, 1.84547), Vector3(0.738317, 0, 1.54663), Vector3(-1.26569, 0, 1.63452), Vector3(1.41697, 0, 1.60438), Vector3(3.04466, 0, -1.63591), Vector3(1.86911, 0, -3.39923)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Camera3D:rotation")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 4.6, 6.3, 7.8, 9.1, 9.9, 10.9, 12, 13.4, 14.5, 15.5, 16.5),
+"transitions": PackedFloat32Array(1, 0.25, 0.25, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector3(0, 2.84387, 0), Vector3(0, 2.84387, 0), Vector3(0, -1.58397, 0), Vector3(0, -0.872385, 0), Vector3(0, -0.222041, 0), Vector3(0, 0, 0), Vector3(0, 0.961711, 0), Vector3(0, 0.636225, 0), Vector3(0, -0.597095, 0), Vector3(0, 0.549203, 0), Vector3(0, 1.95034, 0), Vector3(0, 2.37888, 0)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("WorldEnvironment/FogVolume:shape")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(13.4, 17.3, 19.3, 21.5),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 1,
+"values": [3, 1, 0, 2]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("WorldEnvironment/FogVolume:material")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(21.5, 22.3),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [SubResource("FogMaterial_84hyw"), SubResource("FogMaterial_84hyw")]
+}
+
+[sub_resource type="Animation" id="Animation_w3408"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("WorldEnvironment/FogVolume:material:density")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("WorldEnvironment/FogVolume:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(-1.20167, 0, -0.592784)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Camera3D:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(0.51975, 0, -3.46573)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Camera3D:rotation")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(0, 2.84387, 0)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("WorldEnvironment/FogVolume:shape")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [3]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("WorldEnvironment/FogVolume:material")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [SubResource("FogMaterial_84hyw")]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_x84vs"]
+_data = {
+"RESET": SubResource("Animation_w3408"),
+"Smoke animation": SubResource("Animation_bx3q3")
+}
 
 [node name="Main" type="Control"]
 layout_mode = 3
@@ -97,7 +274,6 @@ grow_horizontal = 0
 grow_vertical = 0
 
 [node name="SubViewportContainer" type="SubViewportContainer" parent="Panel/TabContainer/ViewPort/VBoxContainer/VSplitContainer/HBoxContainer/HSplitContainer/HSplitContainer2/Panel"]
-visible = false
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -106,16 +282,34 @@ grow_horizontal = 2
 grow_vertical = 2
 size_flags_horizontal = 3
 stretch = true
-stretch_shrink = 9
 
 [node name="SubViewport" type="SubViewport" parent="Panel/TabContainer/ViewPort/VBoxContainer/VSplitContainer/HBoxContainer/HSplitContainer/HSplitContainer2/Panel/SubViewportContainer"]
-world_3d = SubResource("World3D_1w7mm")
 handle_input_locally = false
-size = Vector2i(63, 30)
-render_target_update_mode = 0
+size = Vector2i(570, 275)
+size_2d_override = Vector2i(900, 900)
+render_target_clear_mode = 2
+render_target_update_mode = 4
+
+[node name="Camera3D" type="Camera3D" parent="Panel/TabContainer/ViewPort/VBoxContainer/VSplitContainer/HBoxContainer/HSplitContainer/HSplitContainer2/Panel/SubViewportContainer/SubViewport"]
+transform = Transform3D(-0.956008, 0, 0.29334, 0, 1, 0, -0.29334, 0, -0.956008, 0.51975, 0, -3.46573)
+
+[node name="CSGMesh3D" type="CSGMesh3D" parent="Panel/TabContainer/ViewPort/VBoxContainer/VSplitContainer/HBoxContainer/HSplitContainer/HSplitContainer2/Panel/SubViewportContainer/SubViewport"]
+transform = Transform3D(-0.956008, 0, 0.29334, 0, 1, 0, -0.29334, 0, -0.956008, -0.51975, 0, -0.0779461)
+mesh = SubResource("BoxMesh_1taio")
+material = SubResource("StandardMaterial3D_cw6ol")
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="Panel/TabContainer/ViewPort/VBoxContainer/VSplitContainer/HBoxContainer/HSplitContainer/HSplitContainer2/Panel/SubViewportContainer/SubViewport"]
-environment = SubResource("Environment_xjyie")
+environment = SubResource("Environment_bdsre")
+
+[node name="FogVolume" type="FogVolume" parent="Panel/TabContainer/ViewPort/VBoxContainer/VSplitContainer/HBoxContainer/HSplitContainer/HSplitContainer2/Panel/SubViewportContainer/SubViewport/WorldEnvironment"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.20167, 0, -0.592784)
+material = SubResource("FogMaterial_84hyw")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Panel/TabContainer/ViewPort/VBoxContainer/VSplitContainer/HBoxContainer/HSplitContainer/HSplitContainer2/Panel/SubViewportContainer/SubViewport"]
+libraries = {
+"": SubResource("AnimationLibrary_x84vs")
+}
+script = ExtResource("4_pj35i")
 
 [node name="HBoxContainer" type="HBoxContainer" parent="Panel/TabContainer/ViewPort/VBoxContainer/VSplitContainer/HBoxContainer/HSplitContainer/HSplitContainer2/Panel/SubViewportContainer"]
 layout_mode = 2
