@@ -1,10 +1,14 @@
-[gd_scene load_steps=20 format=3 uid="uid://c3dtuivy3402e"]
+[gd_scene load_steps=24 format=3 uid="uid://c3dtuivy3402e"]
 
 [ext_resource type="Script" path="res://MainEditor.gd" id="1_mhr7w"]
+[ext_resource type="Texture2D" uid="uid://r7081tnsaein" path="res://Textures/Icons/add_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg" id="2_j7fqn"]
 [ext_resource type="PackedScene" uid="uid://deiou02c4hjjp" path="res://Windows/CF Browsers/FileBrowserLarge.tscn" id="2_ke0at"]
+[ext_resource type="Texture2D" uid="uid://pqbgpudafvy0" path="res://Textures/Icons/Reload.svg" id="3_llqry"]
 [ext_resource type="Texture2D" uid="uid://cahud40mv7rup" path="res://Textures/Icons/Recenter.svg" id="3_qkg2g"]
 [ext_resource type="Texture2D" uid="uid://blyl5giqvv1sx" path="res://Textures/Icons/Version Manager.svg" id="4_4g0fl"]
+[ext_resource type="Texture2D" uid="uid://bg28tcindg444" path="res://Textures/Icons/open_with_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg" id="4_noxmh"]
 [ext_resource type="Texture2D" uid="uid://c63fwestf8b8y" path="res://Textures/Icons/Server.svg" id="5_cs6g0"]
+[ext_resource type="Texture2D" uid="uid://qx6l181bfkx0" path="res://Textures/Icons/height_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg" id="5_og444"]
 [ext_resource type="Texture2D" uid="uid://0i2dvkvv1ulg" path="res://Textures/Icons/ResetPosition.svg" id="6_30ml4"]
 [ext_resource type="Texture2D" uid="uid://c3hmul1xujg3y" path="res://Textures/Icons/Gpus.svg" id="7_wwy78"]
 [ext_resource type="PackedScene" uid="uid://jgxlu3cabxsf" path="res://Windows/MainEditor/TestGraph.tscn" id="8_j2a4f"]
@@ -67,6 +71,41 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
+[node name="Panel2" type="Panel" parent="Panel/TabContainer/ViewPort/VBoxContainer"]
+custom_minimum_size = Vector2(0, 25)
+layout_mode = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Panel/TabContainer/ViewPort/VBoxContainer/Panel2"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Button" type="Button" parent="Panel/TabContainer/ViewPort/VBoxContainer/Panel2/HBoxContainer"]
+layout_mode = 2
+text = "Add"
+icon = ExtResource("2_j7fqn")
+
+[node name="VSeparator" type="VSeparator" parent="Panel/TabContainer/ViewPort/VBoxContainer/Panel2/HBoxContainer"]
+layout_mode = 2
+
+[node name="Button2" type="Button" parent="Panel/TabContainer/ViewPort/VBoxContainer/Panel2/HBoxContainer"]
+layout_mode = 2
+icon = ExtResource("3_llqry")
+
+[node name="Button3" type="Button" parent="Panel/TabContainer/ViewPort/VBoxContainer/Panel2/HBoxContainer"]
+layout_mode = 2
+icon = ExtResource("4_noxmh")
+
+[node name="Button4" type="Button" parent="Panel/TabContainer/ViewPort/VBoxContainer/Panel2/HBoxContainer"]
+layout_mode = 2
+icon = ExtResource("5_og444")
+
+[node name="VSeparator2" type="VSeparator" parent="Panel/TabContainer/ViewPort/VBoxContainer/Panel2/HBoxContainer"]
+layout_mode = 2
+
 [node name="VSplitContainer" type="VSplitContainer" parent="Panel/TabContainer/ViewPort/VBoxContainer"]
 layout_mode = 2
 size_flags_vertical = 3
@@ -101,7 +140,7 @@ stretch_shrink = 9
 [node name="SubViewport" type="SubViewport" parent="Panel/TabContainer/ViewPort/VBoxContainer/VSplitContainer/HBoxContainer/HSplitContainer/HSplitContainer2/Panel/SubViewportContainer"]
 world_3d = SubResource("World3D_1w7mm")
 handle_input_locally = false
-size = Vector2i(63, 30)
+size = Vector2i(63, 29)
 render_target_update_mode = 4
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="Panel/TabContainer/ViewPort/VBoxContainer/VSplitContainer/HBoxContainer/HSplitContainer/HSplitContainer2/Panel/SubViewportContainer/SubViewport"]

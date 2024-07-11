@@ -1,6 +1,2 @@
-res://Windows/SubWindows/ObjectSelector.tscn
+res://MainEditor.gd
 res://Windows/MainEditor/main.tscn
-res://Windows/3DRendererWrld/node_3d.tscn
-res://Windows/MainEditor/CodeEditor/Nodes/BeginNode.tscn
-res://Windows/MainEditor/CodeWindow.tscn
-res://Windows/MainEditor/CodeEditor/Nodes/LsCodeNode.tscn

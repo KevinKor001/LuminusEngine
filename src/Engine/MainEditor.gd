@@ -14,3 +14,10 @@ func _process(delta):
 
 func _on_menu_file_button_pressed():
 	pass # Replace with function body.
+
+
+func _on_button_pressed():
+	
+	
+	
+	pass # Replace with function body.
