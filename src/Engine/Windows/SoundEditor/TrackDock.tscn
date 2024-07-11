@@ -1,0 +1,71 @@
+[gd_scene load_steps=2 format=3 uid="uid://w6eaejxfj81h"]
+
+[ext_resource type="PackedScene" uid="uid://cf8wy2g2hmrnx" path="res://Windows/SoundEditor/Track.tscn" id="1_ogaa0"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="HSplitContainer" type="HSplitContainer" parent="Panel"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Panel" type="Panel" parent="Panel/HSplitContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="ScrollContainer" type="ScrollContainer" parent="Panel/HSplitContainer/Panel"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Panel/HSplitContainer/Panel/ScrollContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Control" parent="Panel/HSplitContainer/Panel/ScrollContainer/VBoxContainer" instance=ExtResource("1_ogaa0")]
+layout_mode = 2
+
+[node name="Control2" parent="Panel/HSplitContainer/Panel/ScrollContainer/VBoxContainer" instance=ExtResource("1_ogaa0")]
+layout_mode = 2
+
+[node name="Control3" parent="Panel/HSplitContainer/Panel/ScrollContainer/VBoxContainer" instance=ExtResource("1_ogaa0")]
+layout_mode = 2
+
+[node name="Control4" parent="Panel/HSplitContainer/Panel/ScrollContainer/VBoxContainer" instance=ExtResource("1_ogaa0")]
+layout_mode = 2
+
+[node name="Control5" parent="Panel/HSplitContainer/Panel/ScrollContainer/VBoxContainer" instance=ExtResource("1_ogaa0")]
+layout_mode = 2
+
+[node name="Control6" parent="Panel/HSplitContainer/Panel/ScrollContainer/VBoxContainer" instance=ExtResource("1_ogaa0")]
+layout_mode = 2
+
+[node name="Control7" parent="Panel/HSplitContainer/Panel/ScrollContainer/VBoxContainer" instance=ExtResource("1_ogaa0")]
+layout_mode = 2
+
+[node name="Control8" parent="Panel/HSplitContainer/Panel/ScrollContainer/VBoxContainer" instance=ExtResource("1_ogaa0")]
+layout_mode = 2
+
+[node name="Control9" parent="Panel/HSplitContainer/Panel/ScrollContainer/VBoxContainer" instance=ExtResource("1_ogaa0")]
+layout_mode = 2

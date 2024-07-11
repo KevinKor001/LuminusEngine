@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://deiou02c4hjjp"]
 
-[ext_resource type="PackedScene" uid="uid://d4mla17b1u4cw" path="res://Windows/CF Browsers/FileBrowser.tscn" id="1_5j2ck"]
+[ext_resource type="PackedScene" uid="uid://d4mla17b1u4cw" path="res://Textures/FileBrowser.tscn" id="1_5j2ck"]
 [ext_resource type="PackedScene" uid="uid://db46pnqboyipx" path="res://Windows/Main Windows/Console.tscn" id="2_ua16j"]
 [ext_resource type="PackedScene" uid="uid://bcs52owj2ayvl" path="res://Windows/CF Browsers/ContentBrowser.tscn" id="3_sw7eo"]
 

@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=3 uid="uid://dmnh3gav2nr81"]
+[gd_scene load_steps=15 format=3 uid="uid://dmnh3gav2nr81"]
 
 [ext_resource type="Texture2D" uid="uid://cr30fvxvoa3xu" path="res://Textures/Icons/ControllerLarge1.svg" id="1_8j45e"]
 [ext_resource type="Texture2D" uid="uid://biam7l2yy4g04" path="res://Textures/Icons/2DLarge.svg" id="2_elyxq"]
@@ -12,7 +12,8 @@
 [ext_resource type="Texture2D" uid="uid://522t76f6emvv" path="res://Textures/Icons/CubeLarge.svg" id="10_oqap6"]
 [ext_resource type="FontFile" uid="uid://ntm0tieyb5t6" path="res://Textures/Fonts/RubikMonoOne-Regular.ttf" id="11_e5vbi"]
 [ext_resource type="Texture2D" uid="uid://5rb1xegxrj4v" path="res://Textures/TemplateBanners/Humanoid.png" id="12_iyfj6"]
-[ext_resource type="PackedScene" uid="uid://d4mla17b1u4cw" path="res://Windows/CF Browsers/FileBrowser.tscn" id="13_2mws0"]
+[ext_resource type="Script" path="res://Windows/Main Windows/NewProject.gd" id="13_2cffg"]
+[ext_resource type="PackedScene" uid="uid://d4mla17b1u4cw" path="res://Textures/FileBrowser.tscn" id="13_2mws0"]
 
 [node name="Control" type="Control"]
 layout_mode = 3
@@ -213,6 +214,7 @@ size_flags_vertical = 10
 layout_mode = 2
 size_flags_horizontal = 3
 text = "Create New Project"
+script = ExtResource("13_2cffg")
 
 [node name="Button2" type="Button" parent="TabContainer/New Project/HBoxContainer/VBoxContainer/HBoxContainer2"]
 layout_mode = 2
@@ -301,3 +303,5 @@ visible = false
 layout_mode = 2
 tab_alignment = 1
 max_tab_width = 290
+
+[connection signal="pressed" from="TabContainer/New Project/HBoxContainer/VBoxContainer/HBoxContainer2/Button" to="TabContainer/New Project/HBoxContainer/VBoxContainer/HBoxContainer2/Button" method="_on_pressed"]

@@ -1,12 +1,4 @@
-[gd_scene load_steps=8 format=3 uid="uid://d2066t0xgucdn"]
-
-[ext_resource type="Texture2D" uid="uid://diedbb5qqa3le" path="res://Textures/Icons/Cube.svg" id="1_82okk"]
-[ext_resource type="Texture2D" uid="uid://lfcnro5uscm" path="res://Textures/Icons/sports_cricket_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg" id="2_hyy65"]
-[ext_resource type="Texture2D" uid="uid://ixesmyuixbcl" path="res://Textures/Icons/water_drop_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg" id="3_sv63e"]
-[ext_resource type="Texture2D" uid="uid://c63fwestf8b8y" path="res://Textures/Icons/Server.svg" id="4_cxsja"]
-[ext_resource type="Texture2D" uid="uid://8v55mevtc6ev" path="res://Textures/Icons/dark_mode_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg" id="5_1dxji"]
-[ext_resource type="Texture2D" uid="uid://c5qrjg1qp72c3" path="res://Textures/Icons/resize_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg" id="6_vd2ft"]
-[ext_resource type="Texture2D" uid="uid://duu7qac3kfur1" path="res://Textures/Icons/detector_co_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg" id="7_13fx8"]
+[gd_scene format=3 uid="uid://d2066t0xgucdn"]
 
 [node name="Control" type="Control"]
 layout_mode = 3
@@ -45,25 +37,6 @@ layout_mode = 2
 placeholder_text = "Search a object"
 alignment = 1
 
-[node name="ItemList" type="ItemList" parent="Panel/VBoxContainer"]
+[node name="Tree" type="Tree" parent="Panel/VBoxContainer"]
 layout_mode = 2
 size_flags_vertical = 3
-item_count = 10
-item_0/text = "Object"
-item_0/icon = ExtResource("1_82okk")
-item_1/text = "rigidbody"
-item_1/icon = ExtResource("2_hyy65")
-item_2/text = "VTech Liquid Simulator"
-item_2/icon = ExtResource("3_sv63e")
-item_3/text = "HTech Liquid Simulator"
-item_3/icon = ExtResource("3_sv63e")
-item_4/text = "NetworkingObject"
-item_4/icon = ExtResource("4_cxsja")
-item_5/text = "Skybox"
-item_5/icon = ExtResource("5_1dxji")
-item_6/text = "Collision Object"
-item_6/icon = ExtResource("6_vd2ft")
-item_7/text = "Particle Spawner"
-item_7/icon = ExtResource("7_13fx8")
-item_8/text = ""
-item_9/text = ""

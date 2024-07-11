@@ -1,0 +1,72 @@
+#############################################
+#               WARNING :                   #
+#  THIS IS A .LTR FILE WITCH STANDS FOR     #
+# LUMINUS TRANSLATION FILE.DO --> NOT!!! <--#
+#   TAMPER THIS FILE BECAUSE 99% YOU WILL   #
+#  BREAK THE COMPILER. ANY CHANGES YOU WANT #
+# TO MAKE PLEASE USE THE ENGINE EXPORT MENU #
+#############################################
+
+[Ln%5553]
+
+Hdr_Code*(
+
+
+    88273|31928
+    S2231|96783
+    11111|00000
+    00000|11111
+    PPLWE|00000
+    NT0BS|EXPN0
+    VARPB|SET00
+    EXPNM|WIN64
+    _?
+)
+
+Cd-SetByteArray(0x62 + 3b reminder1)
+OS=Win16^2*2
+MainBranch=10.l++}
+
+000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+Sha256:84jj8fjw9je9ifjsfksdjiofj8ui2jojklejio
+RecovKey:WindowsIsTRaSh
+
+[HdgTb]
+Chnk(000001x5) #really is chunk 5
+{
+
+    BeginLibInterpr(#WINLIB.lasm)
+    as ^ ..cd(NoArgs = 0);
+    Pushkey ^ ..sc(str(RecovKey))
+    REP -1 OnCon ^ == 1
+}
+
+PinD as 2nd{EngCLI|RecovKey -StartPCMonitor(OS.GrabTask(NAME=LUMINUS_EMULATOR#####))}
+
+EmuStartP{
+
+    Translt - Cmd LUT *| Lut 1 setter line 257
+    #look up tables based on v 4
+    s".generateKey(|COMPILEALL|!!x):
+        PIN:0023
+        As s" \cload +Task +SetId 0001 +SetCliName EmulationServer01 +Domain #.localyhosted.luminus.NoOneWillHaveThisIpAndIfTheyDoImaboutToQuit:p
+    Clr^
+}
+
+NetCom -> EmulationServer01 localsite ++ DropDe
+AS NETCOM TRANSMIT "GetDBAccount"
+hold(unt(RecieveDATA as NETCOM from EmulationServer01));;
+
+
+var(cap*) LUT = FetchRam as GetDBAccount.link_and_UseAsPipeline(PinD)
+
+LUT.PrintLog(LUT.welcome()")
+lut.RecieveDATA(Array)[
+
+    WindowsNewWindowPak.pak as x11.xorg
+    DirectX12p.dll +A as LuminusLib.x64
+    keyRecM.asm
+
+
+
+]

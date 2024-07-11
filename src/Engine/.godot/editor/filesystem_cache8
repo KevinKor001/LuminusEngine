@@ -1,5 +1,5 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1720141933
+::res://::1720610489
 0ZMIFV (online-video-cutter.com).ogv::VideoStreamTheora::-1::1720141515::0::1::::<><>::
 0ZMIFV.ogv::VideoStreamTheora::-1::1720141515::0::1::::<><>::
 Button4.gd::GDScript::-1::1720141515::0::1::::<>Button<>::
@@ -11,14 +11,16 @@ MenuFileButton.gd::GDScript::-1::1720141515::0::1::::<>MenuButton<>::
 ProgressBar.gd::GDScript::-1::1720141515::0::1::::<>ProgressBar<>::
 Tree.gd::GDScript::-1::1720141515::0::1::::<>Tree<>::
 Window.gd::GDScript::-1::1720141515::0::1::::<>Window<>::
-::res://&Stuff/::1720141515
-::res://Textures/::1720141767
+::res://&Stuff/::1720610529
+y2mate.com - Foo Fighters The Pretender.mp3::AudioStreamMP3::2653281398805229809::1720311733::1720610531::1::::<><>::
+::res://Textures/::1720610489
+FileBrowser.tscn::PackedScene::9220180351673235630::1720141515::0::1::::<><>::res://FileBrowser.gd<>uid://pqbgpudafvy0::::res://Textures/Icons/Reload.svg
 Logo.png::CompressedTexture2D::1640255944048600989::1720141515::1720141767::1::::<><>::
 LogoLone.png::CompressedTexture2D::1278259413631805340::1720141515::1720141767::1::::<><>::
 outline_data_object_black_24dp.png::CompressedTexture2D::4963288202586317052::1720141515::1720141766::1::::<><>::
 ::res://Textures/Fonts/::1720141766
 RubikMonoOne-Regular.ttf::FontFile::952452403898353189::1720141515::1720141766::1::::<><>::
-::res://Textures/Icons/::1720145254
+::res://Textures/Icons/::1720145255
 2DLarge.svg::CompressedTexture2D::2948717802705755055::1720141515::1720141766::1::::<><>::
 3DLarge.svg::CompressedTexture2D::952952198230870136::1720141515::1720141766::1::::<><>::
 AccessibilityLarge.svg::CompressedTexture2D::3160813432647454644::1720141515::1720141766::1::::<><>::
@@ -64,7 +66,7 @@ GameDefault.png::CompressedTexture2D::3541786586460727350::1720141515::172014176
 Humanoid.png::CompressedTexture2D::2140868093114580299::1720141515::1720141766::1::::<><>::
 Phys.png::CompressedTexture2D::5944645981626008576::1720141515::1720141766::1::::<><>::
 Track.png::CompressedTexture2D::1211997711259593933::1720141515::1720141766::1::::<><>::
-::res://Windows/::1720143326
+::res://Windows/::1720609222
 boot.tscn::PackedScene::5148135730472627725::1720141515::0::1::::<><>::res://ProgressBar.gd<>uid://xms1m1id5xqb::::res://Textures/Logo.png
 StartUp.gd::GDScript::-1::1720141515::0::1::::<>Control<>::
 StartUp.tscn::PackedScene::4982410028884335346::1720141515::0::1::::<><>::res://Windows/StartUp.gd<>uid://ntm0tieyb5t6::::res://Textures/Fonts/RubikMonoOne-Regular.ttf<>res://0ZMIFV (online-video-cutter.com).ogv
@@ -72,19 +74,33 @@ StartUp.tscn::PackedScene::4982410028884335346::1720141515::0::1::::<><>::res://
 3DModeler.tscn::PackedScene::7176645233134334027::1720141515::0::1::::<><>::res://MenuFileButton.gd<>res://Button4.gd
 ::res://Windows/3DRendererWrld/::1720141515
 node_3d.tscn::PackedScene::4344232467232863977::1720141515::0::1::::<><>::
-::res://Windows/CF Browsers/::1720141515
+::res://Windows/CF Browsers/::1720610489
 ContentBrowser.tscn::PackedScene::2565827666518295429::1720141515::0::1::::<><>::uid://pqbgpudafvy0::::res://Textures/Icons/Reload.svg<>uid://bmcia77uo40vw::::res://Textures/Icons/Folder.svg<>uid://cecbxri56c04y::::res://Textures/Icons/FolderLarge.svg<>uid://522t76f6emvv::::res://Textures/Icons/CubeLarge.svg<>uid://diedbb5qqa3le::::res://Textures/Icons/Cube.svg
-FileBrowser.tscn::PackedScene::9220180351673235630::1720141515::0::1::::<><>::res://FileBrowser.gd<>uid://pqbgpudafvy0::::res://Textures/Icons/Reload.svg
-FileBrowserLarge.tscn::PackedScene::7457419556364122605::1720141515::0::1::::<><>::uid://d4mla17b1u4cw::::res://Windows/CF Browsers/FileBrowser.tscn<>uid://db46pnqboyipx::::res://Windows/Main Windows/Console.tscn<>uid://bcs52owj2ayvl::::res://Windows/CF Browsers/ContentBrowser.tscn
-::res://Windows/Main Windows/::1720141515
+FileBrowserLarge.tscn::PackedScene::7457419556364122605::1720610489::0::1::::<><>::uid://d4mla17b1u4cw::::res://Textures/FileBrowser.tscn<>uid://db46pnqboyipx::::res://Windows/Main Windows/Console.tscn<>uid://bcs52owj2ayvl::::res://Windows/CF Browsers/ContentBrowser.tscn
+::res://Windows/Main Windows/::1720610489
 Console.tscn::PackedScene::7291227570854922613::1720141515::0::1::::<><>::uid://vigimya6aeln::::res://Textures/Icons/Send.svg
-NewProject.tscn::PackedScene::8028840422848028792::1720141515::0::1::::<><>::uid://cr30fvxvoa3xu::::res://Textures/Icons/ControllerLarge1.svg<>uid://biam7l2yy4g04::::res://Textures/Icons/2DLarge.svg<>uid://ntu8o5tptub5::::res://Textures/Icons/3DLarge.svg<>uid://h2ox4nisq5x0::::res://Textures/Icons/CricketLarge.svg<>uid://blbeeute1mgki::::res://Textures/Icons/AccessibilityLarge.svg<>uid://bmboemqh1e32b::::res://Textures/Icons/PianoLarge.svg<>uid://cgjp4jguck2ag::::res://Textures/Icons/WindowLarge.svg<>uid://ceu3fjje7g0qu::::res://Textures/Icons/HtmlLarge.svg<>uid://b6l8r10h6fhkx::::res://Textures/Icons/MoveSelectionLarge.svg<>uid://522t76f6emvv::::res://Textures/Icons/CubeLarge.svg<>uid://ntm0tieyb5t6::::res://Textures/Fonts/RubikMonoOne-Regular.ttf<>uid://5rb1xegxrj4v::::res://Textures/TemplateBanners/Humanoid.png<>uid://d4mla17b1u4cw::::res://Windows/CF Browsers/FileBrowser.tscn
+NewProject.tscn::PackedScene::8028840422848028792::1720610489::0::1::::<><>::uid://cr30fvxvoa3xu::::res://Textures/Icons/ControllerLarge1.svg<>uid://biam7l2yy4g04::::res://Textures/Icons/2DLarge.svg<>uid://ntu8o5tptub5::::res://Textures/Icons/3DLarge.svg<>uid://h2ox4nisq5x0::::res://Textures/Icons/CricketLarge.svg<>uid://blbeeute1mgki::::res://Textures/Icons/AccessibilityLarge.svg<>uid://bmboemqh1e32b::::res://Textures/Icons/PianoLarge.svg<>uid://cgjp4jguck2ag::::res://Textures/Icons/WindowLarge.svg<>uid://ceu3fjje7g0qu::::res://Textures/Icons/HtmlLarge.svg<>uid://b6l8r10h6fhkx::::res://Textures/Icons/MoveSelectionLarge.svg<>uid://522t76f6emvv::::res://Textures/Icons/CubeLarge.svg<>uid://ntm0tieyb5t6::::res://Textures/Fonts/RubikMonoOne-Regular.ttf<>uid://5rb1xegxrj4v::::res://Textures/TemplateBanners/Humanoid.png<>uid://d4mla17b1u4cw::::res://Textures/FileBrowser.tscn
 WarningPopUp.tscn::PackedScene::6999335590284683695::1720141515::0::1::::<><>::res://Window.gd
-::res://Windows/MainEditor/::1720144005
-main.tscn::PackedScene::6745511915010680038::1720144005::0::1::::<><>::res://MainEditor.gd<>uid://bgygflok661bk::::res://Windows/SubWindows/MainViewport.tscn<>uid://deiou02c4hjjp::::res://Windows/CF Browsers/FileBrowserLarge.tscn<>uid://cahud40mv7rup::::res://Textures/Icons/Recenter.svg<>uid://blyl5giqvv1sx::::res://Textures/Icons/Version Manager.svg<>uid://c63fwestf8b8y::::res://Textures/Icons/Server.svg<>uid://0i2dvkvv1ulg::::res://Textures/Icons/ResetPosition.svg<>uid://c3hmul1xujg3y::::res://Textures/Icons/Gpus.svg<>uid://jgxlu3cabxsf::::res://Windows/MainEditor/TestGraph.tscn<>res://MenuFileButton.gd<>res://Button4.gd<>uid://cyg5mkhkft0hs::::res://Textures/Icons/stop_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg<>uid://doflovfc7c1p4::::res://Textures/Icons/pause_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg<>uid://ds04bw3k7kb04::::res://Textures/Icons/play_arrow_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg<>uid://evxcrgt3jp4x::::res://Textures/Icons/account_circle_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg<>uid://bj1e07rhkbduy::::res://Textures/Icons/groups_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg
+::res://Windows/MainEditor/::1720610102
+CodeWindow.tscn::PackedScene::8398546587932350538::1720608652::0::1::::<><>::uid://r7081tnsaein::::res://Textures/Icons/add_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg<>uid://ntm0tieyb5t6::::res://Textures/Fonts/RubikMonoOne-Regular.ttf<>res://Windows/MainEditor/GraphEdit.gd<>uid://k6hnls2v3ne2::::res://Windows/MainEditor/CodeEditor/NodeSelect.tscn<>uid://b6anm2d8rdhl4::::res://Textures/Icons/conversion_path_24dp_FILL0_wght400_GRAD0_opsz24.svg<>uid://dolt1wfqq3r71::::res://Textures/Icons/deployed_code_alert_24dp_FILL0_wght400_GRAD0_opsz24.svg
+GraphEdit.gd::GDScript::-1::1720608545::0::1::::<>GraphEdit<>::
+main.tscn::PackedScene::6745511915010680038::1720610102::0::1::::<><>::res://MainEditor.gd<>uid://deiou02c4hjjp::::res://Windows/CF Browsers/FileBrowserLarge.tscn<>uid://cahud40mv7rup::::res://Textures/Icons/Recenter.svg<>uid://blyl5giqvv1sx::::res://Textures/Icons/Version Manager.svg<>uid://c63fwestf8b8y::::res://Textures/Icons/Server.svg<>uid://0i2dvkvv1ulg::::res://Textures/Icons/ResetPosition.svg<>uid://c3hmul1xujg3y::::res://Textures/Icons/Gpus.svg<>uid://jgxlu3cabxsf::::res://Windows/MainEditor/TestGraph.tscn<>res://MenuFileButton.gd<>uid://drwk3ntck3ii1::::res://Windows/MainEditor/CodeWindow.tscn<>res://Button4.gd<>uid://cyg5mkhkft0hs::::res://Textures/Icons/stop_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg<>uid://doflovfc7c1p4::::res://Textures/Icons/pause_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg<>uid://ds04bw3k7kb04::::res://Textures/Icons/play_arrow_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg<>uid://evxcrgt3jp4x::::res://Textures/Icons/account_circle_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg<>uid://bj1e07rhkbduy::::res://Textures/Icons/groups_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg
 ReCompileprojectWindow.tscn::PackedScene::4517019313052832738::1720141515::0::1::::<><>::res://Window.gd
 TestGraph.tscn::PackedScene::645503087645696525::1720141515::0::1::::<><>::
-::res://Windows/SubWindows/::1720143991
-MainViewport.tscn::PackedScene::2857472642425995836::1720143991::0::1::::<><>::uid://r7081tnsaein::::res://Textures/Icons/add_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg<>uid://cahud40mv7rup::::res://Textures/Icons/Recenter.svg<>uid://pqbgpudafvy0::::res://Textures/Icons/Reload.svg<>uid://qx6l181bfkx0::::res://Textures/Icons/height_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg<>uid://diedbb5qqa3le::::res://Textures/Icons/Cube.svg
+::res://Windows/MainEditor/CodeEditor/::1720608547
+NodeSelect.gd::GDScript::-1::1720606540::0::1::::<>Control<>::
+NodeSelect.tscn::PackedScene::766332987845572071::1720608547::0::1::::<><>::uid://r7081tnsaein::::res://Textures/Icons/add_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg<>res://Windows/MainEditor/CodeEditor/NodeSelect.gd<>uid://diedbb5qqa3le::::res://Textures/Icons/Cube.svg<>uid://c3hmul1xujg3y::::res://Textures/Icons/Gpus.svg<>uid://blobsl34oxc36::::res://Textures/Icons/tabs_24dp_FILL0_wght400_GRAD0_opsz24.svg<>uid://cgjp4jguck2ag::::res://Textures/Icons/WindowLarge.svg<>uid://biam7l2yy4g04::::res://Textures/Icons/2DLarge.svg<>uid://ntu8o5tptub5::::res://Textures/Icons/3DLarge.svg
+::res://Windows/MainEditor/CodeEditor/Nodes/::1720608547
+LsCodeNode.gd::GDScript::-1::1720606308::0::1::::<>GraphNode<>::
+LsCodeNode.tscn::PackedScene::9117014147928821972::1720608547::0::1::::<><>::res://Windows/MainEditor/CodeEditor/Nodes/LsCodeNode.gd<>uid://diedbb5qqa3le::::res://Textures/Icons/Cube.svg
+VariableNode.gd::GDScript::-1::1720605116::0::1::::<>GraphNode<>::
+VariableNode.tscn::PackedScene::7439611363774058237::1720608547::0::1::::<><>::res://Windows/MainEditor/CodeEditor/Nodes/VariableNode.gd
+::res://Windows/SoundEditor/::1720610460
+Channel.tscn::PackedScene::2689786575873133858::1720610103::0::1::::<><>::
+ChannnelDock.tscn::PackedScene::3150001138016641203::1720610103::0::1::::<><>::uid://bek7nlcdln7uc::::res://Windows/SoundEditor/Channel.tscn
+Track.tscn::PackedScene::5193290112990799301::1720610460::0::1::::<><>::
+::res://Windows/SubWindows/::1720608547
+MainViewport.tscn::PackedScene::2857472642425995836::1720608547::0::1::::<><>::uid://r7081tnsaein::::res://Textures/Icons/add_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg<>uid://cahud40mv7rup::::res://Textures/Icons/Recenter.svg<>uid://pqbgpudafvy0::::res://Textures/Icons/Reload.svg<>uid://qx6l181bfkx0::::res://Textures/Icons/height_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg<>uid://diedbb5qqa3le::::res://Textures/Icons/Cube.svg
+ObjectSelector.tscn::PackedScene::9107908897162068507::1720608547::0::1::::<><>::
 ::res://Windows/WindowTemplate/::1720141515
 PopUp.tscn::PackedScene::3177946554991240785::1720141515::0::1::::<><>::res://Window.gd

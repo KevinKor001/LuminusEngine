@@ -1,7 +1,6 @@
-[gd_scene load_steps=19 format=3 uid="uid://c3dtuivy3402e"]
+[gd_scene load_steps=20 format=3 uid="uid://c3dtuivy3402e"]
 
 [ext_resource type="Script" path="res://MainEditor.gd" id="1_mhr7w"]
-[ext_resource type="PackedScene" uid="uid://bgygflok661bk" path="res://Windows/SubWindows/MainViewport.tscn" id="2_27sna"]
 [ext_resource type="PackedScene" uid="uid://deiou02c4hjjp" path="res://Windows/CF Browsers/FileBrowserLarge.tscn" id="2_ke0at"]
 [ext_resource type="Texture2D" uid="uid://cahud40mv7rup" path="res://Textures/Icons/Recenter.svg" id="3_qkg2g"]
 [ext_resource type="Texture2D" uid="uid://blyl5giqvv1sx" path="res://Textures/Icons/Version Manager.svg" id="4_4g0fl"]
@@ -10,6 +9,8 @@
 [ext_resource type="Texture2D" uid="uid://c3hmul1xujg3y" path="res://Textures/Icons/Gpus.svg" id="7_wwy78"]
 [ext_resource type="PackedScene" uid="uid://jgxlu3cabxsf" path="res://Windows/MainEditor/TestGraph.tscn" id="8_j2a4f"]
 [ext_resource type="Script" path="res://MenuFileButton.gd" id="9_g7ajt"]
+[ext_resource type="PackedScene" uid="uid://drwk3ntck3ii1" path="res://Windows/MainEditor/CodeWindow.tscn" id="9_p7b22"]
+[ext_resource type="PackedScene" uid="uid://cyuyo6kq5gi6v" path="res://Windows/SoundEditor/SoundEditor.tscn" id="10_8f4xp"]
 [ext_resource type="Script" path="res://Button4.gd" id="10_mqm44"]
 [ext_resource type="Texture2D" uid="uid://cyg5mkhkft0hs" path="res://Textures/Icons/stop_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg" id="11_20jol"]
 [ext_resource type="Texture2D" uid="uid://doflovfc7c1p4" path="res://Textures/Icons/pause_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg" id="12_1551m"]
@@ -107,15 +108,6 @@ environment = SubResource("Environment_xjyie")
 
 [node name="HBoxContainer" type="HBoxContainer" parent="Panel/TabContainer/ViewPort/VBoxContainer/VSplitContainer/HBoxContainer/HSplitContainer/HSplitContainer2/Panel/SubViewportContainer"]
 layout_mode = 2
-
-[node name="Control" parent="Panel/TabContainer/ViewPort/VBoxContainer/VSplitContainer/HBoxContainer/HSplitContainer/HSplitContainer2/Panel" instance=ExtResource("2_27sna")]
-layout_mode = 1
-offset_left = 5.0
-offset_top = 5.0
-offset_right = 5.0
-offset_bottom = -5.0
-grow_horizontal = 0
-grow_vertical = 0
 
 [node name="HBoxContainer" type="HBoxContainer" parent="Panel/TabContainer/ViewPort/VBoxContainer/VSplitContainer/HBoxContainer/HSplitContainer/HSplitContainer2/Panel"]
 layout_mode = 1
@@ -247,6 +239,14 @@ layout_mode = 2
 value = 3.5
 
 [node name="Dev_DnDCode_Lui" parent="Panel/TabContainer" instance=ExtResource("8_j2a4f")]
+visible = false
+layout_mode = 2
+
+[node name="New Code Editor" parent="Panel/TabContainer" instance=ExtResource("9_p7b22")]
+visible = false
+layout_mode = 2
+
+[node name="Sound Editor" parent="Panel/TabContainer" instance=ExtResource("10_8f4xp")]
 visible = false
 layout_mode = 2
 

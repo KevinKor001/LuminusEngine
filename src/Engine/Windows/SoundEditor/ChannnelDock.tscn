@@ -1,0 +1,115 @@
+[gd_scene load_steps=2 format=3 uid="uid://bk45b8wfllt3h"]
+
+[ext_resource type="PackedScene" uid="uid://bek7nlcdln7uc" path="res://Windows/SoundEditor/Channel.tscn" id="1_pdj35"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Panel" type="Panel" parent="VBoxContainer"]
+custom_minimum_size = Vector2(0, 30)
+layout_mode = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer/Panel"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Button" type="Button" parent="VBoxContainer/Panel/HBoxContainer"]
+layout_mode = 2
+text = "Add Channel"
+
+[node name="Panel2" type="Panel" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="ScrollContainer" type="ScrollContainer" parent="VBoxContainer/Panel2"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer/Panel2/ScrollContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Control" parent="VBoxContainer/Panel2/ScrollContainer/HBoxContainer" instance=ExtResource("1_pdj35")]
+layout_mode = 2
+
+[node name="Control2" parent="VBoxContainer/Panel2/ScrollContainer/HBoxContainer" instance=ExtResource("1_pdj35")]
+layout_mode = 2
+
+[node name="Control3" parent="VBoxContainer/Panel2/ScrollContainer/HBoxContainer" instance=ExtResource("1_pdj35")]
+layout_mode = 2
+
+[node name="Control4" parent="VBoxContainer/Panel2/ScrollContainer/HBoxContainer" instance=ExtResource("1_pdj35")]
+layout_mode = 2
+
+[node name="Control5" parent="VBoxContainer/Panel2/ScrollContainer/HBoxContainer" instance=ExtResource("1_pdj35")]
+layout_mode = 2
+
+[node name="Control6" parent="VBoxContainer/Panel2/ScrollContainer/HBoxContainer" instance=ExtResource("1_pdj35")]
+layout_mode = 2
+
+[node name="Control7" parent="VBoxContainer/Panel2/ScrollContainer/HBoxContainer" instance=ExtResource("1_pdj35")]
+layout_mode = 2
+
+[node name="Control8" parent="VBoxContainer/Panel2/ScrollContainer/HBoxContainer" instance=ExtResource("1_pdj35")]
+layout_mode = 2
+
+[node name="Control9" parent="VBoxContainer/Panel2/ScrollContainer/HBoxContainer" instance=ExtResource("1_pdj35")]
+layout_mode = 2
+
+[node name="Control10" parent="VBoxContainer/Panel2/ScrollContainer/HBoxContainer" instance=ExtResource("1_pdj35")]
+layout_mode = 2
+
+[node name="Control11" parent="VBoxContainer/Panel2/ScrollContainer/HBoxContainer" instance=ExtResource("1_pdj35")]
+layout_mode = 2
+
+[node name="Control12" parent="VBoxContainer/Panel2/ScrollContainer/HBoxContainer" instance=ExtResource("1_pdj35")]
+layout_mode = 2
+
+[node name="Control13" parent="VBoxContainer/Panel2/ScrollContainer/HBoxContainer" instance=ExtResource("1_pdj35")]
+layout_mode = 2
+
+[node name="Control14" parent="VBoxContainer/Panel2/ScrollContainer/HBoxContainer" instance=ExtResource("1_pdj35")]
+layout_mode = 2
+
+[node name="Control15" parent="VBoxContainer/Panel2/ScrollContainer/HBoxContainer" instance=ExtResource("1_pdj35")]
+layout_mode = 2
+
+[node name="Control16" parent="VBoxContainer/Panel2/ScrollContainer/HBoxContainer" instance=ExtResource("1_pdj35")]
+layout_mode = 2
+
+[node name="Control17" parent="VBoxContainer/Panel2/ScrollContainer/HBoxContainer" instance=ExtResource("1_pdj35")]
+layout_mode = 2
+
+[node name="Control18" parent="VBoxContainer/Panel2/ScrollContainer/HBoxContainer" instance=ExtResource("1_pdj35")]
+layout_mode = 2
+
+[node name="Control19" parent="VBoxContainer/Panel2/ScrollContainer/HBoxContainer" instance=ExtResource("1_pdj35")]
+layout_mode = 2
+
+[node name="Control20" parent="VBoxContainer/Panel2/ScrollContainer/HBoxContainer" instance=ExtResource("1_pdj35")]
+layout_mode = 2
+
+[node name="Control21" parent="VBoxContainer/Panel2/ScrollContainer/HBoxContainer" instance=ExtResource("1_pdj35")]
+layout_mode = 2

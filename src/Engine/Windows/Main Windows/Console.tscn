@@ -1,6 +1,8 @@
-[gd_scene load_steps=2 format=3 uid="uid://db46pnqboyipx"]
+[gd_scene load_steps=4 format=3 uid="uid://db46pnqboyipx"]
 
 [ext_resource type="Texture2D" uid="uid://vigimya6aeln" path="res://Textures/Icons/Send.svg" id="1_68ral"]
+[ext_resource type="Script" path="res://Windows/Main Windows/ConsoleSend.gd" id="2_poffd"]
+[ext_resource type="Script" path="res://Windows/Main Windows/ConsoleLog.gd" id="3_631ii"]
 
 [node name="Control" type="Control"]
 layout_mode = 3
@@ -46,6 +48,7 @@ layout_mode = 2
 text = "Send "
 icon = ExtResource("1_68ral")
 icon_alignment = 2
+script = ExtResource("2_poffd")
 
 [node name="HSeparator2" type="HSeparator" parent="Panel/VBoxContainer"]
 layout_mode = 2
@@ -68,3 +71,7 @@ Luminus [b]Engine V4.3[/b] [[u]Dev Build[/u]] (LOCAL)
 [hr]"
 scroll_following = true
 context_menu_enabled = true
+script = ExtResource("3_631ii")
+
+[connection signal="text_submitted" from="Panel/VBoxContainer/HBoxContainer/LineEdit" to="Panel/VBoxContainer/HBoxContainer/Button" method="_on_line_edit_text_submitted"]
+[connection signal="pressed" from="Panel/VBoxContainer/HBoxContainer/Button" to="Panel/VBoxContainer/HBoxContainer/Button" method="_on_pressed"]

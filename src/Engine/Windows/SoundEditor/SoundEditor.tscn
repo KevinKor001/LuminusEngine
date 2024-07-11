@@ -1,0 +1,35 @@
+[gd_scene load_steps=3 format=3 uid="uid://cyuyo6kq5gi6v"]
+
+[ext_resource type="PackedScene" uid="uid://w6eaejxfj81h" path="res://Windows/SoundEditor/TrackDock.tscn" id="1_k0u3r"]
+[ext_resource type="PackedScene" uid="uid://bk45b8wfllt3h" path="res://Windows/SoundEditor/ChannnelDock.tscn" id="2_xlf7k"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+metadata/_edit_vertical_guides_ = [-414.0]
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VSplitContainer" type="VSplitContainer" parent="Panel"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Control" parent="Panel/VSplitContainer" instance=ExtResource("1_k0u3r")]
+layout_mode = 2
+
+[node name="Control2" parent="Panel/VSplitContainer" instance=ExtResource("2_xlf7k")]
+layout_mode = 2

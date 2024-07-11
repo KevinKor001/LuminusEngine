@@ -1,0 +1,219 @@
+[gd_scene load_steps=7 format=3 uid="uid://drwk3ntck3ii1"]
+
+[ext_resource type="Texture2D" uid="uid://r7081tnsaein" path="res://Textures/Icons/add_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg" id="1_2qhv3"]
+[ext_resource type="FontFile" uid="uid://ntm0tieyb5t6" path="res://Textures/Fonts/RubikMonoOne-Regular.ttf" id="1_06vqo"]
+[ext_resource type="Script" path="res://Windows/MainEditor/GraphEdit.gd" id="1_setwy"]
+[ext_resource type="PackedScene" uid="uid://k6hnls2v3ne2" path="res://Windows/MainEditor/CodeEditor/NodeSelect.tscn" id="2_e53r0"]
+[ext_resource type="Texture2D" uid="uid://b6anm2d8rdhl4" path="res://Textures/Icons/conversion_path_24dp_FILL0_wght400_GRAD0_opsz24.svg" id="2_msxdv"]
+[ext_resource type="Texture2D" uid="uid://dolt1wfqq3r71" path="res://Textures/Icons/deployed_code_alert_24dp_FILL0_wght400_GRAD0_opsz24.svg" id="3_575pk"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Panel"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Panel" type="Panel" parent="Panel/VBoxContainer"]
+custom_minimum_size = Vector2(0, 30)
+layout_mode = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Panel/VBoxContainer/Panel"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Button" type="Button" parent="Panel/VBoxContainer/Panel/HBoxContainer"]
+layout_mode = 2
+text = "Add"
+icon = ExtResource("1_2qhv3")
+
+[node name="VSeparator" type="VSeparator" parent="Panel/VBoxContainer/Panel/HBoxContainer"]
+layout_mode = 2
+
+[node name="LineEdit" type="LineEdit" parent="Panel/VBoxContainer/Panel/HBoxContainer"]
+custom_minimum_size = Vector2(200, 0)
+layout_direction = 2
+layout_mode = 2
+placeholder_text = "Find ./"
+
+[node name="Button2" type="Button" parent="Panel/VBoxContainer/Panel/HBoxContainer"]
+layout_mode = 2
+icon = ExtResource("2_msxdv")
+
+[node name="VSeparator2" type="VSeparator" parent="Panel/VBoxContainer/Panel/HBoxContainer"]
+layout_mode = 2
+
+[node name="Button3" type="Button" parent="Panel/VBoxContainer/Panel/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 10
+text = "Bake Nodes"
+icon = ExtResource("3_575pk")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Panel/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="HSplitContainer" type="HSplitContainer" parent="Panel/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="LeftPanel" type="Panel" parent="Panel/VBoxContainer/HBoxContainer/HSplitContainer"]
+custom_minimum_size = Vector2(20, 0)
+layout_mode = 2
+
+[node name="HSplitContainer2" type="HSplitContainer" parent="Panel/VBoxContainer/HBoxContainer/HSplitContainer"]
+layout_mode = 2
+
+[node name="CenterPanel" type="Panel" parent="Panel/VBoxContainer/HBoxContainer/HSplitContainer/HSplitContainer2"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="GraphEdit" type="GraphEdit" parent="Panel/VBoxContainer/HBoxContainer/HSplitContainer/HSplitContainer2/CenterPanel"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_setwy")
+
+[node name="GraphNode" type="GraphNode" parent="Panel/VBoxContainer/HBoxContainer/HSplitContainer/HSplitContainer2/CenterPanel/GraphEdit"]
+layout_mode = 0
+offset_right = 187.0
+offset_bottom = 112.0
+mouse_filter = 1
+
+[node name="Control" parent="Panel/VBoxContainer/HBoxContainer/HSplitContainer/HSplitContainer2/CenterPanel/GraphEdit" instance=ExtResource("2_e53r0")]
+visible = false
+layout_mode = 1
+offset_left = 430.0
+offset_top = 125.0
+offset_right = -159.0
+offset_bottom = -123.0
+
+[node name="Label" type="Label" parent="Panel/VBoxContainer/HBoxContainer/HSplitContainer/HSplitContainer2/CenterPanel"]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_top = -23.0
+offset_right = 40.0
+grow_vertical = 0
+theme_override_colors/font_color = Color(1, 1, 1, 0.2)
+theme_override_fonts/font = ExtResource("1_06vqo")
+theme_override_font_sizes/font_size = 56
+text = "Node Editor"
+autowrap_mode = 2
+
+[node name="RightPanel" type="Panel" parent="Panel/VBoxContainer/HBoxContainer/HSplitContainer/HSplitContainer2"]
+custom_minimum_size = Vector2(250, 0)
+layout_mode = 2
+
+[node name="TabContainer" type="TabContainer" parent="Panel/VBoxContainer/HBoxContainer/HSplitContainer/HSplitContainer2/RightPanel"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Inspector" type="TabBar" parent="Panel/VBoxContainer/HBoxContainer/HSplitContainer/HSplitContainer2/RightPanel/TabContainer"]
+layout_mode = 2
+
+[node name="ScrollContainer" type="ScrollContainer" parent="Panel/VBoxContainer/HBoxContainer/HSplitContainer/HSplitContainer2/RightPanel/TabContainer/Inspector"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Panel/VBoxContainer/HBoxContainer/HSplitContainer/HSplitContainer2/RightPanel/TabContainer/Inspector/ScrollContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Button" type="Button" parent="Panel/VBoxContainer/HBoxContainer/HSplitContainer/HSplitContainer2/RightPanel/TabContainer/Inspector/ScrollContainer/VBoxContainer"]
+layout_mode = 2
+text = "Bake Nodes"
+
+[node name="HSeparator" type="HSeparator" parent="Panel/VBoxContainer/HBoxContainer/HSplitContainer/HSplitContainer2/RightPanel/TabContainer/Inspector/ScrollContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="Panel/VBoxContainer/HBoxContainer/HSplitContainer/HSplitContainer2/RightPanel/TabContainer/Inspector/ScrollContainer/VBoxContainer"]
+layout_mode = 2
+text = "Bake Settings :"
+
+[node name="CheckButton" type="CheckButton" parent="Panel/VBoxContainer/HBoxContainer/HSplitContainer/HSplitContainer2/RightPanel/TabContainer/Inspector/ScrollContainer/VBoxContainer"]
+layout_mode = 2
+text = "Complete Compile"
+
+[node name="CheckButton2" type="CheckButton" parent="Panel/VBoxContainer/HBoxContainer/HSplitContainer/HSplitContainer2/RightPanel/TabContainer/Inspector/ScrollContainer/VBoxContainer"]
+layout_mode = 2
+text = "Const variables"
+
+[node name="CheckButton3" type="CheckButton" parent="Panel/VBoxContainer/HBoxContainer/HSplitContainer/HSplitContainer2/RightPanel/TabContainer/Inspector/ScrollContainer/VBoxContainer"]
+layout_mode = 2
+text = "Keep Function Names"
+
+[node name="CheckButton4" type="CheckButton" parent="Panel/VBoxContainer/HBoxContainer/HSplitContainer/HSplitContainer2/RightPanel/TabContainer/Inspector/ScrollContainer/VBoxContainer"]
+layout_mode = 2
+text = "Keep Call Names"
+
+[node name="HSeparator2" type="HSeparator" parent="Panel/VBoxContainer/HBoxContainer/HSplitContainer/HSplitContainer2/RightPanel/TabContainer/Inspector/ScrollContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="Label2" type="Label" parent="Panel/VBoxContainer/HBoxContainer/HSplitContainer/HSplitContainer2/RightPanel/TabContainer/Inspector/ScrollContainer/VBoxContainer"]
+layout_mode = 2
+text = "Compiler Verison:"
+
+[node name="OptionButton" type="OptionButton" parent="Panel/VBoxContainer/HBoxContainer/HSplitContainer/HSplitContainer2/RightPanel/TabContainer/Inspector/ScrollContainer/VBoxContainer"]
+layout_mode = 2
+item_count = 5
+selected = 0
+popup/item_0/text = "LE 4 [Recommended]"
+popup/item_0/id = 4
+popup/item_1/text = "LE 4.6 Release"
+popup/item_1/id = 0
+popup/item_2/text = "LE 4.8 BETA"
+popup/item_2/id = 1
+popup/item_3/text = "Custom Compilers"
+popup/item_3/id = 2
+popup/item_3/separator = true
+popup/item_4/text = "com.NintendoSwitch.lcomp"
+popup/item_4/id = 3
+
+[node name="Label3" type="Label" parent="Panel/VBoxContainer/HBoxContainer/HSplitContainer/HSplitContainer2/RightPanel/TabContainer/Inspector/ScrollContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.359069, 0.359069, 0.359069, 1)
+text = "[select a node to show more options]"
+horizontal_alignment = 1
+autowrap_mode = 2
+
+[connection signal="pressed" from="Panel/VBoxContainer/Panel/HBoxContainer/Button" to="Panel/VBoxContainer/HBoxContainer/HSplitContainer/HSplitContainer2/CenterPanel/GraphEdit" method="_on_button_pressed"]
+[connection signal="delete_nodes_request" from="Panel/VBoxContainer/HBoxContainer/HSplitContainer/HSplitContainer2/CenterPanel/GraphEdit" to="Panel/VBoxContainer/HBoxContainer/HSplitContainer/HSplitContainer2/CenterPanel/GraphEdit" method="_on_delete_nodes_request"]
+[connection signal="gui_input" from="Panel/VBoxContainer/HBoxContainer/HSplitContainer/HSplitContainer2/CenterPanel/GraphEdit" to="Panel/VBoxContainer/HBoxContainer/HSplitContainer/HSplitContainer2/CenterPanel/GraphEdit" method="_on_gui_input"]
+[connection signal="node_selected" from="Panel/VBoxContainer/HBoxContainer/HSplitContainer/HSplitContainer2/CenterPanel/GraphEdit" to="Panel/VBoxContainer/HBoxContainer/HSplitContainer/HSplitContainer2/CenterPanel/GraphEdit" method="_on_node_selected"]
+[connection signal="focus_exited" from="Panel/VBoxContainer/HBoxContainer/HSplitContainer/HSplitContainer2/CenterPanel/GraphEdit/Control" to="Panel/VBoxContainer/HBoxContainer/HSplitContainer/HSplitContainer2/CenterPanel/GraphEdit" method="_on_control_focus_exited"]
+[connection signal="mouse_exited" from="Panel/VBoxContainer/HBoxContainer/HSplitContainer/HSplitContainer2/CenterPanel/GraphEdit/Control" to="Panel/VBoxContainer/HBoxContainer/HSplitContainer/HSplitContainer2/CenterPanel/GraphEdit" method="_on_control_mouse_exited"]
