@@ -2,7 +2,7 @@
 
 [sub_resource type="QuadMesh" id="QuadMesh_ha8qq"]
 
-[sub_resource type="CapsuleMesh" id="CapsuleMesh_mfeky"]
+[sub_resource type="CylinderMesh" id="CylinderMesh_fkgjx"]
 
 [node name="Node3D" type="Node3D"]
 
@@ -12,7 +12,7 @@ mesh = SubResource("QuadMesh_ha8qq")
 
 [node name="CSGMesh3D2" type="CSGMesh3D" parent="."]
 transform = Transform3D(0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, 0.790596, 0.0977901, 0)
-mesh = SubResource("CapsuleMesh_mfeky")
+mesh = SubResource("CylinderMesh_fkgjx")
 
 [node name="Viewport3D" type="Camera3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 0.965926, 0.258819, 0, -0.258819, 0.965926, 0.842862, 0.261865, 1.09257)

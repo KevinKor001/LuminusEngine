@@ -1,13 +1,4 @@
-res://Windows/SoundEditor/Channel.tscn
 res://Windows/MainEditor/main.tscn
-res://Windows/SoundEditor/ChannnelDock.tscn
-res://Windows/SoundEditor/Track.tscn
-res://Windows/SoundEditor/SoundEditor.tscn
-res://Windows/SoundEditor/TrackDock.tscn
-res://Windows/Main Windows/ConsoleSend.gd
-res://Windows/Main Windows/Console.tscn
-res://Windows/Main Windows/ConsoleLog.gd
-res://Windows/StartUp.tscn
-res://Windows/Main Windows/NewProject.gd
-res://Windows/Main Windows/NewProject.tscn
-res://Windows/MainEditor/CodeWindow.tscn
+res://Windows/SubWindows/ObjectSelector.tscn
+res://Windows/3DRendererWrld/node_3d.tscn
+res://Windows/MainEditor/AnimationPlayer.gd
