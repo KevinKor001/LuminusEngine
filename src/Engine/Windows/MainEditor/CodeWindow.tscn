@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=3 uid="uid://drwk3ntck3ii1"]
+[gd_scene load_steps=8 format=3 uid="uid://drwk3ntck3ii1"]
 
 [ext_resource type="Texture2D" uid="uid://r7081tnsaein" path="res://Textures/Icons/add_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg" id="1_2qhv3"]
 [ext_resource type="FontFile" uid="uid://ntm0tieyb5t6" path="res://Textures/Fonts/RubikMonoOne-Regular.ttf" id="1_06vqo"]
@@ -6,6 +6,7 @@
 [ext_resource type="PackedScene" uid="uid://k6hnls2v3ne2" path="res://Windows/MainEditor/CodeEditor/NodeSelect.tscn" id="2_e53r0"]
 [ext_resource type="Texture2D" uid="uid://b6anm2d8rdhl4" path="res://Textures/Icons/conversion_path_24dp_FILL0_wght400_GRAD0_opsz24.svg" id="2_msxdv"]
 [ext_resource type="Texture2D" uid="uid://dolt1wfqq3r71" path="res://Textures/Icons/deployed_code_alert_24dp_FILL0_wght400_GRAD0_opsz24.svg" id="3_575pk"]
+[ext_resource type="PackedScene" uid="uid://det2eo1a1sacf" path="res://Windows/MainEditor/CodeEditor/Nodes/BeginNode.tscn" id="6_35mw3"]
 
 [node name="Control" type="Control"]
 layout_mode = 3
@@ -96,13 +97,8 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+connection_lines_thickness = 4.0
 script = ExtResource("1_setwy")
-
-[node name="GraphNode" type="GraphNode" parent="Panel/VBoxContainer/HBoxContainer/HSplitContainer/HSplitContainer2/CenterPanel/GraphEdit"]
-layout_mode = 0
-offset_right = 187.0
-offset_bottom = 112.0
-mouse_filter = 1
 
 [node name="Control" parent="Panel/VBoxContainer/HBoxContainer/HSplitContainer/HSplitContainer2/CenterPanel/GraphEdit" instance=ExtResource("2_e53r0")]
 visible = false
@@ -111,6 +107,10 @@ offset_left = 430.0
 offset_top = 125.0
 offset_right = -159.0
 offset_bottom = -123.0
+
+[node name="GraphNode2" parent="Panel/VBoxContainer/HBoxContainer/HSplitContainer/HSplitContainer2/CenterPanel/GraphEdit" instance=ExtResource("6_35mw3")]
+layout_mode = 0
+mouse_filter = 1
 
 [node name="Label" type="Label" parent="Panel/VBoxContainer/HBoxContainer/HSplitContainer/HSplitContainer2/CenterPanel"]
 layout_mode = 1
