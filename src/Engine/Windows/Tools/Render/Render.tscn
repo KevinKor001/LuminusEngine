@@ -1,10 +1,23 @@
-[gd_scene load_steps=6 format=3 uid="uid://dkpgmb2cb67nn"]
+[gd_scene load_steps=10 format=3 uid="uid://dkpgmb2cb67nn"]
 
 [ext_resource type="Texture2D" uid="uid://blobsl34oxc36" path="res://Textures/Icons/tabs_24dp_FILL0_wght400_GRAD0_opsz24.svg" id="1_bwsg2"]
 [ext_resource type="Texture2D" uid="uid://b6anm2d8rdhl4" path="res://Textures/Icons/conversion_path_24dp_FILL0_wght400_GRAD0_opsz24.svg" id="2_aj4kp"]
 [ext_resource type="Texture2D" uid="uid://bs3vkf1e35g71" path="res://Textures/Icons/arrow_forward_ios_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg" id="3_fp1ga"]
 [ext_resource type="Texture2D" uid="uid://bqpsq5cef4j5i" path="res://Textures/Icons/video_camera_back_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg" id="3_tgeiq"]
 [ext_resource type="Texture2D" uid="uid://bwxqg864e1ngo" path="res://Textures/Icons/sprinkler_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg" id="5_r2fq8"]
+[ext_resource type="Script" path="res://Windows/Tools/Render/BeginRender.gd" id="6_hl0xt"]
+[ext_resource type="FontFile" uid="uid://ntm0tieyb5t6" path="res://Textures/Fonts/RubikMonoOne-Regular.ttf" id="7_18ch1"]
+
+[sub_resource type="Environment" id="Environment_paair"]
+background_mode = 2
+background_color = Color(0.952941, 0.0705882, 0.952941, 1)
+background_energy_multiplier = 3.75
+ambient_light_source = 2
+ambient_light_color = Color(1, 0.141176, 1, 1)
+ambient_light_energy = 0.0
+
+[sub_resource type="World3D" id="World3D_52smd"]
+environment = SubResource("Environment_paair")
 
 [node name="Control" type="Control"]
 layout_mode = 3
@@ -114,6 +127,7 @@ layout_mode = 2
 size_flags_horizontal = 10
 text = "Render"
 icon = ExtResource("3_tgeiq")
+script = ExtResource("6_hl0xt")
 
 [node name="VSplitContainer" type="VSplitContainer" parent="Panel/VBoxContainer"]
 layout_mode = 2
@@ -138,6 +152,24 @@ layout_mode = 2
 layout_mode = 2
 size_flags_horizontal = 3
 
+[node name="SubViewportContainer" type="SubViewportContainer" parent="Panel/VBoxContainer/VSplitContainer/HBoxContainer/HSplitContainer/HSplitContainer2/CenterPanel"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+stretch = true
+
+[node name="SubViewport" type="SubViewport" parent="Panel/VBoxContainer/VSplitContainer/HBoxContainer/HSplitContainer/HSplitContainer2/CenterPanel/SubViewportContainer"]
+world_3d = SubResource("World3D_52smd")
+handle_input_locally = false
+size = Vector2i(858, 301)
+render_target_update_mode = 4
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="Panel/VBoxContainer/VSplitContainer/HBoxContainer/HSplitContainer/HSplitContainer2/CenterPanel/SubViewportContainer/SubViewport"]
+environment = SubResource("Environment_paair")
+
 [node name="RightPanel" type="Panel" parent="Panel/VBoxContainer/VSplitContainer/HBoxContainer/HSplitContainer/HSplitContainer2"]
 custom_minimum_size = Vector2(250, 0)
 layout_mode = 2
@@ -150,9 +182,70 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="Inspector" type="TabBar" parent="Panel/VBoxContainer/VSplitContainer/HBoxContainer/HSplitContainer/HSplitContainer2/RightPanel/TabContainer"]
+[node name="Export Settings" type="TabBar" parent="Panel/VBoxContainer/VSplitContainer/HBoxContainer/HSplitContainer/HSplitContainer2/RightPanel/TabContainer"]
 layout_mode = 2
 
-[node name="Panel" type="Panel" parent="Panel/VBoxContainer/VSplitContainer"]
+[node name="Button" type="Button" parent="Panel/VBoxContainer/VSplitContainer/HBoxContainer/HSplitContainer/HSplitContainer2/RightPanel/TabContainer/Export Settings"]
+layout_mode = 0
+offset_right = 8.0
+offset_bottom = 8.0
+text = "Save Settings"
+
+[node name="BottomPanel" type="Panel" parent="Panel/VBoxContainer/VSplitContainer"]
 layout_mode = 2
 size_flags_vertical = 3
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Panel/VBoxContainer/VSplitContainer/BottomPanel"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ProgressBar" type="ProgressBar" parent="Panel/VBoxContainer/VSplitContainer/BottomPanel/VBoxContainer"]
+custom_minimum_size = Vector2(0, 35)
+layout_mode = 2
+value = 19.68
+show_percentage = false
+
+[node name="Label" type="Label" parent="Panel/VBoxContainer/VSplitContainer/BottomPanel/VBoxContainer/ProgressBar"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "Render Time 00:00:00 | R:6000mb bank | Sample 326 : 46034"
+horizontal_alignment = 1
+
+[node name="RenderOverlay" type="Panel" parent="."]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="RenderOverlay"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+text = "Press \"Terminate\" To Stop Render"
+
+[node name="Label2" type="Label" parent="RenderOverlay"]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_top = -23.0
+offset_right = 40.0
+grow_vertical = 0
+theme_override_colors/font_color = Color(1, 1, 1, 0.2)
+theme_override_fonts/font = ExtResource("7_18ch1")
+theme_override_font_sizes/font_size = 56
+text = "RENDERING "
+autowrap_mode = 2
+
+[connection signal="pressed" from="Panel/VBoxContainer/Panel/HBoxContainer/Button3" to="Panel/VBoxContainer/Panel/HBoxContainer/Button3" method="_on_pressed"]

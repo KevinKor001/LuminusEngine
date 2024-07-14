@@ -1,3 +1,4 @@
+res://Windows/Tools/Render/BeginRender.gd
 res://Windows/Tools/Render/Render.tscn
 res://Windows/SubWindows/ObjectSelector.tscn
 res://Windows/MainEditor/main.tscn
