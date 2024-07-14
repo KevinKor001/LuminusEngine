@@ -1,0 +1,158 @@
+[gd_scene load_steps=6 format=3 uid="uid://dkpgmb2cb67nn"]
+
+[ext_resource type="Texture2D" uid="uid://blobsl34oxc36" path="res://Textures/Icons/tabs_24dp_FILL0_wght400_GRAD0_opsz24.svg" id="1_bwsg2"]
+[ext_resource type="Texture2D" uid="uid://b6anm2d8rdhl4" path="res://Textures/Icons/conversion_path_24dp_FILL0_wght400_GRAD0_opsz24.svg" id="2_aj4kp"]
+[ext_resource type="Texture2D" uid="uid://bs3vkf1e35g71" path="res://Textures/Icons/arrow_forward_ios_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg" id="3_fp1ga"]
+[ext_resource type="Texture2D" uid="uid://bqpsq5cef4j5i" path="res://Textures/Icons/video_camera_back_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg" id="3_tgeiq"]
+[ext_resource type="Texture2D" uid="uid://bwxqg864e1ngo" path="res://Textures/Icons/sprinkler_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg" id="5_r2fq8"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Panel"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Panel" type="Panel" parent="Panel/VBoxContainer"]
+custom_minimum_size = Vector2(0, 30)
+layout_mode = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Panel/VBoxContainer/Panel"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Button" type="Button" parent="Panel/VBoxContainer/Panel/HBoxContainer"]
+layout_mode = 2
+text = "Open Server"
+icon = ExtResource("1_bwsg2")
+
+[node name="VSeparator" type="VSeparator" parent="Panel/VBoxContainer/Panel/HBoxContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="Panel/VBoxContainer/Panel/HBoxContainer"]
+layout_mode = 2
+text = "Sequence:"
+
+[node name="OptionButton" type="OptionButton" parent="Panel/VBoxContainer/Panel/HBoxContainer"]
+custom_minimum_size = Vector2(150, 0)
+layout_mode = 2
+item_count = 1
+popup/item_0/text = "Empty.seq"
+popup/item_0/id = 0
+
+[node name="Button2" type="Button" parent="Panel/VBoxContainer/Panel/HBoxContainer"]
+layout_mode = 2
+icon = ExtResource("2_aj4kp")
+
+[node name="TextureRect" type="TextureRect" parent="Panel/VBoxContainer/Panel/HBoxContainer"]
+layout_mode = 2
+texture = ExtResource("3_fp1ga")
+stretch_mode = 3
+
+[node name="Label2" type="Label" parent="Panel/VBoxContainer/Panel/HBoxContainer"]
+layout_mode = 2
+text = "Sequencer Script :"
+
+[node name="OptionButton2" type="OptionButton" parent="Panel/VBoxContainer/Panel/HBoxContainer"]
+custom_minimum_size = Vector2(150, 0)
+layout_mode = 2
+item_count = 1
+selected = 0
+popup/item_0/text = "   Default"
+popup/item_0/icon = ExtResource("3_tgeiq")
+popup/item_0/id = 0
+
+[node name="TextureRect2" type="TextureRect" parent="Panel/VBoxContainer/Panel/HBoxContainer"]
+layout_mode = 2
+texture = ExtResource("3_fp1ga")
+stretch_mode = 3
+
+[node name="Label3" type="Label" parent="Panel/VBoxContainer/Panel/HBoxContainer"]
+layout_mode = 2
+text = "PipeLine :"
+
+[node name="OptionButton3" type="OptionButton" parent="Panel/VBoxContainer/Panel/HBoxContainer"]
+custom_minimum_size = Vector2(150, 0)
+layout_mode = 2
+item_count = 1
+selected = 0
+popup/item_0/text = "   Cycle 2k"
+popup/item_0/icon = ExtResource("5_r2fq8")
+popup/item_0/id = 0
+
+[node name="TextureRect3" type="TextureRect" parent="Panel/VBoxContainer/Panel/HBoxContainer"]
+layout_mode = 2
+texture = ExtResource("3_fp1ga")
+stretch_mode = 3
+
+[node name="VSeparator2" type="VSeparator" parent="Panel/VBoxContainer/Panel/HBoxContainer"]
+layout_mode = 2
+
+[node name="Button3" type="Button" parent="Panel/VBoxContainer/Panel/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 10
+text = "Render"
+icon = ExtResource("3_tgeiq")
+
+[node name="VSplitContainer" type="VSplitContainer" parent="Panel/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Panel/VBoxContainer/VSplitContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="HSplitContainer" type="HSplitContainer" parent="Panel/VBoxContainer/VSplitContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="LeftPanel" type="Panel" parent="Panel/VBoxContainer/VSplitContainer/HBoxContainer/HSplitContainer"]
+custom_minimum_size = Vector2(20, 0)
+layout_mode = 2
+
+[node name="HSplitContainer2" type="HSplitContainer" parent="Panel/VBoxContainer/VSplitContainer/HBoxContainer/HSplitContainer"]
+layout_mode = 2
+
+[node name="CenterPanel" type="Panel" parent="Panel/VBoxContainer/VSplitContainer/HBoxContainer/HSplitContainer/HSplitContainer2"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="RightPanel" type="Panel" parent="Panel/VBoxContainer/VSplitContainer/HBoxContainer/HSplitContainer/HSplitContainer2"]
+custom_minimum_size = Vector2(250, 0)
+layout_mode = 2
+
+[node name="TabContainer" type="TabContainer" parent="Panel/VBoxContainer/VSplitContainer/HBoxContainer/HSplitContainer/HSplitContainer2/RightPanel"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Inspector" type="TabBar" parent="Panel/VBoxContainer/VSplitContainer/HBoxContainer/HSplitContainer/HSplitContainer2/RightPanel/TabContainer"]
+layout_mode = 2
+
+[node name="Panel" type="Panel" parent="Panel/VBoxContainer/VSplitContainer"]
+layout_mode = 2
+size_flags_vertical = 3
