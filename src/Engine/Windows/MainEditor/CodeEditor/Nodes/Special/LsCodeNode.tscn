@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://d25l5kaawjqdg"]
 
-[ext_resource type="Script" path="res://Windows/MainEditor/CodeEditor/Nodes/LsCodeNode.gd" id="1_b2noy"]
+[ext_resource type="Script" path="res://Windows/MainEditor/CodeEditor/Nodes/Special/LsCodeNode.gd" id="1_b2noy"]
 [ext_resource type="Texture2D" uid="uid://diedbb5qqa3le" path="res://Textures/Icons/Cube.svg" id="1_trf0c"]
 
 [node name="GraphNode" type="GraphNode"]

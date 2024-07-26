@@ -1,0 +1,6 @@
+yes there are 2 viewport containers and yes both of them work but one of them doesnot work and 
+DO NOT !!!!! delete it because its is the actual serer and you have been trough this a milion times,
+just call "Viewport.SetContainer(-1)" or add the Viewport CONTAINER instead 
+
+love
+kevin......
