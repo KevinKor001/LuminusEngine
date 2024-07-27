@@ -1,4 +1,4 @@
-[gd_scene load_steps=25 format=3 uid="uid://c3dtuivy3402e"]
+[gd_scene load_steps=26 format=3 uid="uid://c3dtuivy3402e"]
 
 [ext_resource type="Script" path="res://MainEditor.gd" id="1_mhr7w"]
 [ext_resource type="Texture2D" uid="uid://r7081tnsaein" path="res://Textures/Icons/add_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg" id="2_j7fqn"]
@@ -21,7 +21,8 @@
 [ext_resource type="Texture2D" uid="uid://ds04bw3k7kb04" path="res://Textures/Icons/play_arrow_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg" id="13_l5wgm"]
 [ext_resource type="Texture2D" uid="uid://evxcrgt3jp4x" path="res://Textures/Icons/account_circle_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg" id="14_n3nqh"]
 [ext_resource type="Texture2D" uid="uid://bj1e07rhkbduy" path="res://Textures/Icons/groups_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg" id="15_3xkld"]
-[ext_resource type="PackedScene" uid="uid://dkpgmb2cb67nn" path="res://Windows/Tools/Render/Render.tscn" id="15_myxgy"]
+[ext_resource type="PackedScene" uid="uid://dkpgmb2cb67nn" path="res://Windows/SubWindows/Render.tscn" id="15_myxgy"]
+[ext_resource type="Texture2D" uid="uid://c5qrjg1qp72c3" path="res://Textures/Icons/resize_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg" id="18_be8ji"]
 
 [sub_resource type="Environment" id="Environment_xjyie"]
 background_mode = 2
@@ -353,6 +354,20 @@ layout_mode = 2
 [node name="VSeparator3" type="VSeparator" parent="Panel/UtilityBar/HBoxContainer"]
 layout_mode = 2
 size_flags_horizontal = 10
+
+[node name="Stop2" type="Button" parent="Panel/UtilityBar/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 8
+icon = ExtResource("2_j7fqn")
+
+[node name="Pause2" type="Button" parent="Panel/UtilityBar/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 8
+icon = ExtResource("18_be8ji")
+
+[node name="VSeparator4" type="VSeparator" parent="Panel/UtilityBar/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 8
 
 [node name="Stop" type="Button" parent="Panel/UtilityBar/HBoxContainer"]
 layout_mode = 2
