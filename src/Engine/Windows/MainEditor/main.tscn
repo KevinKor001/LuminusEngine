@@ -24,6 +24,8 @@
 [ext_resource type="PackedScene" uid="uid://dkpgmb2cb67nn" path="res://Windows/SubWindows/Render.tscn" id="15_myxgy"]
 [ext_resource type="Texture2D" uid="uid://c5qrjg1qp72c3" path="res://Textures/Icons/resize_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg" id="18_be8ji"]
 
+[sub_resource type="World3D" id="World3D_1w7mm"]
+
 [sub_resource type="Environment" id="Environment_xjyie"]
 background_mode = 2
 background_color = Color(0.952941, 0.0705882, 0.952941, 1)
@@ -31,9 +33,6 @@ background_energy_multiplier = 3.75
 ambient_light_source = 2
 ambient_light_color = Color(1, 0.141176, 1, 1)
 ambient_light_energy = 0.0
-
-[sub_resource type="World3D" id="World3D_1w7mm"]
-environment = SubResource("Environment_xjyie")
 
 [node name="Main" type="Control"]
 layout_mode = 3

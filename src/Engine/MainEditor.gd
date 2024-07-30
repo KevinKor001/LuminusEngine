@@ -17,7 +17,6 @@ func _on_menu_file_button_pressed():
 
 
 func _on_button_pressed():
-	
-	
+ 
 	
 	pass # Replace with function body.

@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=3 uid="uid://dkpgmb2cb67nn"]
+[gd_scene load_steps=11 format=3 uid="uid://dkpgmb2cb67nn"]
 
 [ext_resource type="Texture2D" uid="uid://blobsl34oxc36" path="res://Textures/Icons/tabs_24dp_FILL0_wght400_GRAD0_opsz24.svg" id="1_bwsg2"]
 [ext_resource type="Texture2D" uid="uid://b6anm2d8rdhl4" path="res://Textures/Icons/conversion_path_24dp_FILL0_wght400_GRAD0_opsz24.svg" id="2_aj4kp"]
@@ -6,6 +6,7 @@
 [ext_resource type="Texture2D" uid="uid://bqpsq5cef4j5i" path="res://Textures/Icons/video_camera_back_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg" id="3_tgeiq"]
 [ext_resource type="Texture2D" uid="uid://bwxqg864e1ngo" path="res://Textures/Icons/sprinkler_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg" id="5_r2fq8"]
 [ext_resource type="Script" path="res://Windows/Tools/Render/BeginRender.gd" id="6_hl0xt"]
+[ext_resource type="Texture2D" uid="uid://dyokax36oqo0i" path="res://Windows/Tools/Render/teapot_broken.jpg" id="7_0q5af"]
 [ext_resource type="FontFile" uid="uid://ntm0tieyb5t6" path="res://Textures/Fonts/RubikMonoOne-Regular.ttf" id="7_18ch1"]
 
 [sub_resource type="Environment" id="Environment_paair"]
@@ -153,6 +154,7 @@ layout_mode = 2
 size_flags_horizontal = 3
 
 [node name="SubViewportContainer" type="SubViewportContainer" parent="Panel/VBoxContainer/VSplitContainer/HBoxContainer/HSplitContainer/HSplitContainer2/CenterPanel"]
+visible = false
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -165,10 +167,21 @@ stretch = true
 world_3d = SubResource("World3D_52smd")
 handle_input_locally = false
 size = Vector2i(858, 301)
-render_target_update_mode = 4
+render_target_update_mode = 0
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="Panel/VBoxContainer/VSplitContainer/HBoxContainer/HSplitContainer/HSplitContainer2/CenterPanel/SubViewportContainer/SubViewport"]
 environment = SubResource("Environment_paair")
+
+[node name="TextureRect" type="TextureRect" parent="Panel/VBoxContainer/VSplitContainer/HBoxContainer/HSplitContainer/HSplitContainer2/CenterPanel"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("7_0q5af")
+expand_mode = 3
+stretch_mode = 6
 
 [node name="RightPanel" type="Panel" parent="Panel/VBoxContainer/VSplitContainer/HBoxContainer/HSplitContainer/HSplitContainer2"]
 custom_minimum_size = Vector2(250, 0)
@@ -206,7 +219,7 @@ grow_vertical = 2
 [node name="ProgressBar" type="ProgressBar" parent="Panel/VBoxContainer/VSplitContainer/BottomPanel/VBoxContainer"]
 custom_minimum_size = Vector2(0, 35)
 layout_mode = 2
-value = 19.68
+value = 82.47
 show_percentage = false
 
 [node name="Label" type="Label" parent="Panel/VBoxContainer/VSplitContainer/BottomPanel/VBoxContainer/ProgressBar"]
@@ -216,11 +229,10 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-text = "Render Time 00:00:00 | R:6000mb bank | Sample 326 : 46034"
+text = "Render Time 00:25:17| R:6000mb bank | Sample 334426 : 467034"
 horizontal_alignment = 1
 
 [node name="RenderOverlay" type="Panel" parent="."]
-visible = false
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -244,7 +256,7 @@ offset_right = 40.0
 grow_vertical = 0
 theme_override_colors/font_color = Color(1, 1, 1, 0.2)
 theme_override_fonts/font = ExtResource("7_18ch1")
-theme_override_font_sizes/font_size = 56
+theme_override_font_sizes/font_size = 80
 text = "RENDERING "
 autowrap_mode = 2
 

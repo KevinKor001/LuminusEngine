@@ -1,0 +1,304 @@
+[gd_scene format=3 uid="uid://72luxm5dbhfw"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VSplitContainer" type="VSplitContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Panel" type="Panel" parent="VSplitContainer"]
+custom_minimum_size = Vector2(0, 56.895)
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Panel2" type="Panel" parent="VSplitContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="HSplitContainer" type="HSplitContainer" parent="VSplitContainer/Panel2"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+
+[node name="Panel" type="Panel" parent="VSplitContainer/Panel2/HSplitContainer"]
+custom_minimum_size = Vector2(200, 0)
+layout_mode = 2
+
+[node name="ScrollContainer" type="ScrollContainer" parent="VSplitContainer/Panel2/HSplitContainer/Panel"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ScrollContainer2" type="ScrollContainer" parent="VSplitContainer/Panel2/HSplitContainer"]
+layout_mode = 2
+horizontal_scroll_mode = 3
+vertical_scroll_mode = 2
+
+[node name="HSplitContainer2" type="HSplitContainer" parent="VSplitContainer/Panel2/HSplitContainer/ScrollContainer2"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Panel3" type="Panel" parent="VSplitContainer/Panel2/HSplitContainer/ScrollContainer2/HSplitContainer2"]
+custom_minimum_size = Vector2(100, 0)
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="VSplitContainer/Panel2/HSplitContainer/ScrollContainer2/HSplitContainer2/Panel3"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Panel" type="Panel" parent="VSplitContainer/Panel2/HSplitContainer/ScrollContainer2/HSplitContainer2/Panel3/VBoxContainer"]
+custom_minimum_size = Vector2(0, 100)
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="VSplitContainer/Panel2/HSplitContainer/ScrollContainer2/HSplitContainer2/Panel3/VBoxContainer/Panel"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="VSplitContainer/Panel2/HSplitContainer/ScrollContainer2/HSplitContainer2/Panel3/VBoxContainer/Panel/VBoxContainer"]
+layout_mode = 2
+text = "Channel 1"
+
+[node name="HSeparator" type="HSeparator" parent="VSplitContainer/Panel2/HSplitContainer/ScrollContainer2/HSplitContainer2/Panel3/VBoxContainer/Panel/VBoxContainer"]
+layout_mode = 2
+
+[node name="OptionButton" type="OptionButton" parent="VSplitContainer/Panel2/HSplitContainer/ScrollContainer2/HSplitContainer2/Panel3/VBoxContainer/Panel/VBoxContainer"]
+layout_mode = 2
+item_count = 3
+selected = 0
+popup/item_0/text = "Audio"
+popup/item_0/id = 0
+popup/item_1/text = "Video"
+popup/item_1/id = 1
+popup/item_2/text = "Gfx"
+popup/item_2/id = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="VSplitContainer/Panel2/HSplitContainer/ScrollContainer2/HSplitContainer2/Panel3/VBoxContainer/Panel/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Button" type="Button" parent="VSplitContainer/Panel2/HSplitContainer/ScrollContainer2/HSplitContainer2/Panel3/VBoxContainer/Panel/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "S"
+
+[node name="Button2" type="Button" parent="VSplitContainer/Panel2/HSplitContainer/ScrollContainer2/HSplitContainer2/Panel3/VBoxContainer/Panel/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Fx"
+
+[node name="Button3" type="Button" parent="VSplitContainer/Panel2/HSplitContainer/ScrollContainer2/HSplitContainer2/Panel3/VBoxContainer/Panel/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "M"
+
+[node name="HSeparator2" type="HSeparator" parent="VSplitContainer/Panel2/HSplitContainer/ScrollContainer2/HSplitContainer2/Panel3/VBoxContainer/Panel/VBoxContainer"]
+layout_mode = 2
+
+[node name="Panel2" type="Panel" parent="VSplitContainer/Panel2/HSplitContainer/ScrollContainer2/HSplitContainer2/Panel3/VBoxContainer"]
+custom_minimum_size = Vector2(0, 100)
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="VSplitContainer/Panel2/HSplitContainer/ScrollContainer2/HSplitContainer2/Panel3/VBoxContainer/Panel2"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="VSplitContainer/Panel2/HSplitContainer/ScrollContainer2/HSplitContainer2/Panel3/VBoxContainer/Panel2/VBoxContainer"]
+layout_mode = 2
+text = "Channel 1"
+
+[node name="HSeparator" type="HSeparator" parent="VSplitContainer/Panel2/HSplitContainer/ScrollContainer2/HSplitContainer2/Panel3/VBoxContainer/Panel2/VBoxContainer"]
+layout_mode = 2
+
+[node name="OptionButton" type="OptionButton" parent="VSplitContainer/Panel2/HSplitContainer/ScrollContainer2/HSplitContainer2/Panel3/VBoxContainer/Panel2/VBoxContainer"]
+layout_mode = 2
+item_count = 3
+selected = 0
+popup/item_0/text = "Audio"
+popup/item_0/id = 0
+popup/item_1/text = "Video"
+popup/item_1/id = 1
+popup/item_2/text = "Gfx"
+popup/item_2/id = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="VSplitContainer/Panel2/HSplitContainer/ScrollContainer2/HSplitContainer2/Panel3/VBoxContainer/Panel2/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Button" type="Button" parent="VSplitContainer/Panel2/HSplitContainer/ScrollContainer2/HSplitContainer2/Panel3/VBoxContainer/Panel2/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "S"
+
+[node name="Button2" type="Button" parent="VSplitContainer/Panel2/HSplitContainer/ScrollContainer2/HSplitContainer2/Panel3/VBoxContainer/Panel2/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Fx"
+
+[node name="Button3" type="Button" parent="VSplitContainer/Panel2/HSplitContainer/ScrollContainer2/HSplitContainer2/Panel3/VBoxContainer/Panel2/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "M"
+
+[node name="HSeparator2" type="HSeparator" parent="VSplitContainer/Panel2/HSplitContainer/ScrollContainer2/HSplitContainer2/Panel3/VBoxContainer/Panel2/VBoxContainer"]
+layout_mode = 2
+
+[node name="Panel3" type="Panel" parent="VSplitContainer/Panel2/HSplitContainer/ScrollContainer2/HSplitContainer2/Panel3/VBoxContainer"]
+custom_minimum_size = Vector2(0, 100)
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="VSplitContainer/Panel2/HSplitContainer/ScrollContainer2/HSplitContainer2/Panel3/VBoxContainer/Panel3"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="VSplitContainer/Panel2/HSplitContainer/ScrollContainer2/HSplitContainer2/Panel3/VBoxContainer/Panel3/VBoxContainer"]
+layout_mode = 2
+text = "Channel 1"
+
+[node name="HSeparator" type="HSeparator" parent="VSplitContainer/Panel2/HSplitContainer/ScrollContainer2/HSplitContainer2/Panel3/VBoxContainer/Panel3/VBoxContainer"]
+layout_mode = 2
+
+[node name="OptionButton" type="OptionButton" parent="VSplitContainer/Panel2/HSplitContainer/ScrollContainer2/HSplitContainer2/Panel3/VBoxContainer/Panel3/VBoxContainer"]
+layout_mode = 2
+item_count = 3
+selected = 0
+popup/item_0/text = "Audio"
+popup/item_0/id = 0
+popup/item_1/text = "Video"
+popup/item_1/id = 1
+popup/item_2/text = "Gfx"
+popup/item_2/id = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="VSplitContainer/Panel2/HSplitContainer/ScrollContainer2/HSplitContainer2/Panel3/VBoxContainer/Panel3/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Button" type="Button" parent="VSplitContainer/Panel2/HSplitContainer/ScrollContainer2/HSplitContainer2/Panel3/VBoxContainer/Panel3/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "S"
+
+[node name="Button2" type="Button" parent="VSplitContainer/Panel2/HSplitContainer/ScrollContainer2/HSplitContainer2/Panel3/VBoxContainer/Panel3/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Fx"
+
+[node name="Button3" type="Button" parent="VSplitContainer/Panel2/HSplitContainer/ScrollContainer2/HSplitContainer2/Panel3/VBoxContainer/Panel3/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "M"
+
+[node name="HSeparator2" type="HSeparator" parent="VSplitContainer/Panel2/HSplitContainer/ScrollContainer2/HSplitContainer2/Panel3/VBoxContainer/Panel3/VBoxContainer"]
+layout_mode = 2
+
+[node name="Panel4" type="Panel" parent="VSplitContainer/Panel2/HSplitContainer/ScrollContainer2/HSplitContainer2/Panel3/VBoxContainer"]
+custom_minimum_size = Vector2(0, 100)
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="VSplitContainer/Panel2/HSplitContainer/ScrollContainer2/HSplitContainer2/Panel3/VBoxContainer/Panel4"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="VSplitContainer/Panel2/HSplitContainer/ScrollContainer2/HSplitContainer2/Panel3/VBoxContainer/Panel4/VBoxContainer"]
+layout_mode = 2
+text = "Channel 1"
+
+[node name="HSeparator" type="HSeparator" parent="VSplitContainer/Panel2/HSplitContainer/ScrollContainer2/HSplitContainer2/Panel3/VBoxContainer/Panel4/VBoxContainer"]
+layout_mode = 2
+
+[node name="OptionButton" type="OptionButton" parent="VSplitContainer/Panel2/HSplitContainer/ScrollContainer2/HSplitContainer2/Panel3/VBoxContainer/Panel4/VBoxContainer"]
+layout_mode = 2
+item_count = 3
+selected = 0
+popup/item_0/text = "Audio"
+popup/item_0/id = 0
+popup/item_1/text = "Video"
+popup/item_1/id = 1
+popup/item_2/text = "Gfx"
+popup/item_2/id = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="VSplitContainer/Panel2/HSplitContainer/ScrollContainer2/HSplitContainer2/Panel3/VBoxContainer/Panel4/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Button" type="Button" parent="VSplitContainer/Panel2/HSplitContainer/ScrollContainer2/HSplitContainer2/Panel3/VBoxContainer/Panel4/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "S"
+
+[node name="Button2" type="Button" parent="VSplitContainer/Panel2/HSplitContainer/ScrollContainer2/HSplitContainer2/Panel3/VBoxContainer/Panel4/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Fx"
+
+[node name="Button3" type="Button" parent="VSplitContainer/Panel2/HSplitContainer/ScrollContainer2/HSplitContainer2/Panel3/VBoxContainer/Panel4/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "M"
+
+[node name="HSeparator2" type="HSeparator" parent="VSplitContainer/Panel2/HSplitContainer/ScrollContainer2/HSplitContainer2/Panel3/VBoxContainer/Panel4/VBoxContainer"]
+layout_mode = 2
+
+[node name="Panel2" type="Panel" parent="VSplitContainer/Panel2/HSplitContainer/ScrollContainer2/HSplitContainer2"]
+layout_mode = 2
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="VSplitContainer/Panel2/HSplitContainer/ScrollContainer2/HSplitContainer2/Panel2"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Panel2" type="Panel" parent="VSplitContainer/Panel2/HSplitContainer/ScrollContainer2/HSplitContainer2/Panel2/VBoxContainer2"]
+custom_minimum_size = Vector2(0, 100)
+layout_mode = 2
+
+[node name="Panel3" type="Panel" parent="VSplitContainer/Panel2/HSplitContainer/ScrollContainer2/HSplitContainer2/Panel2/VBoxContainer2"]
+custom_minimum_size = Vector2(0, 100)
+layout_mode = 2
+
+[node name="Panel4" type="Panel" parent="VSplitContainer/Panel2/HSplitContainer/ScrollContainer2/HSplitContainer2/Panel2/VBoxContainer2"]
+custom_minimum_size = Vector2(0, 100)
+layout_mode = 2
+
+[node name="Panel5" type="Panel" parent="VSplitContainer/Panel2/HSplitContainer/ScrollContainer2/HSplitContainer2/Panel2/VBoxContainer2"]
+custom_minimum_size = Vector2(0, 100)
+layout_mode = 2
