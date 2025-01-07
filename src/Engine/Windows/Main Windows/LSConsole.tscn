@@ -1,0 +1,92 @@
+[gd_scene load_steps=7 format=3 uid="uid://bf30cpn5oh6cd"]
+
+[ext_resource type="Texture2D" uid="uid://vigimya6aeln" path="res://Textures/Icons/Send.svg" id="1_5pvxl"]
+[ext_resource type="Script" path="res://Windows/Main Windows/ConsoleSend.gd" id="2_vpl7j"]
+[ext_resource type="Script" path="res://Windows/Main Windows/ConsoleLog.gd" id="3_a2six"]
+[ext_resource type="Texture2D" uid="uid://duu7qac3kfur1" path="res://Textures/Icons/detector_co_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg" id="3_r8ne3"]
+[ext_resource type="Script" path="res://Windows/Main Windows/LSConsoleClear.gd" id="4_u13co"]
+[ext_resource type="Script" path="res://Dependecies/Interpreter/Shell.gd" id="6_dvnk6"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Panel"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="Panel/VBoxContainer"]
+layout_mode = 2
+text = "Interpreter
+"
+
+[node name="HSeparator" type="HSeparator" parent="Panel/VBoxContainer"]
+layout_mode = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Panel/VBoxContainer"]
+layout_mode = 2
+
+[node name="LineEdit" type="LineEdit" parent="Panel/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+placeholder_text = "Type a Command (To interface with application type \"/a -command\")"
+
+[node name="Send" type="Button" parent="Panel/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+text = "Send "
+icon = ExtResource("1_5pvxl")
+icon_alignment = 2
+script = ExtResource("2_vpl7j")
+
+[node name="Clear" type="Button" parent="Panel/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+text = "Clear"
+icon = ExtResource("3_r8ne3")
+icon_alignment = 2
+script = ExtResource("4_u13co")
+
+[node name="HSeparator2" type="HSeparator" parent="Panel/VBoxContainer"]
+layout_mode = 2
+
+[node name="Panel" type="Panel" parent="Panel/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Panel/VBoxContainer/Panel"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_vertical = 3
+bbcode_enabled = true
+text = "Luminus Interpreter [b]Version 4.67.1[/b] [[u]Lazy[/u]]
+Luminus [b]Engine V4.3[/b] [[u]Dev Build[/u]] (LOCAL)
+[hr]"
+scroll_following = true
+context_menu_enabled = true
+script = ExtResource("3_a2six")
+
+[node name="Interpreter" type="Node" parent="."]
+script = ExtResource("6_dvnk6")
+
+[connection signal="text_submitted" from="Panel/VBoxContainer/HBoxContainer/LineEdit" to="Panel/VBoxContainer/HBoxContainer/Send" method="_on_line_edit_text_submitted"]
+[connection signal="pressed" from="Panel/VBoxContainer/HBoxContainer/Send" to="Panel/VBoxContainer/HBoxContainer/Send" method="_on_pressed"]
+[connection signal="pressed" from="Panel/VBoxContainer/HBoxContainer/Clear" to="Panel/VBoxContainer/HBoxContainer/Clear" method="_on_pressed"]

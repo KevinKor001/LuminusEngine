@@ -38,7 +38,7 @@ func _on_control_mouse_exited():
 
 func AddNode(NodeType):
 	if (NodeType == "Variable"):
-		$".".add_child(load("res://Windows/MainEditor/CodeEditor/Nodes/VariableNode.tscn").instantiate())
+		$".".add_child(load("res://Windows/MainEditor/CodeEditor/Nodes/DataTypes/VariableNode.tscn").instantiate())
 	elif (NodeType == "Script"):
 			$".".add_child(load("res://Windows/MainEditor/CodeEditor/Nodes/LsCodeNode.tscn").instantiate())
 

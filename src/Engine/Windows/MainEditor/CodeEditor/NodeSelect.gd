@@ -22,3 +22,10 @@ func _on_button_17_pressed():
 	self.visible = false
 	get_parent().AddNode("Script")
 	pass # Replace with function body.
+
+
+func _on_exit_pressed():
+	
+	self.free()
+	
+	pass # Replace with function body.

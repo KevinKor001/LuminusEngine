@@ -1,0 +1,77 @@
+[gd_scene load_steps=2 format=3 uid="uid://bmrvq1qmdgww7"]
+
+[ext_resource type="Script" path="res://Windows/MainEditor/CodeEditor/Nodes/DataTypes/VariableNode.gd" id="1_51xrd"]
+
+[node name="GraphNode" type="GraphNode"]
+custom_minimum_size = Vector2(0, 150)
+offset_right = 257.0
+offset_bottom = 86.0
+title = "Loop"
+slot/0/left_enabled = false
+slot/0/left_type = 1
+slot/0/left_color = Color(1, 0, 0, 1)
+slot/0/left_icon = null
+slot/0/right_enabled = true
+slot/0/right_type = 2
+slot/0/right_color = Color(1, 1, 1, 1)
+slot/0/right_icon = null
+slot/0/draw_stylebox = true
+slot/1/left_enabled = false
+slot/1/left_type = 0
+slot/1/left_color = Color(1, 1, 1, 1)
+slot/1/left_icon = null
+slot/1/right_enabled = false
+slot/1/right_type = 0
+slot/1/right_color = Color(1, 1, 1, 1)
+slot/1/right_icon = null
+slot/1/draw_stylebox = true
+slot/2/left_enabled = true
+slot/2/left_type = 0
+slot/2/left_color = Color(0, 1, 0, 1)
+slot/2/left_icon = null
+slot/2/right_enabled = false
+slot/2/right_type = 0
+slot/2/right_color = Color(1, 1, 1, 1)
+slot/2/right_icon = null
+slot/2/draw_stylebox = true
+slot/3/left_enabled = true
+slot/3/left_type = 0
+slot/3/left_color = Color(1, 0, 0, 1)
+slot/3/left_icon = null
+slot/3/right_enabled = false
+slot/3/right_type = 0
+slot/3/right_color = Color(1, 1, 1, 1)
+slot/3/right_icon = null
+slot/3/draw_stylebox = true
+script = ExtResource("1_51xrd")
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 2
+text = "Execute"
+
+[node name="HSeparator2" type="HSeparator" parent="."]
+layout_mode = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Label" type="Label" parent="HBoxContainer"]
+layout_mode = 2
+text = "Number Of Loops "
+
+[node name="SpinBox" type="SpinBox" parent="HBoxContainer"]
+layout_mode = 2
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="."]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Label" type="Label" parent="HBoxContainer2"]
+layout_mode = 2
+text = "Enable DeltaTime"
+
+[node name="CheckBox" type="CheckBox" parent="HBoxContainer2"]
+layout_mode = 2
+size_flags_horizontal = 3
+button_pressed = true

@@ -1,0 +1,23 @@
+[gd_scene load_steps=6 format=3 uid="uid://bckxgjyxauwc"]
+
+[ext_resource type="PackedScene" uid="uid://b3tcjfk6cwsom" path="res://&Stuff/Table3D.tscn" id="1_uj7ku"]
+[ext_resource type="PackedScene" uid="uid://drplstyhnen1r" path="res://&Stuff/Plate3D.tscn" id="2_525io"]
+[ext_resource type="PackedScene" uid="uid://1o2851tbdkou" path="res://&Stuff/Donut3D.tscn" id="3_mrjsh"]
+[ext_resource type="PackedScene" uid="uid://ba658eqcey4fh" path="res://&Stuff/Box3D.tscn" id="4_j4ney"]
+[ext_resource type="PackedScene" uid="uid://dhfvh6vwbc6hh" path="res://&Stuff/Book3D.tscn" id="5_b6jj8"]
+
+[node name="Node3D" type="Node3D"]
+
+[node name="Root Scene" parent="." instance=ExtResource("1_uj7ku")]
+
+[node name="Root Scene" parent="Root Scene" instance=ExtResource("2_525io")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.742363, 0)
+
+[node name="Root Scene" parent="Root Scene/Root Scene" instance=ExtResource("3_mrjsh")]
+transform = Transform3D(1.5, 0, 0, 0, 1.5, 0, 0, 0, 1.5, 0, 0, 0)
+
+[node name="Root Scene2" parent="Root Scene" instance=ExtResource("4_j4ney")]
+transform = Transform3D(0.355707, 0, 0.351387, 0, 0.5, 0, -0.351387, 0, 0.355707, -0.439444, 0.73821, -0.0895233)
+
+[node name="Root Scene3" parent="Root Scene" instance=ExtResource("5_b6jj8")]
+transform = Transform3D(0.522159, -0.436556, 0.732645, 0.648037, 0.761566, -0.00807038, -0.554434, 0.478995, 0.680563, -0.532192, 0.82199, 0.0617363)

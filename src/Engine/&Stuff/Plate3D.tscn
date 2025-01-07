@@ -1,0 +1,15 @@
+[gd_scene load_steps=5 format=3 uid="uid://drplstyhnen1r"]
+
+[ext_resource type="PackedScene" uid="uid://xj7ivui187ec" path="res://&Stuff/Wooden Plate_tltkecdhw/Wooden Plate_LOD6__tltkecdhw.fbx" id="1_tg3j8"]
+[ext_resource type="Texture2D" uid="uid://vb7artntmy65" path="res://&Stuff/Wooden Plate_tltkecdhw/Albedo_2K_LOD6_tltkecdhw.jpg" id="2_wwx2v"]
+[ext_resource type="Texture2D" uid="uid://cs2e2njq0qqjg" path="res://&Stuff/Wooden Plate_tltkecdhw/Normal_2K_LOD6_tltkecdhw.jpg" id="3_4ep7c"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_mf0q3"]
+albedo_texture = ExtResource("2_wwx2v")
+normal_enabled = true
+normal_texture = ExtResource("3_4ep7c")
+
+[node name="Root Scene" instance=ExtResource("1_tg3j8")]
+
+[node name="Aset_wood_misc_S_tltkecdhw_LOD6" parent="RootNode" index="0"]
+surface_material_override/0 = SubResource("StandardMaterial3D_mf0q3")

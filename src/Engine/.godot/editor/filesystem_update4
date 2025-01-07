@@ -1,5 +1,7 @@
-res://Windows/SubWindows/Render.tscn
-res://Windows/SubWindows/ObjectSelector.tscn
+res://Windows/Main Windows/NewProject.tscn
+res://MakeNewProject.gd
 res://Windows/MainEditor/main.tscn
-res://Windows/ClipMaker/clipMaker.tscn
-res://Windows/3D Modeler/3DModeler.tscn
+res://Windows/Main Windows/LSConsole.tscn
+res://Windows/CF Browsers/FileBrowserLarge.tscn
+res://Windows/CF Browsers/ContentBrowser.tscn
+res://Windows/Main Windows/NewProject.gd

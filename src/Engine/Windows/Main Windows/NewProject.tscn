@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=3 uid="uid://dmnh3gav2nr81"]
+[gd_scene load_steps=27 format=3 uid="uid://dmnh3gav2nr81"]
 
 [ext_resource type="Texture2D" uid="uid://cr30fvxvoa3xu" path="res://Textures/Icons/ControllerLarge1.svg" id="1_8j45e"]
 [ext_resource type="Texture2D" uid="uid://biam7l2yy4g04" path="res://Textures/Icons/2DLarge.svg" id="2_elyxq"]
@@ -11,9 +11,21 @@
 [ext_resource type="Texture2D" uid="uid://b6l8r10h6fhkx" path="res://Textures/Icons/MoveSelectionLarge.svg" id="9_vcypd"]
 [ext_resource type="Texture2D" uid="uid://522t76f6emvv" path="res://Textures/Icons/CubeLarge.svg" id="10_oqap6"]
 [ext_resource type="FontFile" uid="uid://ntm0tieyb5t6" path="res://Textures/Fonts/RubikMonoOne-Regular.ttf" id="11_e5vbi"]
+[ext_resource type="Script" path="res://Windows/Main Windows/NewProjectPreview.gd" id="11_mlxpx"]
 [ext_resource type="Texture2D" uid="uid://5rb1xegxrj4v" path="res://Textures/TemplateBanners/Humanoid.png" id="12_iyfj6"]
 [ext_resource type="Script" path="res://Windows/Main Windows/NewProject.gd" id="13_2cffg"]
 [ext_resource type="PackedScene" uid="uid://d4mla17b1u4cw" path="res://Textures/FileBrowser.tscn" id="13_2mws0"]
+[ext_resource type="Texture2D" uid="uid://cqxvpld85nifo" path="res://Textures/TemplateBanners/Phys.png" id="13_el4ga"]
+[ext_resource type="Texture2D" uid="uid://dlkn4lrj3hl7e" path="res://Textures/Icons/replay_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg" id="15_6wdhy"]
+[ext_resource type="Script" path="res://Windows/Main Windows/Scripts/FetchReleaseUpdates.gd" id="16_6e12e"]
+[ext_resource type="Texture2D" uid="uid://bj1e07rhkbduy" path="res://Textures/Icons/groups_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg" id="17_n37xd"]
+[ext_resource type="Texture2D" uid="uid://bo7g7n7tbg0ys" path="res://Textures/Icons/local_convenience_store_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg" id="18_2m6u0"]
+[ext_resource type="Texture2D" uid="uid://drr0fbwbvrxbk" path="res://Textures/Icons/source_environment_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg" id="19_ht775"]
+[ext_resource type="PackedScene" uid="uid://60ghfihujq8b" path="res://Windows/Main Windows/PluginsTab.tscn" id="20_4k054"]
+[ext_resource type="Texture2D" uid="uid://dyeyshim425wk" path="res://Textures/Icons/construction_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg" id="21_74ijw"]
+[ext_resource type="Texture2D" uid="uid://b0bu2tfakttge" path="res://Textures/Icons/bomb_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg" id="21_qf4bi"]
+[ext_resource type="Texture2D" uid="uid://c3udh4qpogfbn" path="res://Textures/Icons/function_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg" id="23_2wdaw"]
+[ext_resource type="PackedScene" uid="uid://cfy12mw8pcw48" path="res://Windows/Main Windows/PopUps/CreatingProject.tscn" id="26_hs0qm"]
 
 [node name="Control" type="Control"]
 layout_mode = 3
@@ -31,11 +43,9 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 tab_alignment = 1
-current_tab = 1
 drag_to_rearrange_enabled = true
 
 [node name="New Project" type="Panel" parent="TabContainer"]
-visible = false
 layout_mode = 2
 size_flags_vertical = 3
 
@@ -73,23 +83,27 @@ horizontal_alignment = 1
 [node name="HSeparator" type="HSeparator" parent="TabContainer/New Project/HBoxContainer/Panel/ScrollContainer/VBoxContainer"]
 layout_mode = 2
 
-[node name="Button" type="Button" parent="TabContainer/New Project/HBoxContainer/Panel/ScrollContainer/VBoxContainer"]
+[node name="BlankGame" type="Button" parent="TabContainer/New Project/HBoxContainer/Panel/ScrollContainer/VBoxContainer"]
 layout_mode = 2
-text = "Game Project"
+text = "Game Project (Blank)"
 icon = ExtResource("1_8j45e")
 
-[node name="Button4" type="Button" parent="TabContainer/New Project/HBoxContainer/Panel/ScrollContainer/VBoxContainer"]
+[node name="2Dgame" type="Button" parent="TabContainer/New Project/HBoxContainer/Panel/ScrollContainer/VBoxContainer"]
 layout_mode = 2
 text = "2D Based Project"
 icon = ExtResource("2_elyxq")
 
-[node name="Button5" type="Button" parent="TabContainer/New Project/HBoxContainer/Panel/ScrollContainer/VBoxContainer"]
+[node name="3D game" type="Button" parent="TabContainer/New Project/HBoxContainer/Panel/ScrollContainer/VBoxContainer"]
 layout_mode = 2
+tooltip_text = "Not avaliable in release, either wait for update or Compile from source
+"
 text = "3D Based Project"
 icon = ExtResource("3_7tanp")
 
-[node name="Button2" type="Button" parent="TabContainer/New Project/HBoxContainer/Panel/ScrollContainer/VBoxContainer"]
+[node name="PhysSim" type="Button" parent="TabContainer/New Project/HBoxContainer/Panel/ScrollContainer/VBoxContainer"]
 layout_mode = 2
+tooltip_text = "Not avaliable in release, either wait for update or Compile from source
+"
 text = "Physics Simulation"
 icon = ExtResource("4_m2sfk")
 
@@ -104,33 +118,51 @@ horizontal_alignment = 1
 [node name="HSeparator3" type="HSeparator" parent="TabContainer/New Project/HBoxContainer/Panel/ScrollContainer/VBoxContainer"]
 layout_mode = 2
 
-[node name="Button3" type="Button" parent="TabContainer/New Project/HBoxContainer/Panel/ScrollContainer/VBoxContainer"]
+[node name="HumanModeler" type="Button" parent="TabContainer/New Project/HBoxContainer/Panel/ScrollContainer/VBoxContainer"]
 layout_mode = 2
+tooltip_text = "Not avaliable in release, either wait for update or Compile from source
+"
+disabled = true
 text = "Humanoid Modeler"
 icon = ExtResource("5_0pcjx")
 
-[node name="Button6" type="Button" parent="TabContainer/New Project/HBoxContainer/Panel/ScrollContainer/VBoxContainer"]
+[node name="TrackMaker" type="Button" parent="TabContainer/New Project/HBoxContainer/Panel/ScrollContainer/VBoxContainer"]
 layout_mode = 2
+tooltip_text = "Not avaliable in release, either wait for update or Compile from source
+"
+disabled = true
 text = "Track Maker INDEV"
 icon = ExtResource("6_ch16x")
 
-[node name="Button7" type="Button" parent="TabContainer/New Project/HBoxContainer/Panel/ScrollContainer/VBoxContainer"]
+[node name="OsApp" type="Button" parent="TabContainer/New Project/HBoxContainer/Panel/ScrollContainer/VBoxContainer"]
 layout_mode = 2
+tooltip_text = "Not avaliable in release, either wait for update or Compile from source
+"
+disabled = true
 text = "OS Window Maker"
 icon = ExtResource("7_e1moc")
 
-[node name="Button8" type="Button" parent="TabContainer/New Project/HBoxContainer/Panel/ScrollContainer/VBoxContainer"]
+[node name="WebsiteMaker" type="Button" parent="TabContainer/New Project/HBoxContainer/Panel/ScrollContainer/VBoxContainer"]
 layout_mode = 2
+tooltip_text = "Not avaliable in release, either wait for update or Compile from source
+"
+disabled = true
 text = "Website Maker"
 icon = ExtResource("8_esqkt")
 
-[node name="Button9" type="Button" parent="TabContainer/New Project/HBoxContainer/Panel/ScrollContainer/VBoxContainer"]
+[node name="Modeler" type="Button" parent="TabContainer/New Project/HBoxContainer/Panel/ScrollContainer/VBoxContainer"]
 layout_mode = 2
+tooltip_text = "Not avaliable in release, either wait for update or Compile from source
+"
+disabled = true
 text = "Modeling Project"
 icon = ExtResource("9_vcypd")
 
 [node name="Button10" type="Button" parent="TabContainer/New Project/HBoxContainer/Panel/ScrollContainer/VBoxContainer"]
 layout_mode = 2
+tooltip_text = "Not avaliable in release, either wait for update or Compile from source
+"
+disabled = true
 text = "UNO Editor"
 icon = ExtResource("10_oqap6")
 
@@ -139,89 +171,115 @@ layout_mode = 2
 
 [node name="Button11" type="Button" parent="TabContainer/New Project/HBoxContainer/Panel/ScrollContainer/VBoxContainer"]
 layout_mode = 2
-text = "LEG Game Mod"
+text = "Game Mod"
 icon = ExtResource("10_oqap6")
 
-[node name="VBoxContainer" type="VBoxContainer" parent="TabContainer/New Project/HBoxContainer"]
+[node name="Preview" type="VBoxContainer" parent="TabContainer/New Project/HBoxContainer"]
 layout_mode = 2
 size_flags_horizontal = 3
+script = ExtResource("11_mlxpx")
 
-[node name="HSeparator2" type="HSeparator" parent="TabContainer/New Project/HBoxContainer/VBoxContainer"]
+[node name="HSeparator2" type="HSeparator" parent="TabContainer/New Project/HBoxContainer/Preview"]
 layout_mode = 2
 
-[node name="Label" type="Label" parent="TabContainer/New Project/HBoxContainer/VBoxContainer"]
+[node name="Label" type="Label" parent="TabContainer/New Project/HBoxContainer/Preview"]
 layout_mode = 2
 theme_override_fonts/font = ExtResource("11_e5vbi")
 theme_override_font_sizes/font_size = 36
 text = "Create a New Project"
 horizontal_alignment = 1
 
-[node name="HSeparator" type="HSeparator" parent="TabContainer/New Project/HBoxContainer/VBoxContainer"]
+[node name="HSeparator" type="HSeparator" parent="TabContainer/New Project/HBoxContainer/Preview"]
 layout_mode = 2
 
-[node name="Label2" type="Label" parent="TabContainer/New Project/HBoxContainer/VBoxContainer"]
+[node name="TemplateSlection" type="Label" parent="TabContainer/New Project/HBoxContainer/Preview"]
 layout_mode = 2
 size_flags_vertical = 10
 text = "Selected Template : (Default)"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="TextureRect" type="TextureRect" parent="TabContainer/New Project/HBoxContainer/VBoxContainer"]
+[node name="Banner" type="TextureRect" parent="TabContainer/New Project/HBoxContainer/Preview"]
 custom_minimum_size = Vector2(0, 200)
 layout_mode = 2
-texture = ExtResource("12_iyfj6")
+size_flags_vertical = 0
+texture = ExtResource("13_el4ga")
 
-[node name="HBoxContainer" type="HBoxContainer" parent="TabContainer/New Project/HBoxContainer/VBoxContainer"]
+[node name="Panel" type="Panel" parent="TabContainer/New Project/HBoxContainer/Preview"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="VBoxContainer" type="VBoxContainer" parent="TabContainer/New Project/HBoxContainer/Preview/Panel"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="TabContainer/New Project/HBoxContainer/Preview/Panel/VBoxContainer"]
 layout_mode = 2
 size_flags_vertical = 0
 
-[node name="Label2" type="Label" parent="TabContainer/New Project/HBoxContainer/VBoxContainer/HBoxContainer"]
+[node name="Label2" type="Label" parent="TabContainer/New Project/HBoxContainer/Preview/Panel/VBoxContainer/HBoxContainer"]
 layout_mode = 2
 size_flags_vertical = 10
 text = "Project Name : "
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="LineEdit" type="LineEdit" parent="TabContainer/New Project/HBoxContainer/VBoxContainer/HBoxContainer"]
+[node name="ProjectName" type="LineEdit" parent="TabContainer/New Project/HBoxContainer/Preview/Panel/VBoxContainer/HBoxContainer"]
 layout_mode = 2
 size_flags_horizontal = 3
 
-[node name="HBoxContainer3" type="HBoxContainer" parent="TabContainer/New Project/HBoxContainer/VBoxContainer"]
+[node name="HBoxContainer3" type="HBoxContainer" parent="TabContainer/New Project/HBoxContainer/Preview/Panel/VBoxContainer"]
 layout_mode = 2
 size_flags_vertical = 2
 
-[node name="Label2" type="Label" parent="TabContainer/New Project/HBoxContainer/VBoxContainer/HBoxContainer3"]
+[node name="Label2" type="Label" parent="TabContainer/New Project/HBoxContainer/Preview/Panel/VBoxContainer/HBoxContainer3"]
 layout_mode = 2
 size_flags_vertical = 10
 text = "Project Path : "
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="LineEdit" type="LineEdit" parent="TabContainer/New Project/HBoxContainer/VBoxContainer/HBoxContainer3"]
+[node name="LineEdit" type="LineEdit" parent="TabContainer/New Project/HBoxContainer/Preview/Panel/VBoxContainer/HBoxContainer3"]
 layout_mode = 2
 size_flags_horizontal = 3
 
-[node name="Button2" type="Button" parent="TabContainer/New Project/HBoxContainer/VBoxContainer/HBoxContainer3"]
+[node name="Browse" type="Button" parent="TabContainer/New Project/HBoxContainer/Preview/Panel/VBoxContainer/HBoxContainer3"]
 layout_mode = 2
 size_flags_horizontal = 3
 text = "Browse"
 
-[node name="HBoxContainer2" type="HBoxContainer" parent="TabContainer/New Project/HBoxContainer/VBoxContainer"]
+[node name="Warningtext" type="Label" parent="TabContainer/New Project/HBoxContainer/Preview/Panel/VBoxContainer"]
+visible = false
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 0, 0, 1)
+text = "Warning
+"
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="TabContainer/New Project/HBoxContainer/Preview"]
 layout_mode = 2
 size_flags_vertical = 10
 
-[node name="Button" type="Button" parent="TabContainer/New Project/HBoxContainer/VBoxContainer/HBoxContainer2"]
+[node name="Button" type="Button" parent="TabContainer/New Project/HBoxContainer/Preview/HBoxContainer2"]
 layout_mode = 2
 size_flags_horizontal = 3
 text = "Create New Project"
 script = ExtResource("13_2cffg")
 
-[node name="Button2" type="Button" parent="TabContainer/New Project/HBoxContainer/VBoxContainer/HBoxContainer2"]
+[node name="Button2" type="Button" parent="TabContainer/New Project/HBoxContainer/Preview/HBoxContainer2"]
 layout_mode = 2
 size_flags_horizontal = 3
 text = "Cancel"
 
+[node name="Panel2" type="Panel" parent="TabContainer/New Project/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
 [node name="Load Project" type="Panel" parent="TabContainer"]
+visible = false
 layout_mode = 2
 size_flags_vertical = 3
 
@@ -298,10 +356,258 @@ layout_mode = 2
 size_flags_horizontal = 3
 text = "Project Settings"
 
-[node name="Comming Soon" type="TabBar" parent="TabContainer"]
+[node name="Release Notes" type="Panel" parent="TabContainer"]
 visible = false
+custom_minimum_size = Vector2(1100, 600)
 layout_mode = 2
-tab_alignment = 1
-max_tab_width = 290
+size_flags_vertical = 3
 
-[connection signal="pressed" from="TabContainer/New Project/HBoxContainer/VBoxContainer/HBoxContainer2/Button" to="TabContainer/New Project/HBoxContainer/VBoxContainer/HBoxContainer2/Button" method="_on_pressed"]
+[node name="HBoxContainer" type="HBoxContainer" parent="TabContainer/Release Notes"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Panel" type="Panel" parent="TabContainer/Release Notes/HBoxContainer"]
+custom_minimum_size = Vector2(220, 0)
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="TabContainer/Release Notes/HBoxContainer/Panel"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="FetchButton" type="ProgressBar" parent="TabContainer/Release Notes/HBoxContainer/Panel/VBoxContainer"]
+custom_minimum_size = Vector2(0, 50)
+layout_mode = 2
+value = 17.65
+show_percentage = false
+
+[node name="Button" type="Button" parent="TabContainer/Release Notes/HBoxContainer/Panel/VBoxContainer/FetchButton"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "Fetch Updates"
+icon = ExtResource("15_6wdhy")
+script = ExtResource("16_6e12e")
+
+[node name="HSeparator" type="HSeparator" parent="TabContainer/Release Notes/HBoxContainer/Panel/VBoxContainer"]
+layout_mode = 2
+
+[node name="ScrollContainer" type="ScrollContainer" parent="TabContainer/Release Notes/HBoxContainer/Panel/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="VBoxContainer" type="VBoxContainer" parent="TabContainer/Release Notes/HBoxContainer/Panel/VBoxContainer/ScrollContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="VBoxContainer" type="VBoxContainer" parent="TabContainer/Release Notes/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="HSeparator2" type="HSeparator" parent="TabContainer/Release Notes/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="TabContainer/Release Notes/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("11_e5vbi")
+theme_override_font_sizes/font_size = 36
+text = "Release News"
+horizontal_alignment = 1
+
+[node name="HSeparator" type="HSeparator" parent="TabContainer/Release Notes/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="TabContainer/Release Notes/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 10
+
+[node name="WebsiteBtn" type="Button" parent="TabContainer/Release Notes/HBoxContainer/VBoxContainer/HBoxContainer2"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "More Details On kevinsblog/luminusEngine/releases"
+
+[node name="IntroduceBtn" type="Button" parent="TabContainer/Release Notes/HBoxContainer/VBoxContainer/HBoxContainer2"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Introduce Updates"
+
+[node name="Plugin DB" type="Panel" parent="TabContainer"]
+visible = false
+custom_minimum_size = Vector2(1100, 600)
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="HBoxContainer" type="HBoxContainer" parent="TabContainer/Plugin DB"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Panel" type="Panel" parent="TabContainer/Plugin DB/HBoxContainer"]
+custom_minimum_size = Vector2(220, 0)
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="TabContainer/Plugin DB/HBoxContainer/Panel"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="FetchButton" type="ProgressBar" parent="TabContainer/Plugin DB/HBoxContainer/Panel/VBoxContainer"]
+custom_minimum_size = Vector2(0, 50)
+layout_mode = 2
+value = 17.65
+show_percentage = false
+
+[node name="Button" type="Button" parent="TabContainer/Plugin DB/HBoxContainer/Panel/VBoxContainer/FetchButton"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "Fetch Updates"
+icon = ExtResource("15_6wdhy")
+script = ExtResource("16_6e12e")
+
+[node name="HSeparator" type="HSeparator" parent="TabContainer/Plugin DB/HBoxContainer/Panel/VBoxContainer"]
+layout_mode = 2
+
+[node name="LineEdit" type="LineEdit" parent="TabContainer/Plugin DB/HBoxContainer/Panel/VBoxContainer"]
+layout_mode = 2
+placeholder_text = "Search Plugins..."
+
+[node name="OptionButton" type="OptionButton" parent="TabContainer/Plugin DB/HBoxContainer/Panel/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+alignment = 1
+expand_icon = true
+item_count = 5
+selected = 0
+popup/item_0/text = "Select Filters"
+popup/item_0/id = 0
+popup/item_0/disabled = true
+popup/item_0/separator = true
+popup/item_1/text = "Officially maintained"
+popup/item_1/icon = ExtResource("17_n37xd")
+popup/item_1/id = 1
+popup/item_2/text = "From SiNK Inc"
+popup/item_2/icon = ExtResource("18_2m6u0")
+popup/item_2/id = 2
+popup/item_3/text = "Community Maintained"
+popup/item_3/icon = ExtResource("17_n37xd")
+popup/item_3/id = 3
+popup/item_4/text = "3rd Party (Serialized)"
+popup/item_4/icon = ExtResource("19_ht775")
+popup/item_4/id = 4
+
+[node name="HSeparator2" type="HSeparator" parent="TabContainer/Plugin DB/HBoxContainer/Panel/VBoxContainer"]
+layout_mode = 2
+
+[node name="ScrollContainer" type="ScrollContainer" parent="TabContainer/Plugin DB/HBoxContainer/Panel/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="VBoxContainer" type="VBoxContainer" parent="TabContainer/Plugin DB/HBoxContainer/Panel/VBoxContainer/ScrollContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="ReleaseNewsTab" parent="TabContainer/Plugin DB/HBoxContainer/Panel/VBoxContainer/ScrollContainer/VBoxContainer" instance=ExtResource("20_4k054")]
+layout_mode = 2
+size_flags_vertical = 0
+ReleaseName = "Nuke"
+ReleaseDesc = "The ported version of nuke as an LVS"
+ReleaseVers = "(INDEV) 0.1"
+ReleaseDate = "By the broke team :)"
+Icon = ExtResource("21_qf4bi")
+
+[node name="ReleaseNewsTab2" parent="TabContainer/Plugin DB/HBoxContainer/Panel/VBoxContainer/ScrollContainer/VBoxContainer" instance=ExtResource("20_4k054")]
+layout_mode = 2
+size_flags_vertical = 0
+ReleaseName = "Plugin Editor"
+ReleaseDesc = "Create Luminusn engine plugins"
+ReleaseVers = "(INDEV) 0.1"
+ReleaseDate = "8/16/24"
+Icon = ExtResource("21_74ijw")
+
+[node name="ReleaseNewsTab3" parent="TabContainer/Plugin DB/HBoxContainer/Panel/VBoxContainer/ScrollContainer/VBoxContainer" instance=ExtResource("20_4k054")]
+layout_mode = 2
+size_flags_vertical = 0
+ReleaseName = "VFX Editors"
+ReleaseDesc = "More VFX"
+ReleaseVers = "(INDEV) 0.1"
+ReleaseDate = "8/16/24"
+Icon = ExtResource("23_2wdaw")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="TabContainer/Plugin DB/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="HSeparator2" type="HSeparator" parent="TabContainer/Plugin DB/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="TabContainer/Plugin DB/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("11_e5vbi")
+theme_override_font_sizes/font_size = 36
+text = "Plug-in Datebase"
+horizontal_alignment = 1
+
+[node name="HSeparator" type="HSeparator" parent="TabContainer/Plugin DB/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="TabContainer/Plugin DB/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 10
+
+[node name="WebsiteBtn" type="Button" parent="TabContainer/Plugin DB/HBoxContainer/VBoxContainer/HBoxContainer2"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "More Details On kevinsblog/luminusEngine/releases"
+
+[node name="IntroduceBtn" type="Button" parent="TabContainer/Plugin DB/HBoxContainer/VBoxContainer/HBoxContainer2"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Download"
+
+[node name="NativeFileDialog" type="NativeFileDialog" parent="."]
+title = "Open a Directory"
+file_mode = 2
+access = 2
+root_subfolder = "/"
+
+[node name="Window" type="Window" parent="."]
+title = "Creating Project"
+initial_position = 1
+size = Vector2i(350, 100)
+visible = false
+unresizable = true
+
+[node name="CreatingProject" parent="Window" instance=ExtResource("26_hs0qm")]
+
+[connection signal="tab_clicked" from="TabContainer" to="TabContainer/Release Notes/HBoxContainer/Panel/VBoxContainer/FetchButton/Button" method="_on_tab_container_tab_clicked"]
+[connection signal="pressed" from="TabContainer/New Project/HBoxContainer/Panel/ScrollContainer/VBoxContainer/BlankGame" to="TabContainer/New Project/HBoxContainer/Preview" method="_on_blank_game_pressed"]
+[connection signal="pressed" from="TabContainer/New Project/HBoxContainer/Panel/ScrollContainer/VBoxContainer/2Dgame" to="TabContainer/New Project/HBoxContainer/Preview" method="_on_dgame_pressed"]
+[connection signal="pressed" from="TabContainer/New Project/HBoxContainer/Panel/ScrollContainer/VBoxContainer/3D game" to="TabContainer/New Project/HBoxContainer/Preview" method="_on_d_game_pressed"]
+[connection signal="pressed" from="TabContainer/New Project/HBoxContainer/Panel/ScrollContainer/VBoxContainer/PhysSim" to="TabContainer/New Project/HBoxContainer/Preview" method="_on_phys_sim_pressed"]
+[connection signal="pressed" from="TabContainer/New Project/HBoxContainer/Preview/Panel/VBoxContainer/HBoxContainer3/Browse" to="TabContainer/New Project/HBoxContainer/Preview" method="_on_browse_pressed"]
+[connection signal="pressed" from="TabContainer/New Project/HBoxContainer/Preview/HBoxContainer2/Button" to="TabContainer/New Project/HBoxContainer/Preview/HBoxContainer2/Button" method="_on_pressed"]
+[connection signal="pressed" from="TabContainer/Release Notes/HBoxContainer/Panel/VBoxContainer/FetchButton/Button" to="TabContainer/Release Notes/HBoxContainer/Panel/VBoxContainer/FetchButton/Button" method="_on_pressed"]
+[connection signal="pressed" from="TabContainer/Plugin DB/HBoxContainer/Panel/VBoxContainer/FetchButton/Button" to="TabContainer/Plugin DB/HBoxContainer/Panel/VBoxContainer/FetchButton/Button" method="_on_pressed"]
+[connection signal="dir_selected" from="NativeFileDialog" to="TabContainer/New Project/HBoxContainer/Preview" method="_on_native_file_dialog_dir_selected"]

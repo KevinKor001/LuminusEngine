@@ -4,7 +4,7 @@ extends Control
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	get_window().size = Vector2i(780, 580)
-	
+	get_window().unresizable = true
 	
 	$Panel/VBoxContainer/ProgressBar.value = 0
 	
@@ -25,7 +25,7 @@ func _ready():
 	get_window().size = Vector2i(1152, 648)
 	
 	get_tree().change_scene_to_file("res://Windows/Main Windows/NewProject.tscn")
-	
+
 	
 	pass # Replace with function body.
 

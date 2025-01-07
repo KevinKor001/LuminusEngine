@@ -1,0 +1,67 @@
+[gd_scene load_steps=3 format=3 uid="uid://60ghfihujq8b"]
+
+[ext_resource type="Script" path="res://PluginsTab.gd" id="1_mou47"]
+[ext_resource type="Texture2D" uid="uid://b0bu2tfakttge" path="res://Textures/Icons/bomb_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg" id="2_6dfgx"]
+
+[node name="ReleaseNewsTab" type="Panel"]
+custom_minimum_size = Vector2(100, 100)
+anchors_preset = 10
+anchor_right = 1.0
+grow_horizontal = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+tooltip_text = "Release Description .... a jrufherhyhreygyuhryhfyrehyfhyerhfyrheyfhyrhfyhryhfyhyhy"
+script = ExtResource("1_mou47")
+
+[node name="Button" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+tooltip_text = "Release Description .... a jrufherhyhreygyuhryhfyrehyfhyerhfyrheyfhyrhfyhryhfyhyhy"
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Button"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+metadata/_edit_use_anchors_ = true
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Button/VBoxContainer"]
+layout_mode = 2
+
+[node name="TextureRect" type="TextureRect" parent="Button/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 0
+texture = ExtResource("2_6dfgx")
+
+[node name="Label" type="Label" parent="Button/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+text = "Release Name"
+
+[node name="HSeparator" type="HSeparator" parent="Button/VBoxContainer"]
+layout_mode = 2
+
+[node name="Label2" type="Label" parent="Button/VBoxContainer"]
+layout_mode = 2
+tooltip_text = "Release Description .... a jrufherhyhreygyuhryhfyrehyfhyerhfyrheyfhyrhfyhryhfyhyhy"
+theme_override_font_sizes/font_size = 8
+text = "Release Description .... a jrufherhyhreygyuhryhfyrehyfhyerhfyrheyfhyrhfyhryhfyhyhy"
+text_overrun_behavior = 3
+
+[node name="Label3" type="Label" parent="Button/VBoxContainer"]
+layout_mode = 2
+text = "Release Ver"
+horizontal_alignment = 2
+
+[node name="Label4" type="Label" parent="Button/VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 8
+text = "Release Date"
+horizontal_alignment = 2
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

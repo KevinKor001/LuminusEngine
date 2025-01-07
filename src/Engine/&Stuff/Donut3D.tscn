@@ -1,0 +1,15 @@
+[gd_scene load_steps=5 format=3 uid="uid://1o2851tbdkou"]
+
+[ext_resource type="PackedScene" uid="uid://fyhobr626g23" path="res://&Stuff/Donut_vcbjfbu/Donut___vcbjfbu 1.fbx" id="1_mc8a3"]
+[ext_resource type="Texture2D" uid="uid://c8oc7eduvd56p" path="res://&Stuff/Donut_vcbjfbu/Albedo_2K_LOD4_vcbjfbu.jpg" id="2_io6ii"]
+[ext_resource type="Texture2D" uid="uid://txfb457vbpas" path="res://&Stuff/Donut_vcbjfbu/Normal_2K_LOD4_vcbjfbu.jpg" id="3_c1onx"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_c8ce6"]
+albedo_texture = ExtResource("2_io6ii")
+normal_enabled = true
+normal_texture = ExtResource("3_c1onx")
+
+[node name="Root Scene" instance=ExtResource("1_mc8a3")]
+
+[node name="Aset_food__S_vcbjfbu_00_lod2" parent="RootNode/world_root" index="0"]
+surface_material_override/0 = SubResource("StandardMaterial3D_c8ce6")

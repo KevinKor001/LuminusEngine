@@ -1,5 +1,5 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1722334341
+::res://::1735507195
 0ZMIFV (online-video-cutter.com).ogv::VideoStreamTheora::-1::1720141515::0::1::::<><>::
 0ZMIFV.ogv::VideoStreamTheora::-1::1720141515::0::1::::<><>::
 Button4.gd::GDScript::-1::1720141515::0::1::::<>Button<>::
@@ -7,29 +7,156 @@ export_presets.cfg::TextFile::-1::1720141515::0::1::::<><>::
 FileBrowser.gd::GDScript::-1::1720141515::0::1::::<>Control<>::
 icon.svg::CompressedTexture2D::6414182555046155705::1720141515::1720141766::1::::<><>::
 MainEditor.gd::GDScript::-1::1722046968::0::1::::<>Control<>::
+MakeNewProject.gd::GDScript::-1::1735491690::0::1::::MakeNewProject<>RefCounted<>::
 MenuFileButton.gd::GDScript::-1::1720141515::0::1::::<>MenuButton<>::
+PluginsTab.gd::GDScript::-1::1723789751::0::1::::<>Panel<>::
 ProgressBar.gd::GDScript::-1::1720141515::0::1::::<>ProgressBar<>::
 Tree.gd::GDScript::-1::1720141515::0::1::::<>Tree<>::
 Window.gd::GDScript::-1::1720141515::0::1::::<>Window<>::
-::res://&Stuff/::1720610531
+::res://&Stuff/::1725912923
+Book3D.tscn::PackedScene::7662195064387036305::1724450382::0::1::::<><>::uid://dxkkgetiwwst::::res://&Stuff/Blue And Red Book_vdkvdds/Blue And Red Book_LOD6__vdkvdds.fbx<>uid://ct65y43dobbf::::res://&Stuff/Blue And Red Book_vdkvdds/Albedo_2K_LOD6_vdkvdds.jpg<>uid://dvvfp2suu1drh::::res://&Stuff/Blue And Red Book_vdkvdds/AO_2K__vdkvdds.jpg<>uid://ba5cdmj7wmgom::::res://&Stuff/Blue And Red Book_vdkvdds/Normal_2K_LOD6_vdkvdds.jpg
+Box3D.tscn::PackedScene::2452297069958274021::1724450220::0::1::::<><>::uid://n47rql4c7c55::::res://&Stuff/Cardboard Box_vh1hehj/Cardboard Box_LOD4__vh1hehj.fbx<>uid://corai2oga4bns::::res://&Stuff/Cardboard Box_vh1hehj/Albedo_2K_LOD4_vh1hehj.jpg<>uid://jddl568djqij::::res://&Stuff/Cardboard Box_vh1hehj/Normal_2K_LOD4_vh1hehj.jpg
+Donut3D.tscn::PackedScene::1855511129879393440::1724450758::0::1::::<><>::uid://fyhobr626g23::::res://&Stuff/Donut_vcbjfbu/Donut___vcbjfbu 1.fbx<>uid://c8oc7eduvd56p::::res://&Stuff/Donut_vcbjfbu/Albedo_2K_LOD4_vcbjfbu.jpg<>uid://txfb457vbpas::::res://&Stuff/Donut_vcbjfbu/Normal_2K_LOD4_vcbjfbu.jpg
+Plate3D.tscn::PackedScene::8384139125802021769::1724450621::0::1::::<><>::uid://xj7ivui187ec::::res://&Stuff/Wooden Plate_tltkecdhw/Wooden Plate_LOD6__tltkecdhw.fbx<>uid://vb7artntmy65::::res://&Stuff/Wooden Plate_tltkecdhw/Albedo_2K_LOD6_tltkecdhw.jpg<>uid://cs2e2njq0qqjg::::res://&Stuff/Wooden Plate_tltkecdhw/Normal_2K_LOD6_tltkecdhw.jpg
+Table3D.tscn::PackedScene::4391069268492672224::1724450501::0::1::::<><>::uid://sufwsgbpdvnf::::res://&Stuff/Wooden Table_viejdi1/Wooden Table_LOD4__viejdi1.fbx<>uid://dehl7p70tj2yx::::res://&Stuff/Wooden Table_viejdi1/Albedo_2K_LOD4_viejdi1.jpg<>uid://cjv080wlqhi2v::::res://&Stuff/Wooden Table_viejdi1/Normal_2K_LOD4_viejdi1.jpg<>uid://cstkhr2vtn7cx::::res://&Stuff/Wooden Table_viejdi1/Roughness_2K__viejdi1.jpg
 y2mate.com - Foo Fighters The Pretender.mp3::AudioStreamMP3::2653281398805229809::1720311733::1720610531::1::::<><>::
-::res://OpenXR/::1721443986
-::res://OpenXR/Windows/::1704482205
+::res://&Stuff/Blue And Red Book_vdkvdds/::1724450319
+Albedo_2K_LOD4_vdkvdds.jpg::CompressedTexture2D::3780833970731851259::1724449658::1724449770::1::::<><>::
+Albedo_2K_LOD6_vdkvdds.jpg::CompressedTexture2D::181537971832591627::1724449658::1724450247::1::::<><>::
+Albedo_2K__vdkvdds.jpg::CompressedTexture2D::7978629077655476078::1724449658::1724449771::1::::<><>::
+AO_2K__vdkvdds.jpg::CompressedTexture2D::8676911519059038821::1724449658::1724450319::1::::<><>::
+Blue And Red Book_LOD0__vdkvdds.fbx::PackedScene::5321615676606722198::1724449658::1724449807::1::::<><>::
+Blue And Red Book_LOD2__vdkvdds.fbx::PackedScene::7028269496843661250::1724449658::1724449807::1::::<><>::
+Blue And Red Book_LOD4__vdkvdds.fbx::PackedScene::4865006849228994526::1724449658::1724449807::1::::<><>::
+Blue And Red Book_LOD6__vdkvdds.fbx::PackedScene::258672569318358623::1724449658::1724449807::1::::<><>::
+Displacement_2K__vdkvdds.exr::CompressedTexture2D::3522398428882165770::1724449658::1724449772::1::::<><>::
+Normal_2K_LOD0_vdkvdds.jpg::CompressedTexture2D::7565144669872257542::1724449658::1724449777::1::::<><>::
+Normal_2K_LOD2_vdkvdds.jpg::CompressedTexture2D::2335522074226334610::1724449658::1724449777::1::::<><>::
+Normal_2K_LOD4_vdkvdds.jpg::CompressedTexture2D::7327322914644072288::1724449658::1724449778::1::::<><>::
+Normal_2K_LOD6_vdkvdds.jpg::CompressedTexture2D::2448479453349395456::1724449658::1724450271::1::::<><>::
+preview.png::CompressedTexture2D::2097842015667097851::1724449658::1724449771::1::::<><>::
+Roughness_2K__vdkvdds.jpg::CompressedTexture2D::7609658546057922179::1724449658::1724449773::1::::<><>::
+::res://&Stuff/Cardboard Box_vh1hehj/::1724450122
+Albedo_2K_LOD4_vh1hehj.jpg::CompressedTexture2D::5790595326520380536::1724449658::1724450101::1::::<><>::
+Albedo_2K__vh1hehj.jpg::CompressedTexture2D::6918024478845287067::1724449658::1724449762::1::::<><>::
+Cardboard Box_LOD0__vh1hehj.fbx::PackedScene::5106896465168180318::1724449658::1724449806::1::::<><>::
+Cardboard Box_LOD2__vh1hehj.fbx::PackedScene::1706955209242732326::1724449658::1724449806::1::::<><>::
+Cardboard Box_LOD4__vh1hehj.fbx::PackedScene::974296083115076514::1724449658::1724449807::1::::<><>::
+Displacement_2K__vh1hehj.exr::CompressedTexture2D::7388477462147347680::1724449658::1724449762::1::::<><>::
+Normal_2K_LOD0_vh1hehj.jpg::CompressedTexture2D::7081037973199434249::1724449658::1724449767::1::::<><>::
+Normal_2K_LOD2_vh1hehj.jpg::CompressedTexture2D::5339475357737495322::1724449658::1724449767::1::::<><>::
+Normal_2K_LOD4_vh1hehj.jpg::CompressedTexture2D::638096145808915761::1724449658::1724450122::1::::<><>::
+preview.png::CompressedTexture2D::821271042520194839::1724449658::1724449764::1::::<><>::
+Roughness_2K__vh1hehj.jpg::CompressedTexture2D::3151069724278624611::1724449658::1724449767::1::::<><>::
+::res://&Stuff/Donut_vcbjfbu/::1724449991
+Albedo_2K_LOD4_vcbjfbu.jpg::CompressedTexture2D::7118153291053336269::1724449658::1724449894::1::::<><>::
+Albedo_2K__vcbjfbu.jpg::CompressedTexture2D::8875819811180941733::1724449658::1724449782::1::::<><>::
+Displacement_2K__vcbjfbu.exr::CompressedTexture2D::3790293709951232679::1724449658::1724449778::1::::<><>::
+Donut___vcbjfbu 1.fbx::PackedScene::400939384582461074::1724449658::1724449804::1::::<><>::
+Donut___vcbjfbu 2.fbx::PackedScene::9219911925353053603::1724449658::1724449804::1::::<><>::
+Donut___vcbjfbu.fbx::PackedScene::3351818102664247600::1724449658::1724449804::1::::<><>::
+Normal_2K_LOD0_vcbjfbu.jpg::CompressedTexture2D::4810639350289911615::1724449658::1724449930::1::::<><>::
+Normal_2K_LOD2_vcbjfbu.jpg::CompressedTexture2D::8615907744717894686::1724449658::1724449783::1::::<><>::
+Normal_2K_LOD4_vcbjfbu.jpg::CompressedTexture2D::1381375659227067302::1724449658::1724449991::1::::<><>::
+preview.png::CompressedTexture2D::2099032283063350446::1724449658::1724449783::1::::<><>::
+Roughness_2K__vcbjfbu.jpg::CompressedTexture2D::8372107070099341365::1724449658::1724449785::1::::<><>::
+::res://&Stuff/Travel Coffee Cup_ugfkdgsva/::1724449804
+Albedo_2K_LOD4_ugfkdgsva.jpg::CompressedTexture2D::1585491366124774993::1724449658::1724449774::1::::<><>::
+Albedo_2K_LOD6_ugfkdgsva.jpg::CompressedTexture2D::8802472768584006287::1724449658::1724449773::1::::<><>::
+Albedo_2K__ugfkdgsva.jpg::CompressedTexture2D::3699714672576435049::1724449658::1724449764::1::::<><>::
+AO_2K__ugfkdgsva.jpg::CompressedTexture2D::5452988835559424271::1724449658::1724449761::1::::<><>::
+Displacement_2K__ugfkdgsva.exr::CompressedTexture2D::2407568757691722860::1724449658::1724449759::1::::<><>::
+Normal_2K_LOD0_ugfkdgsva.jpg::CompressedTexture2D::3800880682627984158::1724449658::1724449760::1::::<><>::
+Normal_2K_LOD2_ugfkdgsva.jpg::CompressedTexture2D::4971185284690197377::1724449658::1724449758::1::::<><>::
+Normal_2K_LOD4_ugfkdgsva.jpg::CompressedTexture2D::6965632896489459221::1724449658::1724449758::1::::<><>::
+Normal_2K_LOD6_ugfkdgsva.jpg::CompressedTexture2D::2918047681799012592::1724449658::1724449798::1::::<><>::
+preview.png::CompressedTexture2D::3041775660568846512::1724449658::1724449794::1::::<><>::
+Roughness_2K__ugfkdgsva.jpg::CompressedTexture2D::246799581356706160::1724449658::1724449796::1::::<><>::
+Travel Coffee Cup_LOD0__ugfkdgsva.fbx::PackedScene::5335827623411784715::1724449658::1724449803::1::::<><>::
+Travel Coffee Cup_LOD2__ugfkdgsva.fbx::PackedScene::1677690893362760865::1724449658::1724449804::1::::<><>::
+Travel Coffee Cup_LOD4__ugfkdgsva.fbx::PackedScene::5491145962311168375::1724449658::1724449804::1::::<><>::
+Travel Coffee Cup_LOD6__ugfkdgsva.fbx::PackedScene::8088504460037003682::1724449658::1724449804::1::::<><>::
+::res://&Stuff/Wooden Plate_tltkecdhw/::1724450541
+Albedo_2K_LOD4_tltkecdhw.jpg::CompressedTexture2D::8642087118183399189::1724449658::1724449788::1::::<><>::
+Albedo_2K_LOD6_tltkecdhw.jpg::CompressedTexture2D::1477973960786054412::1724449658::1724450524::1::::<><>::
+Albedo_2K__tltkecdhw.jpg::CompressedTexture2D::6131569844242605872::1724449658::1724449790::1::::<><>::
+AO_2K__tltkecdhw.jpg::CompressedTexture2D::5738407976913338746::1724449658::1724449788::1::::<><>::
+Displacement_2K__tltkecdhw.exr::CompressedTexture2D::4941820671492261857::1724449658::1724449788::1::::<><>::
+Normal_2K_LOD0_tltkecdhw.jpg::CompressedTexture2D::7071712509495738966::1724449658::1724449794::1::::<><>::
+Normal_2K_LOD2_tltkecdhw.jpg::CompressedTexture2D::8166132297542410686::1724449658::1724449801::1::::<><>::
+Normal_2K_LOD4_tltkecdhw.jpg::CompressedTexture2D::9062682396319519163::1724449658::1724449801::1::::<><>::
+Normal_2K_LOD6_tltkecdhw.jpg::CompressedTexture2D::6092270534104711496::1724449658::1724450541::1::::<><>::
+preview.png::CompressedTexture2D::2604731501013271189::1724449658::1724449796::1::::<><>::
+Roughness_2K__tltkecdhw.jpg::CompressedTexture2D::2491518980709169797::1724449658::1724449796::1::::<><>::
+Wooden Plate_LOD0__tltkecdhw.fbx::PackedScene::2373027550100752696::1724449658::1724449805::1::::<><>::
+Wooden Plate_LOD2__tltkecdhw.fbx::PackedScene::2873291987230441970::1724449658::1724449805::1::::<><>::
+Wooden Plate_LOD4__tltkecdhw.fbx::PackedScene::6366376608975054295::1724449658::1724449805::1::::<><>::
+Wooden Plate_LOD6__tltkecdhw.fbx::PackedScene::1634881167867052466::1724449658::1724449805::1::::<><>::
+::res://&Stuff/Wooden Table_viejdi1/::1724450458
+Albedo_2K_LOD4_viejdi1.jpg::CompressedTexture2D::7455193940680894155::1724449658::1724450410::1::::<><>::
+Albedo_2K__viejdi1.jpg::CompressedTexture2D::8315243852717481904::1724449658::1724449794::1::::<><>::
+Displacement_2K__viejdi1.exr::CompressedTexture2D::9209199793961472466::1724449658::1724449791::1::::<><>::
+Normal_2K_LOD0_viejdi1.jpg::CompressedTexture2D::1389076991935853825::1724449658::1724449794::1::::<><>::
+Normal_2K_LOD2_viejdi1.jpg::CompressedTexture2D::3548663004574016256::1724449658::1724449794::1::::<><>::
+Normal_2K_LOD4_viejdi1.jpg::CompressedTexture2D::5449471096572679139::1724449658::1724450444::1::::<><>::
+preview.png::CompressedTexture2D::2359715381809043566::1724449658::1724449754::1::::<><>::
+Roughness_2K__viejdi1.jpg::CompressedTexture2D::6076084336269673683::1724449658::1724450458::1::::<><>::
+Wooden Table_LOD0__viejdi1.fbx::PackedScene::5777691708849632863::1724449658::1724449806::1::::<><>::
+Wooden Table_LOD2__viejdi1.fbx::PackedScene::5066790291506683447::1724449658::1724449806::1::::<><>::
+Wooden Table_LOD4__viejdi1.fbx::PackedScene::1305030567750270651::1724449658::1724449806::1::::<><>::
+::res://addons/::1729083719
+::res://addons/native_dialogs/::1729083720
+LICENSE.md::TextFile::-1::1729083720::0::1::::<><>::
+native_dialogs.gdextension::GDExtension::-1::1729083719::0::1::::<><>::
+plugin.cfg::TextFile::-1::1729083720::0::1::::<><>::
+plugin.gd::GDScript::-1::1729083720::0::1::::<>EditorPlugin<>::
+::res://addons/native_dialogs/bin/::1729083720
+::res://addons/native_dialogs/bin/libnativedialogs.macos.template_debug.framework/::1729083720
+::res://addons/native_dialogs/bin/libnativedialogs.macos.template_release.framework/::1729083720
+::res://addons/native_dialogs/icons/::1729083720
+native_accept_dialog.svg::CompressedTexture2D::4118541303092869972::1729083720::1729083720::1::::<><>::
+native_confirmation_dialog.svg::CompressedTexture2D::3515145095636932164::1729083719::1729083720::1::::<><>::
+native_file_dialog.svg::CompressedTexture2D::6371715522213223447::1729083719::1729083720::1::::<><>::
+native_notification.svg::CompressedTexture2D::2754908540507625128::1729083719::1729083720::1::::<><>::
+::res://Dependecies/::1731588506
+::res://Dependecies/Compiler/::1722547868
+::res://Dependecies/General/::1722547944
+::res://Dependecies/Interpreter/::1731589464
+Lscript.gd::GDScript::-1::1731589165::0::1::::<>Node<>::
+Shell.gd::GDScript::-1::1731589060::0::1::::<>Node<>::
+Token.gd::GDScript::-1::1731589464::0::1::::Token<>RefCounted<>::
+::res://Dependecies/MainLibs/::1722547846
+::res://Dependecies/Plugins/::1722547860
+::res://Dependecies/source/::1722548000
+::res://Dependecies/source/Monitors/::1722547992
+::res://Dependecies/source/Scene/::1722548014
+::res://Dependecies/source/Scene/DefaultObjects/::1722548354
+::res://Dependecies/source/Scene/DefaultObjects/2D/::1722548590
+Box2D.tscn::PackedScene::7074158301822194716::1722548590::0::1::::<><>::
+CollisonShape2D.tscn::PackedScene::8378949113697467388::1722548373::0::1::::<><>::
+::res://DEVTEMP/::1724451085
+3D_Demo.tscn::PackedScene::74966172498179566::1724451085::0::1::::<><>::uid://b3tcjfk6cwsom::::res://&Stuff/Table3D.tscn<>uid://drplstyhnen1r::::res://&Stuff/Plate3D.tscn<>uid://1o2851tbdkou::::res://&Stuff/Donut3D.tscn<>uid://ba658eqcey4fh::::res://&Stuff/Box3D.tscn<>uid://dhfvh6vwbc6hh::::res://&Stuff/Book3D.tscn
+NewFetchTest.json::JSON::-1::1722551095::0::1::::<><>::
+::res://OpenXR/::1722116365
+::res://OpenXR/Windows/::1725912997
 Setup.tscn::PackedScene::1483627038943049292::1704482205::0::1::::<><>::uid://ntm0tieyb5t6::::res://Textures/Fonts/RubikMonoOne-Regular.ttf<>uid://bidunjdgb0eyq::::res://Textures/Icons/head_mounted_device_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg<>uid://bukqlw5x22qw3::::res://Textures/Icons/view_in_ar_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg<>uid://wb3q21llspxc::::res://Textures/Icons/devices_other_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg
-::res://Textures/::1720610489
+::res://Textures/::1725912924
 FileBrowser.tscn::PackedScene::9220180351673235630::1720141515::0::1::::<><>::res://FileBrowser.gd<>uid://pqbgpudafvy0::::res://Textures/Icons/Reload.svg
 Logo.png::CompressedTexture2D::1640255944048600989::1720141515::1720141767::1::::<><>::
 LogoLone.png::CompressedTexture2D::1278259413631805340::1720141515::1720141767::1::::<><>::
 outline_data_object_black_24dp.png::CompressedTexture2D::4963288202586317052::1720141515::1720141766::1::::<><>::
-::res://Textures/Fonts/::1720141766
+::res://Textures/Fonts/::1725912995
 RubikMonoOne-Regular.ttf::FontFile::952452403898353189::1720141515::1720141766::1::::<><>::
-::res://Textures/Icons/::1721444047
+::res://Textures/Icons/::1730664800
 2DLarge.svg::CompressedTexture2D::2948717802705755055::1720141515::1720141766::1::::<><>::
 3DLarge.svg::CompressedTexture2D::952952198230870136::1720141515::1720141766::1::::<><>::
 AccessibilityLarge.svg::CompressedTexture2D::3160813432647454644::1720141515::1720141766::1::::<><>::
 account_circle_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg::CompressedTexture2D::325508272875664789::1720142180::1720142180::1::::<><>::
 add_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg::CompressedTexture2D::1260848681567593645::1720142996::1720142996::1::::<><>::
 arrow_forward_ios_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg::CompressedTexture2D::3708915664080514210::1720921887::1720921887::1::::<><>::
+bomb_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg::CompressedTexture2D::4144469714370539028::1723244556::1723244563::1::::<><>::
+Close.svg::CompressedTexture2D::5270196942408730503::1730664790::1730664800::1::::<><>::
+construction_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg::CompressedTexture2D::8853541542131964566::1723789829::1723789830::1::::<><>::
 ControllerLarge1.svg::CompressedTexture2D::6025382279628852818::1720141515::1720141766::1::::<><>::
 conversion_path_24dp_FILL0_wght400_GRAD0_opsz24.svg::CompressedTexture2D::4563087011192007991::1720141515::1720141766::1::::<><>::
 CricketLarge.svg::CompressedTexture2D::547952759632197119::1720141515::1720141766::1::::<><>::
@@ -39,14 +166,18 @@ dark_mode_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg::CompressedTexture2D::23614
 deployed_code_alert_24dp_FILL0_wght400_GRAD0_opsz24.svg::CompressedTexture2D::8165815234797698878::1720141515::1720141766::1::::<><>::
 detector_co_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg::CompressedTexture2D::8606297999767535860::1720145120::1720145120::1::::<><>::
 devices_other_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg::CompressedTexture2D::1547949045101295212::1721443284::1721444027::1::::<><>::
+explore_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg::CompressedTexture2D::7596503503948024398::1723243799::1723243799::1::::<><>::
 Folder.svg::CompressedTexture2D::3233303029909273484::1720141515::1720141766::1::::<><>::
 FolderLarge.svg::CompressedTexture2D::5057828194359015702::1720141515::1720141766::1::::<><>::
+function_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg::CompressedTexture2D::6779612744462444595::1723789984::1723789984::1::::<><>::
+globe_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg::CompressedTexture2D::2269272278732347102::1722334941::1722334941::1::::<><>::
 Gpus.svg::CompressedTexture2D::6753344572314692304::1720141515::1720141766::1::::<><>::
 groups_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg::CompressedTexture2D::3072083318199969428::1720142080::1720142080::1::::<><>::
 handheld_controller_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg::CompressedTexture2D::8442639360831184801::1721443254::1721443254::1::::<><>::
 head_mounted_device_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg::CompressedTexture2D::2955362598855133864::1721443125::1721444037::1::::<><>::
 height_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg::CompressedTexture2D::1172405474829122951::1720143174::1720143174::1::::<><>::
 HtmlLarge.svg::CompressedTexture2D::5096593788624673416::1720141515::1720141766::1::::<><>::
+local_convenience_store_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg::CompressedTexture2D::3435546763219190854::1723243807::1723243807::1::::<><>::
 MoveSelectionLarge.svg::CompressedTexture2D::4587018415611332543::1720141515::1720141766::1::::<><>::
 open_with_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg::CompressedTexture2D::2865329653726471147::1720660145::1720660145::1::::<><>::
 OptionsLarge.svg::CompressedTexture2D::8262692688296416417::1720141515::1720141766::1::::<><>::
@@ -60,6 +191,7 @@ ResetPosition.svg::CompressedTexture2D::1772881948591346572::1720141515::1720141
 resize_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg::CompressedTexture2D::6912585337667620540::1720144993::1720144993::1::::<><>::
 Send.svg::CompressedTexture2D::1490859994135935363::1720141515::1720141766::1::::<><>::
 Server.svg::CompressedTexture2D::7006841208479753910::1720141515::1720141766::1::::<><>::
+source_environment_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg::CompressedTexture2D::8389093755116796544::1723243792::1723243793::1::::<><>::
 sports_cricket_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg::CompressedTexture2D::23016021588519576::1720144490::1720144490::1::::<><>::
 sprinkler_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg::CompressedTexture2D::3979039901204382590::1720922463::1720922463::1::::<><>::
 stop_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg::CompressedTexture2D::6471603357042134860::1720142460::1720142461::1::::<><>::
@@ -69,7 +201,16 @@ video_camera_back_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg::CompressedTexture2
 view_in_ar_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg::CompressedTexture2D::3811833652551575728::1721443122::1721444047::1::::<><>::
 water_drop_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg::CompressedTexture2D::609267117984800011::1720143234::1720143234::1::::<><>::
 WindowLarge.svg::CompressedTexture2D::5213516854806456546::1720141515::1720141766::1::::<><>::
-::res://Textures/TemplateBanners/::1720141766
+::res://Textures/Splash/::1728881917
+Default.png::CompressedTexture2D::800400201612669885::1722334941::1722334941::1::::<><>::
+idk1.png::CompressedTexture2D::1252974749430152513::1728168184::1728881916::1::::<><>::
+idk1.webp::::-1::0::0::0::::<><>::
+idk2.jpg::CompressedTexture2D::8681910094279613925::1728168197::1728881917::1::::<><>::
+idk2.webp::::-1::0::0::0::::<><>::
+idk3.png::CompressedTexture2D::5394334347681315471::1728168091::1728881917::1::::<><>::
+kevin.png::CompressedTexture2D::7770074893233914000::1724802042::1727468426::1::::<><>::
+my-image.png::CompressedTexture2D::650543564283839701::1727123139::1727468427::1::::<><>::
+::res://Textures/TemplateBanners/::1725912994
 Default.png::CompressedTexture2D::6534610155736858806::1720141515::1720141766::1::::<><>::
 Game2D.png::CompressedTexture2D::4556547557951623949::1720141515::1720141766::1::::<><>::
 Game3D.png::CompressedTexture2D::2337119398370808580::1720141515::1720141766::1::::<><>::
@@ -77,72 +218,119 @@ GameDefault.png::CompressedTexture2D::3541786586460727350::1720141515::172014176
 Humanoid.png::CompressedTexture2D::2140868093114580299::1720141515::1720141766::1::::<><>::
 Phys.png::CompressedTexture2D::5944645981626008576::1720141515::1720141766::1::::<><>::
 Track.png::CompressedTexture2D::1211997711259593933::1720141515::1720141766::1::::<><>::
-::res://Windows/::1722046960
-boot.tscn::PackedScene::5148135730472627725::1720141515::0::1::::<><>::res://ProgressBar.gd<>uid://xms1m1id5xqb::::res://Textures/Logo.png
-StartUp.gd::GDScript::-1::1720141515::0::1::::<>Control<>::
-StartUp.tscn::PackedScene::4982410028884335346::1720612607::0::1::::<><>::res://Windows/StartUp.gd<>uid://ntm0tieyb5t6::::res://Textures/Fonts/RubikMonoOne-Regular.ttf<>res://0ZMIFV (online-video-cutter.com).ogv
-::res://Windows/3D Modeler/::1720141515
-3DModeler.tscn::PackedScene::7176645233134334027::1720141515::0::1::::<><>::res://MenuFileButton.gd<>res://Button4.gd
-::res://Windows/3DRendererWrld/::1704482205
+::res://Windows/::1731587895
+boot.tscn::PackedScene::5148135730472627725::1731587895::0::1::::<><>::res://ProgressBar.gd<>uid://xms1m1id5xqb::::res://Textures/Logo.png
+Preferences.tscn::PackedScene::2540167804121205606::1731587895::0::1::::<><>::
+StartUp.gd::GDScript::-1::1724330117::0::1::::<>Control<>::
+StartUp.tscn::PackedScene::4982410028884335346::1731587895::0::1::::<><>::res://Windows/StartUp.gd<>uid://lnyqenb57s6x::::res://Textures/Splash/Default.png<>uid://ntm0tieyb5t6::::res://Textures/Fonts/RubikMonoOne-Regular.ttf<>uid://7lit220nw3ly::::res://Textures/Icons/globe_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg
+::res://Windows/3D Modeler/::1725912994
+3DModeler.tscn::PackedScene::7176645233134334027::1722334874::0::1::::<><>::res://MenuFileButton.gd<>res://Button4.gd
+::res://Windows/3DRendererWrld/::1725912994
 ingo-doerrie-MCq600eIijI-unsplash.jpg::CompressedTexture2D::5816722719699226601::1720658623::1720658623::1::::<><>::
 istockphoto-468711388-612x612.jpg::CompressedTexture2D::5780115302864746193::1720658623::1720658623::1::::<><>::
 node_3d.tscn::PackedScene::4344232467232863977::1704482205::0::1::::<><>::
-::res://Windows/CF Browsers/::1720610489
-ContentBrowser.tscn::PackedScene::2565827666518295429::1720141515::0::1::::<><>::uid://pqbgpudafvy0::::res://Textures/Icons/Reload.svg<>uid://bmcia77uo40vw::::res://Textures/Icons/Folder.svg<>uid://cecbxri56c04y::::res://Textures/Icons/FolderLarge.svg<>uid://522t76f6emvv::::res://Textures/Icons/CubeLarge.svg<>uid://diedbb5qqa3le::::res://Textures/Icons/Cube.svg
-FileBrowserLarge.tscn::PackedScene::7457419556364122605::1720610489::0::1::::<><>::uid://d4mla17b1u4cw::::res://Textures/FileBrowser.tscn<>uid://db46pnqboyipx::::res://Windows/Main Windows/Console.tscn<>uid://bcs52owj2ayvl::::res://Windows/CF Browsers/ContentBrowser.tscn
-::res://Windows/ClipMaker/::1722049129
-clipMaker.tscn::PackedScene::2302486026517004884::1722049129::0::1::::<><>::
-::res://Windows/Main Windows/::1720612791
-Console.tscn::PackedScene::7291227570854922613::1720612607::0::1::::<><>::uid://vigimya6aeln::::res://Textures/Icons/Send.svg<>res://Windows/Main Windows/ConsoleSend.gd<>res://Windows/Main Windows/ConsoleLog.gd
-ConsoleLog.gd::GDScript::-1::1720612188::0::1::::<>RichTextLabel<>::
-ConsoleSend.gd::GDScript::-1::1720612015::0::1::::<>Button<>::
-NewProject.gd::GDScript::-1::1720612533::0::1::::<>Button<>::
-NewProject.tscn::PackedScene::8028840422848028792::1720612791::0::1::::<><>::uid://cr30fvxvoa3xu::::res://Textures/Icons/ControllerLarge1.svg<>uid://biam7l2yy4g04::::res://Textures/Icons/2DLarge.svg<>uid://ntu8o5tptub5::::res://Textures/Icons/3DLarge.svg<>uid://h2ox4nisq5x0::::res://Textures/Icons/CricketLarge.svg<>uid://blbeeute1mgki::::res://Textures/Icons/AccessibilityLarge.svg<>uid://bmboemqh1e32b::::res://Textures/Icons/PianoLarge.svg<>uid://cgjp4jguck2ag::::res://Textures/Icons/WindowLarge.svg<>uid://ceu3fjje7g0qu::::res://Textures/Icons/HtmlLarge.svg<>uid://b6l8r10h6fhkx::::res://Textures/Icons/MoveSelectionLarge.svg<>uid://522t76f6emvv::::res://Textures/Icons/CubeLarge.svg<>uid://ntm0tieyb5t6::::res://Textures/Fonts/RubikMonoOne-Regular.ttf<>uid://5rb1xegxrj4v::::res://Textures/TemplateBanners/Humanoid.png<>res://Windows/Main Windows/NewProject.gd<>uid://d4mla17b1u4cw::::res://Textures/FileBrowser.tscn
+::res://Windows/CF Browsers/::1735491057
+ContentBrowser.gd::GDScript::-1::1735438516::0::1::::<>Control<>::
+ContentBrowser.tscn::PackedScene::2565827666518295429::1735491057::0::1::::<><>::res://Windows/CF Browsers/ContentBrowser.gd<>uid://pqbgpudafvy0::::res://Textures/Icons/Reload.svg<>uid://bmcia77uo40vw::::res://Textures/Icons/Folder.svg<>uid://diedbb5qqa3le::::res://Textures/Icons/Cube.svg<>uid://12mwugt5yc7r::::res://Windows/CF Browsers/ContentBrowserItem.tscn
+ContentBrowserItem.gd::GDScript::-1::1735436453::0::1::::<>Button<>::
+ContentBrowserItem.tscn::PackedScene::1881417085967700441::1735436554::0::1::::<><>::uid://522t76f6emvv::::res://Textures/Icons/CubeLarge.svg<>res://Windows/CF Browsers/ContentBrowserItem.gd<>uid://xms1m1id5xqb::::res://Textures/Logo.png
+FileBrowserLarge.tscn::PackedScene::7457419556364122605::1735491057::0::1::::<><>::uid://d4mla17b1u4cw::::res://Textures/FileBrowser.tscn<>uid://db46pnqboyipx::::res://Windows/Main Windows/Console.tscn<>uid://bcs52owj2ayvl::::res://Windows/CF Browsers/ContentBrowser.tscn<>uid://bf30cpn5oh6cd::::res://Windows/Main Windows/LSConsole.tscn
+::res://Windows/ClipMaker/::1722334874
+clipMaker.tscn::PackedScene::2302486026517004884::1722334874::0::1::::<><>::
+::res://Windows/Main Windows/::1735491792
+Console.tscn::PackedScene::7291227570854922613::1731587895::0::1::::<><>::uid://vigimya6aeln::::res://Textures/Icons/Send.svg<>res://Windows/Main Windows/ConsoleSend.gd<>res://Windows/Main Windows/ConsoleLog.gd
+ConsoleLog.gd::GDScript::-1::1735435538::0::1::::<>RichTextLabel<>::
+ConsoleSend.gd::GDScript::-1::1731589060::0::1::::<>Button<>::
+LSConsole.tscn::PackedScene::2796689784718700123::1735491057::0::1::::<><>::uid://vigimya6aeln::::res://Textures/Icons/Send.svg<>res://Windows/Main Windows/ConsoleSend.gd<>res://Windows/Main Windows/ConsoleLog.gd<>uid://duu7qac3kfur1::::res://Textures/Icons/detector_co_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg<>res://Windows/Main Windows/LSConsoleClear.gd<>res://Dependecies/Interpreter/Shell.gd
+LSConsoleClear.gd::GDScript::-1::1731588742::0::1::::<>Button<>::
+NewProject.gd::GDScript::-1::1735490227::0::1::::<>Button<>::
+NewProject.tscn::PackedScene::8028840422848028792::1735491792::0::1::::<><>::uid://cr30fvxvoa3xu::::res://Textures/Icons/ControllerLarge1.svg<>uid://biam7l2yy4g04::::res://Textures/Icons/2DLarge.svg<>uid://ntu8o5tptub5::::res://Textures/Icons/3DLarge.svg<>uid://h2ox4nisq5x0::::res://Textures/Icons/CricketLarge.svg<>uid://blbeeute1mgki::::res://Textures/Icons/AccessibilityLarge.svg<>uid://bmboemqh1e32b::::res://Textures/Icons/PianoLarge.svg<>uid://cgjp4jguck2ag::::res://Textures/Icons/WindowLarge.svg<>uid://ceu3fjje7g0qu::::res://Textures/Icons/HtmlLarge.svg<>uid://b6l8r10h6fhkx::::res://Textures/Icons/MoveSelectionLarge.svg<>uid://522t76f6emvv::::res://Textures/Icons/CubeLarge.svg<>uid://ntm0tieyb5t6::::res://Textures/Fonts/RubikMonoOne-Regular.ttf<>res://Windows/Main Windows/NewProjectPreview.gd<>uid://5rb1xegxrj4v::::res://Textures/TemplateBanners/Humanoid.png<>res://Windows/Main Windows/NewProject.gd<>uid://d4mla17b1u4cw::::res://Textures/FileBrowser.tscn<>uid://cqxvpld85nifo::::res://Textures/TemplateBanners/Phys.png<>uid://dlkn4lrj3hl7e::::res://Textures/Icons/replay_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg<>res://Windows/Main Windows/Scripts/FetchReleaseUpdates.gd<>uid://bj1e07rhkbduy::::res://Textures/Icons/groups_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg<>uid://bo7g7n7tbg0ys::::res://Textures/Icons/local_convenience_store_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg<>uid://drr0fbwbvrxbk::::res://Textures/Icons/source_environment_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg<>uid://60ghfihujq8b::::res://Windows/Main Windows/PluginsTab.tscn<>uid://dyeyshim425wk::::res://Textures/Icons/construction_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg<>uid://b0bu2tfakttge::::res://Textures/Icons/bomb_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg<>uid://c3udh4qpogfbn::::res://Textures/Icons/function_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg<>uid://cfy12mw8pcw48::::res://Windows/Main Windows/PopUps/CreatingProject.tscn
+NewProjectPreview.gd::GDScript::-1::1729774253::0::1::::<>VBoxContainer<>::
+PluginsTab.tscn::PackedScene::2227840674464765451::1724330120::0::1::::<><>::res://PluginsTab.gd<>uid://b0bu2tfakttge::::res://Textures/Icons/bomb_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg
+ReleaseNewsTab.tscn::PackedScene::6648999150198104303::1724330120::0::1::::<><>::res://Windows/Main Windows/Scripts/ReleaseNewsTab.gd
 WarningPopUp.tscn::PackedScene::6999335590284683695::1720141515::0::1::::<><>::res://Window.gd
-::res://Windows/MainEditor/::1722048835
+::res://Windows/Main Windows/PopUps/::1731189172
+CreatingProject.gd::GDScript::-1::1729105575::0::1::::<>Control<>::
+CreatingProject.tscn::PackedScene::5174958175706576883::1731189172::0::1::::<><>::res://Windows/Main Windows/PopUps/CreatingProject.gd
+::res://Windows/Main Windows/Scripts/::1722551970
+FetchReleaseUpdates.gd::GDScript::-1::1722551754::0::1::::<>Button<>::
+ReleaseNewsTab.gd::GDScript::-1::1722551970::0::1::::<>Panel<>::
+::res://Windows/MainEditor/::1735491057
 AnimationPlayer.gd::GDScript::-1::1720658623::0::1::::<>AnimationPlayer<>::
 CodeWindow.tscn::PackedScene::8398546587932350538::1721789293::0::1::::<><>::uid://r7081tnsaein::::res://Textures/Icons/add_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg<>uid://ntm0tieyb5t6::::res://Textures/Fonts/RubikMonoOne-Regular.ttf<>res://Windows/MainEditor/GraphEdit.gd<>uid://k6hnls2v3ne2::::res://Windows/MainEditor/CodeEditor/NodeSelect.tscn<>uid://b6anm2d8rdhl4::::res://Textures/Icons/conversion_path_24dp_FILL0_wght400_GRAD0_opsz24.svg<>uid://dolt1wfqq3r71::::res://Textures/Icons/deployed_code_alert_24dp_FILL0_wght400_GRAD0_opsz24.svg<>uid://det2eo1a1sacf::::res://Windows/MainEditor/CodeEditor/Nodes/Flow/BeginNode.tscn
-GraphEdit.gd::GDScript::-1::1720608545::0::1::::<>GraphEdit<>::
-main.tscn::PackedScene::6745511915010680038::1722048835::0::1::::<><>::res://MainEditor.gd<>uid://r7081tnsaein::::res://Textures/Icons/add_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg<>uid://deiou02c4hjjp::::res://Windows/CF Browsers/FileBrowserLarge.tscn<>uid://pqbgpudafvy0::::res://Textures/Icons/Reload.svg<>uid://cahud40mv7rup::::res://Textures/Icons/Recenter.svg<>uid://blyl5giqvv1sx::::res://Textures/Icons/Version Manager.svg<>uid://bg28tcindg444::::res://Textures/Icons/open_with_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg<>uid://c63fwestf8b8y::::res://Textures/Icons/Server.svg<>uid://qx6l181bfkx0::::res://Textures/Icons/height_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg<>uid://0i2dvkvv1ulg::::res://Textures/Icons/ResetPosition.svg<>uid://c3hmul1xujg3y::::res://Textures/Icons/Gpus.svg<>uid://jgxlu3cabxsf::::res://Windows/MainEditor/TestGraph.tscn<>res://MenuFileButton.gd<>uid://drwk3ntck3ii1::::res://Windows/MainEditor/CodeWindow.tscn<>uid://cyuyo6kq5gi6v::::res://Windows/SoundEditor/SoundEditor.tscn<>res://Button4.gd<>uid://cyg5mkhkft0hs::::res://Textures/Icons/stop_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg<>uid://doflovfc7c1p4::::res://Textures/Icons/pause_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg<>uid://ds04bw3k7kb04::::res://Textures/Icons/play_arrow_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg<>uid://evxcrgt3jp4x::::res://Textures/Icons/account_circle_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg<>uid://bj1e07rhkbduy::::res://Textures/Icons/groups_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg<>uid://dkpgmb2cb67nn::::res://Windows/SubWindows/Render.tscn<>uid://c5qrjg1qp72c3::::res://Textures/Icons/resize_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg
+GraphEdit.gd::GDScript::-1::1727468600::0::1::::<>GraphEdit<>::
+main.tscn::PackedScene::6745511915010680038::1735491057::0::1::::<><>::res://MainEditor.gd<>uid://r7081tnsaein::::res://Textures/Icons/add_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg<>uid://deiou02c4hjjp::::res://Windows/CF Browsers/FileBrowserLarge.tscn<>uid://pqbgpudafvy0::::res://Textures/Icons/Reload.svg<>uid://cahud40mv7rup::::res://Textures/Icons/Recenter.svg<>uid://blyl5giqvv1sx::::res://Textures/Icons/Version Manager.svg<>uid://bg28tcindg444::::res://Textures/Icons/open_with_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg<>uid://c63fwestf8b8y::::res://Textures/Icons/Server.svg<>uid://qx6l181bfkx0::::res://Textures/Icons/height_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg<>uid://bckxgjyxauwc::::res://DEVTEMP/3D_Demo.tscn<>uid://0i2dvkvv1ulg::::res://Textures/Icons/ResetPosition.svg<>uid://c3hmul1xujg3y::::res://Textures/Icons/Gpus.svg<>uid://jgxlu3cabxsf::::res://Windows/MainEditor/TestGraph.tscn<>res://MenuFileButton.gd<>uid://drwk3ntck3ii1::::res://Windows/MainEditor/CodeWindow.tscn<>uid://cyuyo6kq5gi6v::::res://Windows/SoundEditor/SoundEditor.tscn<>res://Button4.gd<>uid://cyg5mkhkft0hs::::res://Textures/Icons/stop_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg<>uid://doflovfc7c1p4::::res://Textures/Icons/pause_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg<>uid://ds04bw3k7kb04::::res://Textures/Icons/play_arrow_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg<>uid://evxcrgt3jp4x::::res://Textures/Icons/account_circle_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg<>uid://bj1e07rhkbduy::::res://Textures/Icons/groups_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg<>uid://dkpgmb2cb67nn::::res://Windows/SubWindows/Render.tscn<>uid://c5qrjg1qp72c3::::res://Textures/Icons/resize_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg
 ReCompileprojectWindow.tscn::PackedScene::4517019313052832738::1720141515::0::1::::<><>::res://Window.gd
 TestGraph.tscn::PackedScene::645503087645696525::1720141515::0::1::::<><>::
-::res://Windows/MainEditor/CodeEditor/::1720608547
-NodeSelect.gd::GDScript::-1::1720606540::0::1::::<>Control<>::
-NodeSelect.tscn::PackedScene::766332987845572071::1720608547::0::1::::<><>::uid://r7081tnsaein::::res://Textures/Icons/add_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg<>res://Windows/MainEditor/CodeEditor/NodeSelect.gd<>uid://diedbb5qqa3le::::res://Textures/Icons/Cube.svg<>uid://c3hmul1xujg3y::::res://Textures/Icons/Gpus.svg<>uid://blobsl34oxc36::::res://Textures/Icons/tabs_24dp_FILL0_wght400_GRAD0_opsz24.svg<>uid://cgjp4jguck2ag::::res://Textures/Icons/WindowLarge.svg<>uid://biam7l2yy4g04::::res://Textures/Icons/2DLarge.svg<>uid://ntu8o5tptub5::::res://Textures/Icons/3DLarge.svg
-::res://Windows/MainEditor/CodeEditor/Nodes/::1721789293
-::res://Windows/MainEditor/CodeEditor/Nodes/DataTypes/::1721789351
-Array.tscn::PackedScene::5759250459587720900::1721789351::0::1::::<><>::
-Object.tscn::PackedScene::2264567953376735923::1721789351::0::1::::<><>::res://Windows/MainEditor/CodeEditor/Nodes/DataTypes/VariableNode.gd<>uid://522t76f6emvv::::res://Textures/Icons/CubeLarge.svg<>uid://pqbgpudafvy0::::res://Textures/Icons/Reload.svg
+::res://Windows/MainEditor/CodeEditor/::1731189172
+AddNodelisting.gd::GDScript::-1::1728135660::0::1::::<>Tree<>::
+NodeSelect.gd::GDScript::-1::1730665291::0::1::::<>Control<>::
+NodeSelect.tscn::PackedScene::766332987845572071::1731189172::0::1::::<><>::res://Windows/MainEditor/CodeEditor/NodeSelect.gd<>res://Windows/MainEditor/CodeEditor/AddNodelisting.gd<>uid://chc6mx7gbu36j::::res://Textures/Icons/Close.svg
+test.txt::TextFile::-1::1727469969::0::1::::<><>::
+::res://Windows/MainEditor/CodeEditor/Nodes/::1728130871
+res.txt::TextFile::-1::1728130871::0::1::::<><>::
+::res://Windows/MainEditor/CodeEditor/Nodes/DataTypes/::1729101561
+Array.tscn::PackedScene::5759250459587720900::1729101561::0::1::::<><>::
+Object.tscn::PackedScene::2264567953376735923::1729101561::0::1::::<><>::res://Windows/MainEditor/CodeEditor/Nodes/DataTypes/VariableNode.gd<>uid://522t76f6emvv::::res://Textures/Icons/CubeLarge.svg<>uid://pqbgpudafvy0::::res://Textures/Icons/Reload.svg
 VariableNode.gd::GDScript::-1::1720605116::0::1::::<>GraphNode<>::
-VariableNode.tscn::PackedScene::7439611363774058237::1721789351::0::1::::<><>::res://Windows/MainEditor/CodeEditor/Nodes/DataTypes/VariableNode.gd
-::res://Windows/MainEditor/CodeEditor/Nodes/Flow/::1721789351
-BeginNode.tscn::PackedScene::7480887880466151673::1721789351::0::1::::<><>::res://Windows/MainEditor/CodeEditor/Nodes/DataTypes/VariableNode.gd
-Call.tscn::PackedScene::309988890653167834::1721789351::0::1::::<><>::res://Windows/MainEditor/CodeEditor/Nodes/DataTypes/VariableNode.gd
-Event.tscn::PackedScene::3660407195771048293::1721789351::0::1::::<><>::res://Windows/MainEditor/CodeEditor/Nodes/DataTypes/VariableNode.gd
-Function.tscn::PackedScene::5536610167004393207::1721789351::0::1::::<><>::res://Windows/MainEditor/CodeEditor/Nodes/DataTypes/VariableNode.gd<>uid://r7081tnsaein::::res://Textures/Icons/add_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg
-Loop.tscn::PackedScene::4774298875063475093::1721789351::0::1::::<><>::res://Windows/MainEditor/CodeEditor/Nodes/DataTypes/VariableNode.gd
-::res://Windows/MainEditor/CodeEditor/Nodes/Logic/::1721789351
-IfStatement.tscn::PackedScene::6811912940317869831::1721789351::0::1::::<><>::res://Windows/MainEditor/CodeEditor/Nodes/DataTypes/VariableNode.gd
-::res://Windows/MainEditor/CodeEditor/Nodes/Math/::1722334363
-Adition.tscn::PackedScene::1208308751672031852::1721789351::0::1::::<><>::res://Windows/MainEditor/CodeEditor/Nodes/DataTypes/VariableNode.gd
+VariableNode.tscn::PackedScene::7439611363774058237::1729101561::0::1::::<><>::res://Windows/MainEditor/CodeEditor/Nodes/DataTypes/VariableNode.gd
+::res://Windows/MainEditor/CodeEditor/Nodes/Extras/::1727470825
+::res://Windows/MainEditor/CodeEditor/Nodes/Flow/::1725913063
+BeginNode.tscn::PackedScene::7480887880466151673::1722335081::0::1::::<><>::res://Windows/MainEditor/CodeEditor/Nodes/DataTypes/VariableNode.gd
+Call.tscn::PackedScene::309988890653167834::1722335082::0::1::::<><>::res://Windows/MainEditor/CodeEditor/Nodes/DataTypes/VariableNode.gd
+Event.tscn::PackedScene::3660407195771048293::1722335082::0::1::::<><>::res://Windows/MainEditor/CodeEditor/Nodes/DataTypes/VariableNode.gd
+Function.tscn::PackedScene::5536610167004393207::1722335081::0::1::::<><>::res://Windows/MainEditor/CodeEditor/Nodes/DataTypes/VariableNode.gd<>uid://r7081tnsaein::::res://Textures/Icons/add_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg
+Loop.tscn::PackedScene::4774298875063475093::1722335081::0::1::::<><>::res://Windows/MainEditor/CodeEditor/Nodes/DataTypes/VariableNode.gd
+::res://Windows/MainEditor/CodeEditor/Nodes/Logic/::1725913063
+IfStatement.tscn::PackedScene::6811912940317869831::1722335081::0::1::::<><>::res://Windows/MainEditor/CodeEditor/Nodes/DataTypes/VariableNode.gd
+::res://Windows/MainEditor/CodeEditor/Nodes/Math/::1725913063
+Adition.tscn::PackedScene::1208308751672031852::1722335082::0::1::::<><>::res://Windows/MainEditor/CodeEditor/Nodes/DataTypes/VariableNode.gd
 teapot_broken.jpg::CompressedTexture2D::5427846570247552388::1722334361::1722334363::1::::<><>::
-::res://Windows/MainEditor/CodeEditor/Nodes/Special/::1721789221
+::res://Windows/MainEditor/CodeEditor/Nodes/Special/::1725913063
 LsCodeNode.gd::GDScript::-1::1720606308::0::1::::<>GraphNode<>::
 LsCodeNode.tscn::PackedScene::9117014147928821972::1721789221::0::1::::<><>::res://Windows/MainEditor/CodeEditor/Nodes/Special/LsCodeNode.gd<>uid://diedbb5qqa3le::::res://Textures/Icons/Cube.svg
-::res://Windows/SoundEditor/::1720612607
+::res://Windows/MainEditor/MovieEditor/::1722335359
+MovieWindow.tscn::PackedScene::3847157855065229405::1722335356::0::1::::<><>::uid://r7081tnsaein::::res://Textures/Icons/add_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg<>uid://b6anm2d8rdhl4::::res://Textures/Icons/conversion_path_24dp_FILL0_wght400_GRAD0_opsz24.svg<>uid://dolt1wfqq3r71::::res://Textures/Icons/deployed_code_alert_24dp_FILL0_wght400_GRAD0_opsz24.svg<>res://Windows/MainEditor/GraphEdit.gd<>uid://k6hnls2v3ne2::::res://Windows/MainEditor/CodeEditor/NodeSelect.tscn<>uid://det2eo1a1sacf::::res://Windows/MainEditor/CodeEditor/Nodes/Flow/BeginNode.tscn<>uid://ntm0tieyb5t6::::res://Textures/Fonts/RubikMonoOne-Regular.ttf
+NodeSelect.gd::GDScript::-1::1722335340::0::1::::<>Control<>::
+NodeSelect.tscn::PackedScene::7856036582141921147::1722335340::0::1::::<><>::res://Windows/MainEditor/CodeEditor/NodeSelect.gd<>uid://r7081tnsaein::::res://Textures/Icons/add_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg<>uid://diedbb5qqa3le::::res://Textures/Icons/Cube.svg<>uid://c3hmul1xujg3y::::res://Textures/Icons/Gpus.svg<>uid://blobsl34oxc36::::res://Textures/Icons/tabs_24dp_FILL0_wght400_GRAD0_opsz24.svg<>uid://cgjp4jguck2ag::::res://Textures/Icons/WindowLarge.svg<>uid://biam7l2yy4g04::::res://Textures/Icons/2DLarge.svg<>uid://ntu8o5tptub5::::res://Textures/Icons/3DLarge.svg
+::res://Windows/MainEditor/MovieEditor/Nodes/::1722335340
+::res://Windows/MainEditor/MovieEditor/Nodes/DataTypes/::1722335340
+Array.tscn::PackedScene::8904681363645853305::1722335340::0::1::::<><>::
+Object.tscn::PackedScene::8048630778850299599::1722335340::0::1::::<><>::res://Windows/MainEditor/CodeEditor/Nodes/DataTypes/VariableNode.gd<>uid://522t76f6emvv::::res://Textures/Icons/CubeLarge.svg<>uid://pqbgpudafvy0::::res://Textures/Icons/Reload.svg
+VariableNode.gd::GDScript::-1::1722335340::0::1::::<>GraphNode<>::
+VariableNode.tscn::PackedScene::6833302313594230470::1722335340::0::1::::<><>::res://Windows/MainEditor/CodeEditor/Nodes/DataTypes/VariableNode.gd
+::res://Windows/MainEditor/MovieEditor/Nodes/Flow/::1722335340
+BeginNode.tscn::PackedScene::3456622772168217886::1722335340::0::1::::<><>::res://Windows/MainEditor/CodeEditor/Nodes/DataTypes/VariableNode.gd
+Call.tscn::PackedScene::6453553262308412557::1722335340::0::1::::<><>::res://Windows/MainEditor/CodeEditor/Nodes/DataTypes/VariableNode.gd
+Event.tscn::PackedScene::5088310080103292355::1722335340::0::1::::<><>::res://Windows/MainEditor/CodeEditor/Nodes/DataTypes/VariableNode.gd
+Function.tscn::PackedScene::5865485677320761345::1722335340::0::1::::<><>::res://Windows/MainEditor/CodeEditor/Nodes/DataTypes/VariableNode.gd<>uid://r7081tnsaein::::res://Textures/Icons/add_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg
+Loop.tscn::PackedScene::3265086249592550468::1722335340::0::1::::<><>::res://Windows/MainEditor/CodeEditor/Nodes/DataTypes/VariableNode.gd
+::res://Windows/MainEditor/MovieEditor/Nodes/Logic/::1722335340
+IfStatement.tscn::PackedScene::2436494389525972280::1722335340::0::1::::<><>::res://Windows/MainEditor/CodeEditor/Nodes/DataTypes/VariableNode.gd
+::res://Windows/MainEditor/MovieEditor/Nodes/Math/::1722335341
+Adition.tscn::PackedScene::6971487432636044389::1722335340::0::1::::<><>::res://Windows/MainEditor/CodeEditor/Nodes/DataTypes/VariableNode.gd
+teapot_broken.jpg::CompressedTexture2D::2158232831796608324::1722335340::1722335341::1::::<><>::
+::res://Windows/MainEditor/MovieEditor/Nodes/Special/::1722335340
+LsCodeNode.gd::GDScript::-1::1722335340::0::1::::<>GraphNode<>::
+LsCodeNode.tscn::PackedScene::233710021883498514::1722335340::0::1::::<><>::uid://diedbb5qqa3le::::res://Textures/Icons/Cube.svg<>res://Windows/MainEditor/CodeEditor/Nodes/Special/LsCodeNode.gd
+::res://Windows/MainEditor/Objects/::1724330972
+Cube3D.tscn::PackedScene::4156469459153140784::1724330972::0::1::::<><>::
+Cylinder_3D.tscn::PackedScene::1259024437545129318::1724330802::0::1::::<><>::
+Sphere3D.tscn::PackedScene::6068515538036344291::1724330925::0::1::::<><>::
+::res://Windows/SoundEditor/::1725912994
 Channel.tscn::PackedScene::2689786575873133858::1720611007::0::1::::<><>::
 ChannnelDock.tscn::PackedScene::3150001138016641203::1720611007::0::1::::<><>::uid://bek7nlcdln7uc::::res://Windows/SoundEditor/Channel.tscn
 SoundEditor.tscn::PackedScene::6500145023160440163::1720612607::0::1::::<><>::uid://w6eaejxfj81h::::res://Windows/SoundEditor/TrackDock.tscn<>uid://bk45b8wfllt3h::::res://Windows/SoundEditor/ChannnelDock.tscn
 Track.tscn::PackedScene::5193290112990799301::1720611007::0::1::::<><>::uid://bd2jflqkeot26::::res://&Stuff/y2mate.com - Foo Fighters The Pretender.mp3
 TrackDock.tscn::PackedScene::1608393363432360887::1720611007::0::1::::<><>::uid://cf8wy2g2hmrnx::::res://Windows/SoundEditor/Track.tscn
-::res://Windows/SubWindows/::1722048835
+::res://Windows/SubWindows/::1725912994
 MainViewport.tscn::PackedScene::2857472642425995836::1720658623::0::1::::<><>::uid://r7081tnsaein::::res://Textures/Icons/add_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg<>uid://cahud40mv7rup::::res://Textures/Icons/Recenter.svg<>uid://pqbgpudafvy0::::res://Textures/Icons/Reload.svg<>uid://qx6l181bfkx0::::res://Textures/Icons/height_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg<>uid://diedbb5qqa3le::::res://Textures/Icons/Cube.svg
-ObjectSelector.tscn::PackedScene::9107908897162068507::1722048835::0::1::::<><>::
-Render.tscn::PackedScene::7892501979580513615::1704482205::0::1::::<><>::uid://blobsl34oxc36::::res://Textures/Icons/tabs_24dp_FILL0_wght400_GRAD0_opsz24.svg<>uid://b6anm2d8rdhl4::::res://Textures/Icons/conversion_path_24dp_FILL0_wght400_GRAD0_opsz24.svg<>uid://bs3vkf1e35g71::::res://Textures/Icons/arrow_forward_ios_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg<>uid://bqpsq5cef4j5i::::res://Textures/Icons/video_camera_back_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg<>uid://bwxqg864e1ngo::::res://Textures/Icons/sprinkler_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg<>res://Windows/Tools/Render/BeginRender.gd<>uid://ntm0tieyb5t6::::res://Textures/Fonts/RubikMonoOne-Regular.ttf
-::res://Windows/Tools/::1720920850
-::res://Windows/Tools/Render/::1722334386
+ObjectSelector.tscn::PackedScene::9107908897162068507::1724330120::0::1::::<><>::
+Render.tscn::PackedScene::7892501979580513615::1722548520::0::1::::<><>::uid://blobsl34oxc36::::res://Textures/Icons/tabs_24dp_FILL0_wght400_GRAD0_opsz24.svg<>uid://b6anm2d8rdhl4::::res://Textures/Icons/conversion_path_24dp_FILL0_wght400_GRAD0_opsz24.svg<>uid://bs3vkf1e35g71::::res://Textures/Icons/arrow_forward_ios_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg<>uid://bqpsq5cef4j5i::::res://Textures/Icons/video_camera_back_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg<>uid://bwxqg864e1ngo::::res://Textures/Icons/sprinkler_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg<>res://Windows/Tools/Render/BeginRender.gd<>uid://dyokax36oqo0i::::res://Windows/Tools/Render/teapot_broken.jpg<>uid://ntm0tieyb5t6::::res://Textures/Fonts/RubikMonoOne-Regular.ttf
+::res://Windows/Tools/::1720984051
+::res://Windows/Tools/Render/::1725913027
 BeginRender.gd::GDScript::-1::1720925011::0::1::::<>Button<>::
 teapot_broken.jpg::CompressedTexture2D::8873304009596011602::1722334386::1722334387::1::::<><>::
 view_in_ar_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg::CompressedTexture2D::2643927963857087426::1721443097::1721443097::1::::<><>::
-::res://Windows/WindowTemplate/::1720141515
+::res://Windows/WindowTemplate/::1725912994
 PopUp.tscn::PackedScene::3177946554991240785::1720141515::0::1::::<><>::res://Window.gd

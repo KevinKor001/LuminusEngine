@@ -9,6 +9,7 @@
 [ext_resource type="Texture2D" uid="uid://bg28tcindg444" path="res://Textures/Icons/open_with_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg" id="4_noxmh"]
 [ext_resource type="Texture2D" uid="uid://c63fwestf8b8y" path="res://Textures/Icons/Server.svg" id="5_cs6g0"]
 [ext_resource type="Texture2D" uid="uid://qx6l181bfkx0" path="res://Textures/Icons/height_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg" id="5_og444"]
+[ext_resource type="PackedScene" uid="uid://bckxgjyxauwc" path="res://DEVTEMP/3D_Demo.tscn" id="6_6aufx"]
 [ext_resource type="Texture2D" uid="uid://0i2dvkvv1ulg" path="res://Textures/Icons/ResetPosition.svg" id="6_30ml4"]
 [ext_resource type="Texture2D" uid="uid://c3hmul1xujg3y" path="res://Textures/Icons/Gpus.svg" id="7_wwy78"]
 [ext_resource type="PackedScene" uid="uid://jgxlu3cabxsf" path="res://Windows/MainEditor/TestGraph.tscn" id="8_j2a4f"]
@@ -24,15 +25,15 @@
 [ext_resource type="PackedScene" uid="uid://dkpgmb2cb67nn" path="res://Windows/SubWindows/Render.tscn" id="15_myxgy"]
 [ext_resource type="Texture2D" uid="uid://c5qrjg1qp72c3" path="res://Textures/Icons/resize_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg" id="18_be8ji"]
 
-[sub_resource type="World3D" id="World3D_1w7mm"]
-
 [sub_resource type="Environment" id="Environment_xjyie"]
-background_mode = 2
-background_color = Color(0.952941, 0.0705882, 0.952941, 1)
-background_energy_multiplier = 3.75
+background_mode = 1
+background_color = Color(0.39294, 0.309334, 0.619422, 1)
 ambient_light_source = 2
 ambient_light_color = Color(1, 0.141176, 1, 1)
 ambient_light_energy = 0.0
+glow_normalized = true
+glow_intensity = 2.05
+volumetric_fog_density = 1.0
 
 [node name="Main" type="Control"]
 layout_mode = 3
@@ -136,16 +137,17 @@ grow_horizontal = 2
 grow_vertical = 2
 size_flags_horizontal = 3
 stretch = true
-stretch_shrink = 9
 
 [node name="SubViewport" type="SubViewport" parent="Panel/TabContainer/ViewPort/VBoxContainer/VSplitContainer/HBoxContainer/HSplitContainer/HSplitContainer2/Panel/SubViewportContainer"]
-world_3d = SubResource("World3D_1w7mm")
 handle_input_locally = false
-size = Vector2i(2, 2)
-render_target_update_mode = 0
+use_occlusion_culling = true
+scaling_3d_scale = 1.02
+size = Vector2i(570, 261)
+size_2d_override_stretch = true
+render_target_update_mode = 4
 
-[node name="WorldEnvironment" type="WorldEnvironment" parent="Panel/TabContainer/ViewPort/VBoxContainer/VSplitContainer/HBoxContainer/HSplitContainer/HSplitContainer2/Panel/SubViewportContainer/SubViewport"]
-environment = SubResource("Environment_xjyie")
+[node name="Camera3D" type="Camera3D" parent="Panel/TabContainer/ViewPort/VBoxContainer/VSplitContainer/HBoxContainer/HSplitContainer/HSplitContainer2/Panel/SubViewportContainer/SubViewport"]
+transform = Transform3D(0.828041, -0.16923, 0.534518, -1.32546e-08, 0.95336, 0.301837, -0.560668, -0.249933, 0.789421, 0.324194, 1.14251, 0.676762)
 
 [node name="HBoxContainer" type="HBoxContainer" parent="Panel/TabContainer/ViewPort/VBoxContainer/VSplitContainer/HBoxContainer/HSplitContainer/HSplitContainer2/Panel/SubViewportContainer"]
 layout_mode = 2
@@ -314,13 +316,28 @@ grow_vertical = 2
 layout_mode = 2
 text = "File"
 item_count = 4
-popup/item_0/text = "New File"
+popup/item_0/text = "Open Project Manager"
 popup/item_0/id = 0
-popup/item_1/text = "Load File"
+popup/item_1/text = "Import File"
 popup/item_1/id = 1
 popup/item_2/text = "Settings"
 popup/item_2/id = 2
 popup/item_3/text = "ReCompile Project Solution"
+popup/item_3/id = 3
+script = ExtResource("9_g7ajt")
+
+[node name="MenuFileButton2" type="MenuButton" parent="Panel/UtilityBar/HBoxContainer"]
+layout_mode = 2
+text = "Edit"
+item_count = 4
+popup/item_0/text = "Preferences"
+popup/item_0/id = 0
+popup/item_1/text = "Editor"
+popup/item_1/id = 1
+popup/item_1/separator = true
+popup/item_2/text = "Winodow Tiling"
+popup/item_2/id = 2
+popup/item_3/text = "Add Instance"
 popup/item_3/id = 3
 script = ExtResource("9_g7ajt")
 
@@ -397,5 +414,14 @@ layout_mode = 2
 size_flags_horizontal = 8
 icon = ExtResource("15_3xkld")
 
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_xjyie")
+
+[node name="Node3D" parent="WorldEnvironment" instance=ExtResource("6_6aufx")]
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="WorldEnvironment"]
+transform = Transform3D(1, 0, 0, 0, 0.707107, 0.707107, 0, -0.707107, 0.707107, 0, 3, 2)
+
 [connection signal="pressed" from="Panel/UtilityBar/HBoxContainer/MenuFileButton" to="Panel/UtilityBar/HBoxContainer/MenuFileButton" method="_on_pressed"]
+[connection signal="pressed" from="Panel/UtilityBar/HBoxContainer/MenuFileButton2" to="Panel/UtilityBar/HBoxContainer/MenuFileButton2" method="_on_pressed"]
 [connection signal="pressed" from="Panel/UtilityBar/HBoxContainer/Button4" to="Panel/UtilityBar/HBoxContainer/Button4" method="_on_pressed"]

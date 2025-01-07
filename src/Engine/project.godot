@@ -20,6 +20,10 @@ config/icon="res://Textures/LogoLone.png"
 
 window/subwindows/embed_subwindows=false
 
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/native_dialogs/plugin.cfg")
+
 [input]
 
 Code_esc={

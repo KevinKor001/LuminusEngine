@@ -25,7 +25,7 @@ func RunCommand():
 		get_tree().quit()
 	else:
 		$"../../Panel/RichTextLabel".Log("no Command")
-	
+
 	
 
 

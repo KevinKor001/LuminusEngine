@@ -1,0 +1,18 @@
+[gd_scene load_steps=6 format=3 uid="uid://b3tcjfk6cwsom"]
+
+[ext_resource type="PackedScene" uid="uid://sufwsgbpdvnf" path="res://&Stuff/Wooden Table_viejdi1/Wooden Table_LOD4__viejdi1.fbx" id="1_67j5x"]
+[ext_resource type="Texture2D" uid="uid://dehl7p70tj2yx" path="res://&Stuff/Wooden Table_viejdi1/Albedo_2K_LOD4_viejdi1.jpg" id="2_eresw"]
+[ext_resource type="Texture2D" uid="uid://cjv080wlqhi2v" path="res://&Stuff/Wooden Table_viejdi1/Normal_2K_LOD4_viejdi1.jpg" id="3_um487"]
+[ext_resource type="Texture2D" uid="uid://cstkhr2vtn7cx" path="res://&Stuff/Wooden Table_viejdi1/Roughness_2K__viejdi1.jpg" id="4_sggpl"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ydxl1"]
+albedo_texture = ExtResource("2_eresw")
+roughness_texture = ExtResource("4_sggpl")
+roughness_texture_channel = 4
+normal_enabled = true
+normal_texture = ExtResource("3_um487")
+
+[node name="Root Scene" instance=ExtResource("1_67j5x")]
+
+[node name="Aset_interior_furniture_M_viejdi1_00_LOD4" parent="RootNode/world_root" index="0"]
+surface_material_override/0 = SubResource("StandardMaterial3D_ydxl1")

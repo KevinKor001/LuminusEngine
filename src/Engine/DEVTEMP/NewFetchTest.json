@@ -1,0 +1,15 @@
+
+{
+    "name": "LuminusEngineReleases",
+    "versionStaging": "1.0.0",
+    "entities": [
+        {
+            "name": "Hi! release 2",
+            "desc": "idk.. desc 2"
+        },
+        {
+            "name": "owo hi!_1",
+            "desc": "Desc1"
+        }
+    ]
+}

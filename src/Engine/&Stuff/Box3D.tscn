@@ -1,0 +1,15 @@
+[gd_scene load_steps=5 format=3 uid="uid://ba658eqcey4fh"]
+
+[ext_resource type="PackedScene" uid="uid://n47rql4c7c55" path="res://&Stuff/Cardboard Box_vh1hehj/Cardboard Box_LOD4__vh1hehj.fbx" id="1_hlf00"]
+[ext_resource type="Texture2D" uid="uid://corai2oga4bns" path="res://&Stuff/Cardboard Box_vh1hehj/Albedo_2K_LOD4_vh1hehj.jpg" id="2_siwlr"]
+[ext_resource type="Texture2D" uid="uid://jddl568djqij" path="res://&Stuff/Cardboard Box_vh1hehj/Normal_2K_LOD4_vh1hehj.jpg" id="3_2nl4q"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_6booe"]
+albedo_texture = ExtResource("2_siwlr")
+normal_enabled = true
+normal_texture = ExtResource("3_2nl4q")
+
+[node name="Root Scene" instance=ExtResource("1_hlf00")]
+
+[node name="Aset_props_storage_M_vh1hehj_LOD4" parent="RootNode" index="0"]
+surface_material_override/0 = SubResource("StandardMaterial3D_6booe")

@@ -1,0 +1,21 @@
+[gd_scene load_steps=6 format=3 uid="uid://dhfvh6vwbc6hh"]
+
+[ext_resource type="PackedScene" uid="uid://dxkkgetiwwst" path="res://&Stuff/Blue And Red Book_vdkvdds/Blue And Red Book_LOD6__vdkvdds.fbx" id="1_kblde"]
+[ext_resource type="Texture2D" uid="uid://ct65y43dobbf" path="res://&Stuff/Blue And Red Book_vdkvdds/Albedo_2K_LOD6_vdkvdds.jpg" id="2_rdt0u"]
+[ext_resource type="Texture2D" uid="uid://dvvfp2suu1drh" path="res://&Stuff/Blue And Red Book_vdkvdds/AO_2K__vdkvdds.jpg" id="3_542o4"]
+[ext_resource type="Texture2D" uid="uid://ba5cdmj7wmgom" path="res://&Stuff/Blue And Red Book_vdkvdds/Normal_2K_LOD6_vdkvdds.jpg" id="4_h6byu"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_w1v7h"]
+albedo_texture = ExtResource("2_rdt0u")
+normal_enabled = true
+normal_texture = ExtResource("4_h6byu")
+anisotropy = 1.0
+anisotropy_flowmap = ExtResource("3_542o4")
+ao_enabled = true
+ao_light_affect = 0.13
+ao_texture = ExtResource("3_542o4")
+
+[node name="Root Scene" instance=ExtResource("1_kblde")]
+
+[node name="Aset_props__S_vdkvdds_LOD6" parent="RootNode" index="0"]
+surface_material_override/0 = SubResource("StandardMaterial3D_w1v7h")
